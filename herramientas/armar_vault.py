@@ -35,7 +35,8 @@ for jf in sorted(src.glob("*.json")):
         if num == "004" and EP4[0] in t:
             t = t.replace(EP4[0], EP4[1])
             notes.append(f"{mmss(s['inicio'])}: frase omitida por el modelo, restaurada al re-transcribir ese tramo")
-        paras.append(f"**[{mmss(s['inicio'])}]** {t}")
+        # ^mMMSS es el ancla de bloque de Obsidian para citar el párrafo
+        paras.append(f"**[{mmss(s['inicio'])}]** {t} ^m{mmss(s['inicio']).replace(':', '')}")
     fm = [
         "---",
         f'title: "{title}"',

@@ -2,8 +2,8 @@
 
 Vaults de Obsidian con conocimiento destilado, una por tema.
 
-- `holistic-alpha/`: vault piloto del podcast Holistic Alpha
-  - `fuentes/transcripts/`: un transcript por episodio, con `[mm:ss]` por párrafo para citar
+- `holistic-alpha/`: vault piloto del podcast Holistic Alpha, ver su [README](holistic-alpha/README.md)
+  - `fuentes/transcripts/`: un transcript por episodio, con `[mm:ss]` y ancla `^mMMSS` por párrafo para citar
 - `herramientas/`: scripts para generar las fuentes
 
 ## Transcribir episodios
@@ -13,3 +13,7 @@ Vaults de Obsidian con conocimiento destilado, una por tema.
 
 Los audios se nombran `NNN - Título.mp3`.
 Cada transcript lista sus correcciones en el frontmatter.
+
+## Destilar episodios
+
+`citas.py holistic-alpha` expande las citas abreviadas a enlaces y verifica cada cita textual contra su transcript.
