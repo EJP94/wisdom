@@ -1,0 +1,153 @@
+{
+  "reviewer": "sonnet",
+  "episodes": [
+    {
+      "id": "079",
+      "ok": true,
+      "findings": []
+    },
+    {
+      "id": "088",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "scope widened",
+          "ts": "15:47",
+          "transcript": "It's gonna take more practice and more willpower to not ejaculate. It's a little more of an adjustment period, right? ... It's a little harder, right?",
+          "recap": "In a relationship, not ejaculating takes more practice and willpower: a bigger adjustment period and probably more accidents",
+          "fix": "a little more of an adjustment period, and a little harder, with probably more accidents (\"a bigger adjustment period\" is stronger than \"a little more of an adjustment period\")"
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "ok": true,
+      "findings": []
+    },
+    {
+      "id": "252",
+      "ok": true,
+      "findings": []
+    },
+    {
+      "id": "350",
+      "ok": true,
+      "findings": []
+    },
+    {
+      "id": "404b1",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "scope widened",
+          "ts": "13:02",
+          "transcript": "we're in a warmed up, energetic, aroused state, and we're gonna take some of that energy and we're gonna draw it up our body",
+          "recap": "The term seems to make sense: warmed up and aroused, you draw energy up your body",
+          "fix": "warmed up and aroused, you draw some of that energy up your body"
+        }
+      ]
+    },
+    {
+      "id": "549",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "scope widened",
+          "ts": "01:05",
+          "transcript": "this is something I practice or try to practice in my own life, is that you have a certain positivity that carries through even when you're feeling shitty",
+          "recap": "A certain positivity that carries through even when you're feeling shitty, \"this deep foundational kind of positivity\", is worth practicing, or trying to; the guest has it, and it will serve him well",
+          "fix": "He says he personally practices, or tries to practice, a positivity that carries through even when feeling shitty (not a general 'is worth practicing'). Suggested: Personally practices, or tries to practice, a positivity that carries through even when you're feeling shitty; the guest has \"this deep foundational kind of positivity\", and it will serve him well"
+        },
+        {
+          "severity": "S3",
+          "kind": "speaker wrong",
+          "ts": "03:36",
+          "transcript": "Especially if you if you develop like a streak of L's. You've been stacking L's. I know I have. Yeah. Build build building the habit of taking an L, which is a less than ideal habit. Yeah. Less than ideal.",
+          "recap": "Guest story: ... it's tough to get back on after stacking L's, building the habit of taking an L.",
+          "fix": "'You've been stacking L's' and 'building the habit of taking an L, which is a less than ideal habit' look like the host echoing the guest (the guest answers 'I know I have' and 'Yeah. Less than ideal'). Keep under the Guest only 'it's tough to get back on it, especially after a streak of L's', or add [speaker unclear]"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "16:13",
+          "transcript": "You and I, we're not going to feel like this all the way forever, Charles. You know, we're going to get back. We're going to be feeling more powerful. Um, we're going to get back to the highest vibration that we have. Um, you guys who are listening, same thing is true.",
+          "recap": "Move through it so it's as short as possible and you come out with as much momentum as possible (only 'there will be another side of it. Things always flow and change.' is kept)",
+          "fix": "Add: it won't last forever; we'll get back to feeling more powerful, to the highest vibration we have, and the same is true for listeners"
+        },
+        {
+          "severity": "S2",
+          "kind": "source lost",
+          "ts": "24:04",
+          "transcript": "However, I know one of the things that you've experienced is that everything kind of feeds on the other. ... in some ways it can actually be easier if you figure out the right th three or four things to focus on because they kind of support the other one",
+          "recap": "Four may seem like a lot to some guys, but everything kind of feeds the other: in some ways the right three or four that support each other can actually be easier, it seems",
+          "fix": "Credit the guest's experience: Four may seem like a lot to some guys, but the host knows the guest has experienced that everything kind of feeds the other; in some ways the right three or four that support each other can actually be easier"
+        },
+        {
+          "severity": "S3",
+          "kind": "speaker wrong",
+          "ts": "30:27",
+          "transcript": "[host] I know that from our discussions, Charles, you've talked about how those, you know, those habits, cold shower, meditation, getting your workout in, retaining, those are things that make you feel better. Those are things that allow you to show up to the other parts of your life more effectively. Yeah. 100%. When I don't do them, I feel the consequences.",
+          "recap": "Guest: those habits, cold shower, meditation, workout, retaining, make him feel better and show up more effectively elsewhere; when he skips them, he sees and feels the consequences",
+          "fix": "The 'make you feel better / show up more effectively' lines are the host recalling what the guest told him; only 'Yeah. 100%. When I don't do them, I feel the consequences. I see the difference and I feel it' is the guest's own words. Suggested: the host recalls the guest saying these habits make him feel better and show up more effectively elsewhere. **Guest:** 100%, when he skips them he sees and feels the consequences"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "31:35",
+          "transcript": "So yeah, as we move through the holidays, this challenge will help you do that. And then it will also help you come out the other side of it as effectively as possible.",
+          "recap": "(Holiday bullets say the holidays are the perfect time and that supportive habits support us, but not that the challenge carries you through and out the other side)",
+          "fix": "Add: the challenge helps you move through the holidays and then come out the other side as effectively as possible"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "32:45",
+          "transcript": "And you're gonna retain. I'm gonna retain. Going back on the retention. Yeah. It makes all the difference for me. Oh my gosh.",
+          "recap": "Retention bullet starts at 'For so many of you guys listening, this will be the most important habit' with no mention that the speaker is going back on retention and that it makes all the difference for him",
+          "fix": "Add: [speaker unclear] going back on retention, which makes all the difference for him (the lines 'I'm gonna retain. Going back on the retention. It makes all the difference for me' follow the host's 'And you're gonna retain')"
+        },
+        {
+          "severity": "S2",
+          "kind": "speaker wrong",
+          "ts": "38:18",
+          "transcript": "Other people, everybody out there in the world is gonna be waiting. They're gonna be oh, January 1st, they're gonna be trying to get their shit together. No, no, most most of us have been working all year round. Most of us have not that we've been put in the work in, you know. Exactly. We're not waiting till January. Exactly. There's no waiting. Waiting tomorrow's not guaranteed, dude. Let's be grateful for today.",
+          "recap": "**Guest:** everybody else is waiting for January 1st to get their shit together, but most of us have been putting the work in all year round / There's no waiting: tomorrow's not guaranteed. Be grateful for today (unmarked, host)",
+          "fix": "No speaker labels and the turns are interleaved with 'Exactly' replies; the host had raised the January 1st theme himself at 31:35, so the Guest marker may be wrong. Add [speaker unclear] to these lines, or merge the January 1st point into the host's earlier January bullet"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "40:32",
+          "transcript": "I'll post some videos over the next few weeks ... I'll record all 500 of my burpees and I'll speed it up into like a super fast, uh, quick video so I can have some accountability and show you guys the the 500 burpees I'm gonna knock out.",
+          "recap": "Host burpee bullet (500 every day for 21 days, not missing a day) has no mention of recording and posting the 500 burpees as accountability",
+          "fix": "Add to the burpee Host story: he'll record all 500 burpees and post a sped-up video for accountability"
+        },
+        {
+          "severity": "S3",
+          "kind": "fact changed",
+          "ts": "41:25",
+          "transcript": "[host] I am starting tonight because I'm not sure I'll do 500 before the night's up ... [42:02, guest] I'm gonna get my meditation in tonight and then we're gonna start fresh.",
+          "recap": "Both started that night",
+          "fix": "Both said 'Starting tonight'; the host says he is starting tonight with the burpees and the guest says he will get his meditation in tonight and then start fresh. Write: Both said they were starting that night"
+        }
+      ]
+    },
+    {
+      "id": "556",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "02:27",
+          "transcript": "It's okay. It's gonna keep you marching forward. Because guess what Jordan did in those games? He showed up, ... he continued to demonstrate a pattern of showing up and giving what he had that day",
+          "recap": "Same with your habits: scaling back won't stop your journey or your growth. Show up and give what you have",
+          "fix": "Add: scaling back keeps you marching forward, because you keep demonstrating a pattern of showing up"
+        }
+      ]
+    }
+  ]
+}

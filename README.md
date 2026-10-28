@@ -1,15 +1,27 @@
 # Wisdom
 
-Vaults de Obsidian con conocimiento destilado, una por tema.
+Conocimiento destilado de libros, podcasts, videos y cursos, en vaults de Obsidian.
+La primera vault es el podcast Holistic Alpha de Steven Mathis.
 
-- `holistic-alpha/`: vault piloto del podcast Holistic Alpha
-  - `fuentes/transcripts/`: un transcript por episodio, con `[mm:ss]` por párrafo para citar
-- `herramientas/`: scripts para generar las fuentes
+## Capas
 
-## Transcribir episodios
+1. **Transcripts** (`holistic-alpha/transcripts/`): los 809 episodios tal como salieron de Parakeet. No se editan
+2. **Recaps** (`holistic-alpha/recaps/`): un Recap por episodio. Es la fuente de todo lo demás
+3. Vistas sacadas de los Recaps: notas por tema, manual por problema, contenido. Todavía no existen
 
-1. `transcribir_parakeet.py audios/ --salida parakeet/ [--cpu]` usa NVIDIA Parakeet TDT 0.6B v3 y deja `.txt` y `.json` por audio
-2. `armar_vault.py parakeet/ holistic-alpha/fuentes/transcripts` arma el Markdown con frontmatter y corrige nombres mal escuchados
+## Dónde está cada cosa
 
-Los audios se nombran `NNN - Título.mp3`.
-Cada transcript lista sus correcciones en el frontmatter.
+- `holistic-alpha/recap-recipe.md`: la receta, la única regla de cómo se escribe un Recap
+- `holistic-alpha/episodes.csv`: un renglón por episodio. Lo genera `tools/build_episodes.py` desde `INVENTARIO.csv`
+- `holistic-alpha/golden/`: el set de oro y la clave para medir revisores
+- `holistic-alpha/logs/`: hallazgos de revisión, reportes del checker y calibración
+- `tools/`: scripts gratis (Python, sin dependencias) para armar la tabla, planear bloques, revisar formato, puntuar revisores y medir el costo
+- `tools/transcription/`: descarga y transcripción de audios nuevos
+- `.claude/skills/recaps/`: el skill `/recaps` que corre el pipeline
+
+## Procesar episodios
+
+En Claude Code, desde la raíz del repo: `/recaps 801-813`.
+El skill explica cada paso. Las reglas para agentes están en `AGENTS.md`.
+
+El contenido de la vault va en inglés.

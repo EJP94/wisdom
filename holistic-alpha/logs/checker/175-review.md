@@ -1,0 +1,14 @@
+# Recap check - 1 file(s) - check_recaps.py 0.4 (2026-10-28)
+
+| episode | status | errors | warns | looks | transcript | recap | ratio | TL;DR | bullets | quotes ok | numbers missing |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 175 | WARN | 0 | 5 | 1 | 13894 | 344 | 2% | 45 | 8 | 0/0 | 5 |
+
+## 175 - 5 Episodes in One on Sexual Health
+
+- WARN number '037' not found in the transcript
+- WARN number '097' not found in the transcript
+- WARN number '099' not found in the transcript
+- WARN number '117' not found in the transcript
+- WARN number '130' not found in the transcript
+- LOOK [22:49] advice hedge 'you might want to' -> closest bullet keeps none: "Listening to the audio is, of course, fine, and probably still brings benefit from hearing five episodes back "

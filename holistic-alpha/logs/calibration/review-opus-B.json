@@ -1,0 +1,383 @@
+{
+ "reviewer": "opus",
+ "episodes": [
+  {
+   "id": "537",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "02:10",
+     "transcript": "I found this podcast ... and it's been truly life changing for me. Um, has pulled me out of addictions that I thought I wouldn't be able to get out of. And, you know, now I am much stronger, not just even, you know, sexually, but uh physically and mentally as well.",
+     "recap": "(no bullet)",
+     "fix": "Add after the first Guest story: **Guest story:** finding the podcast has been truly life changing, pulling him out of addictions he thought he couldn't get out of; he is now much stronger, not just sexually but physically and mentally"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "06:45",
+     "transcript": "You know, I think the idea of the idea of keeping sex sacred is a good one, but the implementation of that and the way that it's ... not taught in terms of accessing our own sexuality is not a good one.",
+     "recap": "Keeping sex sacred is a good idea. Not teaching men how to access their own sexuality is not",
+     "fix": "The idea of keeping sex sacred seems a good one. The way it is implemented, not teaching how to access our own sexuality, is not"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "07:21",
+     "transcript": "I agree a hundred percent, you know, um a lot of religions get it wrong in the sense of it it sets you up for failure. Um, you know, a firm believer, you know, marriage is very sacred, something to be respected and vowed.",
+     "recap": "(no bullet; the guest's agreement and his view of marriage are absent)",
+     "fix": "Add: **Guest:** a lot of religions get it wrong in that they set you up for failure. He firmly believes marriage is very sacred, something to be respected and vowed; but these desires and needs were still given to us"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "13:52",
+     "transcript": "and it's like the secret becomes harder and harder to control the further you get into it.",
+     "recap": "He felt depleted, depressed and anxious, lived in secrecy and lied to girlfriends about it",
+     "fix": "...lived in secrecy and lied to girlfriends about it. The secret becomes harder and harder to control the further you get into it"
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "19:09",
+     "transcript": "one in particular, I remember this one guy messaged me on Instagram because I had messaged him asking you some questions, not realizing that he wanted to charge me",
+     "recap": "One coach on Instagram asked his income level \"to make sure you're actually committed\"",
+     "fix": "One guy on Instagram he had messaged with questions, not realizing he wanted to charge, asked his income level \"to make sure you're actually committed\""
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "22:24",
+     "transcript": "I would just ask the most random questions, but it's like everybody like immediately was just so conf um affirming in it, and they would answer it like non-judgmentally.",
+     "recap": "he went in \"balls to the wall\" and asked every awkward question, and got answers without judgment",
+     "fix": "he went in \"balls to the wall\", asked the most random questions, and everybody was affirming and answered without judgment"
+    },
+    {
+     "severity": "S2",
+     "kind": "idea missing",
+     "ts": "24:51",
+     "transcript": "when I had, you know, stumbled across edging without knowing what it was, it wasn't something I was doing every day. It also was mixed in with that no fat mentality, which is don't even touch yourself kind of thing. So it's like there was no no benefit really to that other than just trying to get you to break an addiction.",
+     "recap": "(no bullet)",
+     "fix": "Add before the first-edging-session story: **Guest story:** back then the edging he stumbled on wasn't daily and was mixed with the NoFap mentality of not even touching yourself, which had no real benefit beyond trying to break an addiction"
+    },
+    {
+     "severity": "S3",
+     "kind": "quote altered",
+     "ts": "26:22",
+     "transcript": "when a car runs out of gas, you put just a little bit in there and it's all of a sudden it's fired up and ready to go",
+     "recap": "\"when a car runs out of gas, you put just a little bit in there and it's all of a sudden fired up\"",
+     "fix": "\"when a car runs out of gas, you put just a little bit in there and it's all of a sudden it's fired up and ready to go\" (or paraphrase without quotation marks)"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "26:22",
+     "transcript": "And I remember coming on to call the next day and I was just like, oh my God, I saw like a brand new man.",
+     "recap": "(not in the first-session story)",
+     "fix": "Add to the first-session story: on the call the next day he felt like a brand new man [?]"
+    },
+    {
+     "severity": "S2",
+     "kind": "quote altered",
+     "ts": "28:25",
+     "transcript": "get coconut oil. That's my my one self's pitch.",
+     "recap": "**Guest advice:** get coconut oil, his \"one pitch\"",
+     "fix": "**Guest advice:** get coconut oil, his one sales pitch [?] (no quotation marks: \"one pitch\" is not a run of the transcript and the words are garbled)"
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "31:15",
+     "transcript": "one of the guys on the call was kind of talking through one of his things that he had felt shame around.",
+     "recap": "a call where another member shared his own shame",
+     "fix": "a call where one of the guys talked through something he had felt shame around and how he worked through it"
+    },
+    {
+     "severity": "S2",
+     "kind": "quote spliced",
+     "ts": "31:42",
+     "transcript": "a whole lifetime for me of the way I was raised of if you're doing this, this is shameful. If you're trying to grow in this way, oh, you're weird, you're different, uh, straight guys shouldn't be doing that.",
+     "recap": "a lifetime of \"this is shameful, you're weird, straight guys shouldn't do that\" flooded back",
+     "fix": "a whole lifetime of how he was raised flooded back: if you're doing this, this is shameful; if you're trying to grow this way, you're weird, you're different, straight guys shouldn't be doing that (paraphrase, or separate exact quotes)"
+    },
+    {
+     "severity": "S3",
+     "kind": "fact changed",
+     "ts": "32:13",
+     "transcript": "I canceled my membership. I deleted everything off of Instagram.",
+     "recap": "cancelled his membership and deleted his Instagram",
+     "fix": "cancelled his membership and deleted everything off Instagram"
+    },
+    {
+     "severity": "S3",
+     "kind": "quote altered",
+     "ts": "32:35",
+     "transcript": "You just don't talk about it, you don't deal with it until you're old and you're dying. [32:58] at an early age because you never handled how to properly do you never learn how to properly handle your emotions.",
+     "recap": "not deal with them \"until you're old and you're dying\", because they never learn how to handle them [?]",
+     "fix": "Unsure: the quote stops before \"at an early age\", which seems to be part of the claim (dying early because men never learn to handle emotions). Paraphrase: not deal with them until they're old, or dying at an early age [?], because they never learn how to properly handle their emotions"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "32:58",
+     "transcript": "And I was starting to hit a point where it was like the temptation to go back to porn.",
+     "recap": "He didn't go back to porn. But for about three weeks he masturbated and ejaculated several times a day, even in work bathrooms",
+     "fix": "...even in work bathrooms, and the temptation to go back to porn was starting to build"
+    },
+    {
+     "severity": "S2",
+     "kind": "source lost",
+     "ts": "33:32",
+     "transcript": "have you heard, you know, there's the doctors talk about it, but basically when a a drug addict or an alcoholic, when they relapse, they don't start back at the beginning, they go back to where they were. Um, which is usually what ends up killing them because their body can't handle that at that level.",
+     "recap": "Like an addict who relapses, he went straight back to full intensity instead of back to the beginning. **Guest:** for addicts, that is usually what ends up killing them.",
+     "fix": "**Guest:** doctors talk about it: when a drug addict or an alcoholic relapses, they don't start back at the beginning but go back to where they were, which is usually what ends up killing them, because their body can't handle that level. He did the same, straight back to full intensity"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "36:08",
+     "transcript": "Men need that. Men need to be told that what they did and the choice they made was the right choice.",
+     "recap": "\"Men need that.\"",
+     "fix": "\"Men need that.\" Men need to be told that what they did and the choice they made was the right choice"
+    },
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "37:30",
+     "transcript": "Every time I can remember anybody um withdrawing ... when I then find out later, I think invariably every single time it's been they ran into something like that.",
+     "recap": "**Host story:** across coaching, Inner Circle and a past bootcamp, every time a man withdrew, it seems to have invariably been a slip and a shame spiral",
+     "fix": "**Host story:** across coaching, Inner Circle and a past bootcamp, every withdrawal he can remember, when he found out later, seems to have invariably been a slip and a shame spiral"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "42:48",
+     "transcript": "And what I'm finding is that through the process of meditation, a lot of people are getting the ability to rewire their brains network around that. So, what I'm trying to do is learn how to properly meditate. And in the process of edging and using that life force that forces new pathways",
+     "recap": "His goal is to use meditation and edging to \"build a new map\" in his brain",
+     "fix": "Add: **Guest:** he is finding that, through meditation, a lot of people are getting the ability to rewire their brain's network, and the life force of edging forces new pathways"
+    },
+    {
+     "severity": "S2",
+     "kind": "certainty hedge lost",
+     "ts": "43:16",
+     "transcript": "I I think the vast majority of people can relate to some level of anxiety or depression at times in life.",
+     "recap": "Most people relate to anxiety or depression at some point.",
+     "fix": "Probably the vast majority of people can relate to some level of anxiety or depression at times in life."
+    },
+    {
+     "severity": "S3",
+     "kind": "hedge added",
+     "ts": "44:17",
+     "transcript": "And if there's two tools that we have that are the most powerful possible thing to explore our inner world, it's meditation and it's sexuality when it's in a mindful, sacred way.",
+     "recap": "Meditation and sexuality, approached mindfully and as sacred, may be the two most powerful tools to explore the inner world.",
+     "fix": "Meditation and sexuality, approached in a mindful, sacred way, are the two most powerful tools to explore the inner world. (The TL;DR's \"may be the two strongest tools\" follows the same added hedge.)"
+    },
+    {
+     "severity": "S3",
+     "kind": "hedge added",
+     "ts": "48:24",
+     "transcript": "And the beautiful thing is that as you continue exploring this, you'll find that that um it it is limitless.",
+     "recap": "The more you tap in, the more you liberate, and it seems limitless",
+     "fix": "The more you tap in, the more you liberate, and as you keep exploring you'll find it is limitless"
+    },
+    {
+     "severity": "S2",
+     "kind": "certainty hedge lost",
+     "ts": "49:00",
+     "transcript": "I think it's gonna vary a little bit for different guys in terms of what really works well and how to dive into that.",
+     "recap": "Connecting with the energy varies by man. Some tools:",
+     "fix": "What works to connect with the energy probably varies a little for different men. Some tools:"
+    },
+    {
+     "severity": "S3",
+     "kind": "advice hedge lost",
+     "ts": "49:00",
+     "transcript": "So using an anchor like the breath can be a good tool. ... wherever it goes, bring your attention back to your breath is a good way to go.",
+     "recap": "Anchor on the breath, which is itself energy and life force. When the mind drifts to a bill, a project or porn, bring it back to the breath",
+     "fix": "The breath, itself energy and life force, can be a good anchor. When the mind drifts to a bill, a project or porn, bringing attention back to the breath is a good way to go"
+    },
+    {
+     "severity": "S2",
+     "kind": "certainty hedge lost",
+     "ts": "53:41",
+     "transcript": "things deepen over time. You there's there's not really a shortcut.",
+     "recap": "There is no shortcut: stick with the habits",
+     "fix": "There's not really a shortcut: stick with the habits"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "54:11",
+     "transcript": "And I think with that inner world stuff, especially, um, yeah, using the right techniques and the right perspectives can definitely help. But in the end, there is a, you know, there's a journey to walk to to deepen that that inner world place.",
+     "recap": "the inner world takes time to unfold. There is no shortcut: stick with the habits",
+     "fix": "...takes time to unfold. With the inner world especially, the right techniques and perspectives can definitely help, but in the end there is a journey to walk"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "55:53",
+     "transcript": "And I really want to be a spokesperson for changing the mentality in the church around, okay, this is not wrong. And we're setting people up for a life of failure and a life of shame around this. So I think in that sense, becoming a champion, um, once I work through some of my stuff for this practice",
+     "recap": "Become a champion and spokesperson for this practice, starting with the students and college-age men he works with at church",
+     "fix": "Become a champion and spokesperson for this practice, once he works through some of his own stuff, changing the mentality in the church to say this is not wrong: we are setting people up for a life of failure and shame around it..."
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "58:00",
+     "transcript": "Let's be good at it. Like we want to be good at other parts of our life. ... They apply it to their other areas of their life, but they don't apply it often to sexuality.",
+     "recap": "People want to get good at every other part of life but rarely apply that to sexuality",
+     "fix": "People want to get good at other parts of life but rarely apply that to sexuality"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "60:42",
+     "transcript": "It's amazing to see the world is this. [61:09] Deeply interconnected place where we truly, when we change our energy and the work that we do inside of ourselves",
+     "recap": "Inner work alone (energy work, edging, visions, meditation) can change how people treat you, who you run into and what opportunities show up",
+     "fix": "The world is a deeply interconnected place: inner work alone (energy work, edging, manifesting and visions, meditation) can have dramatic impacts on how people treat you, who you run into and what opportunities show up"
+    },
+    {
+     "severity": "S2",
+     "kind": "scope widened",
+     "ts": "62:37",
+     "transcript": "Um, most times in life, it's the awkward questions and awkward seasons that produce the most growth.",
+     "recap": "The awkward questions and seasons produce the most growth.",
+     "fix": "Most times in life, the awkward questions and seasons produce the most growth."
+    },
+    {
+     "severity": "S2",
+     "kind": "source lost",
+     "ts": "63:09",
+     "transcript": "Um for me, coming from a Christian background, somebody who is still a Christian, is this practice and this method does not invalidate what you believe. It adds to it",
+     "recap": "For a Christian, this practice doesn't invalidate the faith. It adds to it",
+     "fix": "Speaking as someone from a Christian background who is still a Christian: this practice doesn't invalidate what you believe. It adds to it"
+    }
+   ]
+  },
+  {
+   "id": "663",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "02:03",
+     "transcript": "Even if that compulsion is just sort of habit, may not even be something that's bad or negative.",
+     "recap": "Much of daily life also runs on compulsion, even when it's just habit and not harmful.",
+     "fix": "Much of daily life also runs on compulsion, even when it's just sort of habit and may not even be bad or negative."
+    },
+    {
+     "severity": "S2",
+     "kind": "scope widened",
+     "ts": "04:40",
+     "transcript": "it creates not good communication and it creates a situation where we just perpetuate often the same negative patterns.",
+     "recap": "creates bad communication and repeats the same negative patterns",
+     "fix": "creates bad communication and often perpetuates the same negative patterns"
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "08:37",
+     "transcript": "Because sometimes we're so much, it's like if we're looking down and we're just looking at our feet and we're getting pulled along by intention and all of a sudden we're like, oh shit, and we fall in the hole.",
+     "recap": "Looking down at your feet, pulled along, you only notice the hole when you fall in",
+     "fix": "Sometimes, looking down at your feet and pulled along, all of a sudden you fall in the hole"
+    },
+    {
+     "severity": "S3",
+     "kind": "hedge added",
+     "ts": "10:27",
+     "transcript": "Now, one thing with this, you're not going to be a hundred percent or even close. ... even if you were to hit a hundred percent, never gonna happen.",
+     "recap": "You won't pause every time, and even if you did, you wouldn't always act on intention.",
+     "fix": "You won't pause 100% of the time, or even close, and even if you did, you wouldn't always act on intention."
+    },
+    {
+     "severity": "S2",
+     "kind": "source lost",
+     "ts": "11:02",
+     "transcript": "This has been something that I've had with so many guys that I've worked with worked with around the porn thing, is there will be parts in the process where they actually see kind of in their mind they have this pause",
+     "recap": "Many men working on porn reach a stage where they may pause, sometimes for a long time, see what is happening, and still take the action.",
+     "fix": "So many of the men he has worked with around porn reach a stage where they may pause, sometimes for a long time, see what is happening, and still take the action."
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "12:59",
+     "transcript": "The a brief the briefest of pauses before you react, before you speak, can make all the difference in the world in you being able to communicate. [13:24] In a calm way, in a connected way",
+     "recap": "The briefest pause lets you communicate calmly, connected, not reactive",
+     "fix": "The briefest pause can make all the difference in communicating calmly, connected, not reactive"
+    }
+   ]
+  },
+  {
+   "id": "813",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "00:00",
+     "transcript": "Many men think that having sexual stamina is extremely complex, maybe even this mystical or unattainable thing.",
+     "recap": "Many men think stamina is complex, mystical or unattainable.",
+     "fix": "Many men think stamina is extremely complex, maybe even mystical or unattainable."
+    },
+    {
+     "severity": "S2",
+     "kind": "scope widened",
+     "ts": "00:00",
+     "transcript": "some of the Kegel apps that you've maybe seen advertised on social media would have you believe the opposite, that all you need to do is do some Kegels and you're gonna have powerful control.",
+     "recap": "Kegel apps advertised on social media suggest the opposite, that Kegels alone give powerful control.",
+     "fix": "Some of the Kegel apps advertised on social media suggest the opposite, that Kegels alone give powerful control."
+    },
+    {
+     "severity": "S2",
+     "kind": "scope widened",
+     "ts": "03:28",
+     "transcript": "what a lot of guys run into is if your erections are not very strong, there's a tendency to squeeze the pelvic floor to kind of try to hold on to your erection or try to strengthen your erection.",
+     "recap": "With weak erections, men tend to squeeze the pelvic floor to hold or strengthen the erection.",
+     "fix": "A lot of guys run into this: with weak erections, there's a tendency to squeeze the pelvic floor to hold or strengthen the erection."
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "10:59",
+     "transcript": "by default, just habitually, many men ... many men's awareness will go directly to kind of where the stimulation is, where that direct kind of sensation is happening, directly into what I'll call your sexual center.",
+     "recap": "By habit, many men put all their awareness on the point of stimulation, the sexual center.",
+     "fix": "By habit, many men's awareness goes directly to the point of stimulation, the sexual center."
+    },
+    {
+     "severity": "S3",
+     "kind": "advice hedge lost",
+     "ts": "11:21",
+     "transcript": "Whereas if we bring our awareness to other parts of our body, if you can draw your awareness to your sacrum, to your spine, to the crown of your head, to the soles of your feet. [11:58] What happens is you start to experience sensation in those places.",
+     "recap": "Bring awareness to the sacrum, spine, crown of the head or soles of the feet. You feel sensation there",
+     "fix": "If you can draw awareness to the sacrum, spine, crown of the head or soles of the feet, you start to feel sensation there"
+    },
+    {
+     "severity": "S2",
+     "kind": "word added",
+     "ts": "14:31",
+     "transcript": "You may have experienced that. Have you practiced a ton of Kegels and it seems like it doesn't make a difference at all? Well, part of the reason, most likely, is that you're not tuning into that awareness dial, and you're not tuning into that breath dial.",
+     "recap": "Part of the reason Kegels alone often seem to do nothing is most likely missing breath and awareness.",
+     "fix": "If a ton of Kegels seem to make no difference at all, part of the reason is most likely missing breath and awareness."
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "22:30",
+     "transcript": "I can promise you. [23:02] It absolutely can change. ... I promise you, when you understand these three dials, these three kind of buckets that everything falls into, and you start to develop better control over these three things, you can have limitless control",
+     "recap": "Understanding these three dials changes that, \"I promise you\"",
+     "fix": "It absolutely can change, \"I promise you\": understanding these three dials and starting to develop better control over them can give limitless control"
+    },
+    {
+     "severity": "S2",
+     "kind": "source lost",
+     "ts": "23:02",
+     "transcript": "Something I've heard from a lot of guys is they get really discouraged because years go by and you try so many different things and nothing seems to work.",
+     "recap": "Many men get discouraged after years of trying things that don't work.",
+     "fix": "A lot of guys say they get really discouraged as years go by, trying so many things where nothing seems to work."
+    }
+   ]
+  }
+ ]
+}
