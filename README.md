@@ -15,7 +15,7 @@ La primera vault es el podcast Holistic Alpha de Steven Mathis.
 - `holistic-alpha/episodes.csv`: un renglón por episodio. Lo genera `tools/build_episodes.py` desde `INVENTARIO.csv`
 - `holistic-alpha/golden/`: el set de oro y la clave para medir revisores
 - `holistic-alpha/logs/`: hallazgos de revisión, reportes del checker y calibración
-- `tools/`: scripts gratis (Python, sin dependencias) para armar la tabla, planear bloques, revisar formato y puntuar revisores
+- `tools/`: scripts gratis (Python, sin dependencias) para armar la tabla, planear bloques, revisar formato, puntuar revisores y medir el costo
 - `tools/transcription/`: descarga y transcripción de audios nuevos
 - `.claude/skills/recaps/`: el skill `/recaps` que corre el pipeline
 

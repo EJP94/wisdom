@@ -5,8 +5,8 @@ Python 3 standard library only. Run it isolated, from the repo root:
 
     python3 -I tools/plan_blocks.py --episodes holistic-alpha/episodes.csv --recaps holistic-alpha/recaps/
         [--ids 801-813 537 404b1 especial-2024-12-25 | --all] [--mode write|review|audit] [--overwrite]
-        [--order newest|oldest] [--chains 1] [--budget 1100000] [--max-block 8] [--max-words 30000]
-        [--alone-over 12000] [--qa-every 25] [--tokens-per-word 20] [--block-tokens 60000]
+        [--order newest|oldest] [--chains 1] [--budget 45] [--max-block 8] [--max-words 30000]
+        [--alone-over 12000] [--qa-every 25] [--episode-cost 1.9] [--spot-cost 3.4]
         [--out-dir test-folder] [--out plan.json]
 
 It reads episodes.csv and writes (or prints) the JSON args of the recap-writeups workflow:
@@ -19,12 +19,13 @@ repo, date, python, mode, overwrite, outDir, header, chains (each chain a list o
 - Each block names its spot-check episodes: every interview and group. Otherwise the longest
   episode, except in every third block, where a fixed hash picks another one, so shorter
   episodes get checked too.
-- --budget stops adding blocks once the estimate would pass it. One 5-hour window of the Pro
-  plan was about 1.2M tokens in the One Piece runs.
-- The estimate per block is --block-tokens + words x --tokens-per-word, plus a spot-check of
-  25,000 + 2 x words per spot episode, plus 5% for escalations. review mode counts 60% of the
-  block cost (no writer) and audit mode 30% (reviewer only, no spot-check). These defaults come
-  from the One Piece runs. Replace them with the calibration run's numbers.
+- The estimate is in cost units (cu), the unit of tools/usage_report.py. Per block it is
+  --episode-cost per episode (writer, reviewer, fixer) plus --spot-cost per spot episode (second
+  review and its fix), plus 5% for escalations. review mode counts 40% of the episode cost (no writer) and audit mode 20%
+  (reviewer only, no spot-check). The defaults are the calibration run of 2026-10-28: 14 episodes
+  in 3 blocks cost 33.3 cu. Cost follows the episode count more than its words.
+- --budget (cu) stops adding blocks once the estimate would pass it. One 5-hour window of the
+  plan is about 50 cu (measured 2026-10-28). Keep about 5 cu for the run's orchestration.
 - qa lists the Recaps Esteban reads by hand: one in --qa-every, plus the first of each
   non-solo type in the run.
 Exit code: 0, or 1 when nothing is left to plan.
@@ -39,10 +40,10 @@ import re
 import sys
 import zlib
 
-VERSION = "0.1 (2026-10-28)"
-PRO_WINDOW = 1_200_000
+VERSION = "0.2 (2026-10-28)"
+WINDOW_CU = 50
 RISKY = ("interview", "group")
-MODE_SHARE = {"write": 1.0, "review": 0.6, "audit": 0.3}
+MODE_SHARE = {"write": 1.0, "review": 0.4, "audit": 0.2}
 
 
 def parse_ids(tokens):
@@ -88,8 +89,12 @@ def spot_ids(block, index):
     risky = [r["id"] for r in block if r.get("type") in RISKY]
     if risky:
         return risky
-    longest = max(block, key=words)
-    others = [r for r in block if r is not longest]
+    # A compilation or a promo holds almost no new text: a second review of it buys nothing
+    pool = [r for r in block if r.get("type") not in ("compilation", "promo")]
+    if not pool:
+        return []
+    longest = max(pool, key=words)
+    others = [r for r in pool if r is not longest]
     if index % 3 == 2 and others:
         key = ",".join(r["id"] for r in block).encode("utf-8")
         return [others[zlib.crc32(key) % len(others)]["id"]]
@@ -97,10 +102,9 @@ def spot_ids(block, index):
 
 
 def block_estimate(block, spot, a):
-    w = sum(words(r) for r in block)
-    base = (a.block_tokens + w * a.tokens_per_word) * MODE_SHARE[a.mode]
-    spot_cost = 0 if a.mode == "audit" else sum(25_000 + 2 * words(r) for r in block if r["id"] in spot)
-    return int((base + spot_cost) * 1.05)
+    base = len(block) * a.episode_cost * MODE_SHARE[a.mode]
+    spot_cost = 0 if a.mode == "audit" else len(spot) * a.spot_cost
+    return round((base + spot_cost) * 1.05, 1)
 
 
 def main(argv=None):
@@ -113,13 +117,13 @@ def main(argv=None):
     ap.add_argument("--overwrite", action="store_true")
     ap.add_argument("--order", choices=("newest", "oldest"), default="newest")
     ap.add_argument("--chains", type=int, default=1)
-    ap.add_argument("--budget", type=int, default=0, help="token budget for this run, 0 = no limit")
+    ap.add_argument("--budget", type=float, default=0, help="cost budget for this run in cu, 0 = no limit")
     ap.add_argument("--max-block", type=int, default=8)
     ap.add_argument("--max-words", type=int, default=30_000)
     ap.add_argument("--alone-over", type=int, default=12_000)
     ap.add_argument("--qa-every", type=int, default=25)
-    ap.add_argument("--tokens-per-word", type=float, default=20)
-    ap.add_argument("--block-tokens", type=int, default=60_000)
+    ap.add_argument("--episode-cost", type=float, default=1.9, help="cu per episode: writer, reviewer, fixer")
+    ap.add_argument("--spot-cost", type=float, default=3.4, help="cu per spot-checked episode: second review and its fix")
     ap.add_argument("--repo", help="absolute path of the repo (default: the folder above episodes.csv's folder)")
     ap.add_argument("--out-dir", help="test folder for the Recaps, relative to the repo (default: production)")
     ap.add_argument("--out")
@@ -218,8 +222,8 @@ def main(argv=None):
             "blocks": len(planned),
             "words": sum(blk["words"] for blk in planned),
             "spot_episodes": sum(len(blk["spot"]) for blk in planned),
-            "tokens": total,
-            "pro_windows": round(total / PRO_WINDOW, 1),
+            "cu": round(total, 1),
+            "windows": round(total / WINDOW_CU, 1),
             "left_for_later": len(todo) - len(in_run),
         },
     }
@@ -232,9 +236,9 @@ def main(argv=None):
 
     e = plan["estimate"]
     print(f"plan_blocks: {e['episodes']} episodes in {e['blocks']} blocks and {len(chains)} chain(s), "
-          f"{e['words']:,} words, about {e['tokens'] / 1e6:.1f}M tokens (~{e['pro_windows']} Pro windows). "
+          f"{e['words']:,} words, about {e['cu']} cu (~{e['windows']} five-hour windows). "
           f"Left for later: {e['left_for_later']}. Skipped: "
-          + ", ".join(f"{k} {v}" for k, v in skipped.items() if v)
+          + (", ".join(f"{k} {v}" for k, v in skipped.items() if v) or "none")
           + (f". Unknown ids: {' '.join(unknown)}" if unknown else ""),
           file=sys.stderr)
     return 0 if planned else 1

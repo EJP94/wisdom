@@ -10,8 +10,9 @@ export const meta = {
   ],
 }
 
-// DRAFT, 2026-10-28. Adapted from the One Piece chapter-writeups workflow. Not run yet: the first
-// run is the calibration (see the skill). Episodes are independent, so chains can run in parallel.
+// 2026-10-28. Adapted from the One Piece chapter-writeups workflow. The calibration ran its steps by
+// hand, one agent per step (no workflow tool in the cloud session). The workflow itself has not run
+// yet. Episodes are independent, so chains can run in parallel.
 //
 // Modes:
 //   write   (default) write -> review -> fix -> spot-check. Skips episodes that have a Recap unless overwrite.
@@ -25,7 +26,7 @@ export const meta = {
 //   header        episodes.csv header line; each block's rows are its episodes' CSV lines
 //   overwrite     true = rewrite existing Recaps from scratch (after a recipe change). Default false.
 //   outDir        optional test folder for the Recaps, relative to the repo. Absent = holistic-alpha/recaps.
-//   writerModel 'opus', reviewerModel 'sonnet', spotModel 'opus'. Decide the reviewer with the calibration run.
+//   writerModel 'opus', reviewerModel 'sonnet', spotModel 'opus'. Sonnet won the reviewer calibration.
 //   spotCheck     default true (ignored in audit mode)
 //   escalateS2    S2 findings in the spot-check that trigger a full Opus review of the block. Default 2.
 const A = args || {}

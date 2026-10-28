@@ -495,10 +495,11 @@ def check_one(recap_path, transcripts_dir, inventory, omissions=False):
         elif kind != "empty":
             W(f"quote not found in the transcript (best {score:.0%}) : \"{q[:90]}\"")
 
-    # --- numbers
+    # --- numbers (a compilation's "Replays episodes ..." bullet holds vault ids, not his numbers)
+    num_bullets = [t for t in bullet_text if not t.startswith("Replays episodes")]
     n_total = n_missing = 0
     reported = set()
-    for shown, val in recap_numbers(tldr + "\n" + body_plain):
+    for shown, val in recap_numbers(tldr + "\n" + "\n".join(num_bullets)):
         n_total += 1
         if val not in S.numbers:
             n_missing += 1
@@ -506,7 +507,7 @@ def check_one(recap_path, transcripts_dir, inventory, omissions=False):
             W(f"number '{shown}' not found in the transcript")
 
     # --- numbers near their source passage (catches a changed small number such as 'five' for 'two or three')
-    for plain in bullet_text:
+    for plain in num_bullets:
         vals = numbers_in(plain)
         if not vals:
             continue
