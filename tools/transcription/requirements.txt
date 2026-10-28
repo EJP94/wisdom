@@ -1,0 +1,11 @@
+# torch va aparte, desde el índice de CUDA (ver AGENTS.md):
+#   uv pip install -p .venv torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+transformers==5.20.2
+numpy==2.3.5
+librosa==0.11.0
+mutagen==1.48.1
+# Solo para comparacion/transcribir.py (Voxtral):
+accelerate==1.15.0
+mistral-common[audio]==1.12.0
+soundfile==0.14.0
+soxr==1.1.0
