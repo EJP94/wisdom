@@ -75,7 +75,7 @@ The results are in `holistic-alpha/logs/calibration/`. Rerun a step only for a n
    - Cost 33.3 cu: writer 1.1 cu per episode, reviewer 0.4, fixer 0.4, spot-check and its fix 3.4 per spot episode. These are the defaults of `plan_blocks.py`. A block of 8 took about 30 minutes.
    - The first review left work for the spot-checks: 549 had 13 S3, 565 one S2 and 12 S3. No block escalated.
    - The v2 Recaps run longer than the pilots: 32 to 40% of the transcript, against 20 to 28%.
-   - Esteban reads 079, 175, 252, 565 and 675. Once fixed, they join the golden set.
+   - Esteban read 079, 175, 252, 565 and 675 and flagged nothing. They joined the golden set, now 15 Recaps.
 
 ## Recipe changes
 - Every change gets a changelog line in the recipe and a new `recipe:` value (v2.1).
