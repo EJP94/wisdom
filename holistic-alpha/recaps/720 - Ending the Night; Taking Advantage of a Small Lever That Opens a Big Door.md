@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 2208
 minutes: 12
-recipe: v2
+instructions: v2
 source: "720 - Ending the Night; Taking Advantage of a Small Lever That Opens a Big Door.txt"
 section: recap
 ---

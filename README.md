@@ -11,7 +11,7 @@ La primera vault es el podcast Holistic Alpha de Steven Mathis.
 
 ## Dónde está cada cosa
 
-- `holistic-alpha/recap-recipe.md`: la receta, la única regla de cómo se escribe un Recap
+- `holistic-alpha/recap-instructions.md`: las instrucciones de recap, la única regla de cómo se escribe un Recap
 - `holistic-alpha/episodes.csv`: un renglón por episodio. Lo genera `tools/build_episodes.py` desde `INVENTARIO.csv`
 - `holistic-alpha/golden/`: el set de oro y la clave para medir revisores
 - `holistic-alpha/logs/`: hallazgos de revisión, reportes del checker y calibración

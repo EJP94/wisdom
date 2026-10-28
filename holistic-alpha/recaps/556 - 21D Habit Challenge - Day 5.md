@@ -9,7 +9,7 @@ part: 5
 host: Steven Mathis
 words: 782
 minutes: 5
-recipe: v2
+instructions: v2
 source: "556 - 21D Habit Challenge - Day 5.txt"
 section: recap
 ---

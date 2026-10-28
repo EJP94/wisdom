@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 2486
 minutes: 14
-recipe: v2
+instructions: v2
 source: "663 - The Pause-Intention Bridge - Quitting Porn + Building Discipline & More.txt"
 section: recap
 ---

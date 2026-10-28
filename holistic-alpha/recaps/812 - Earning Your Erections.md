@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 964
 minutes: 6
-recipe: v2
+instructions: v2
 source: "812 - Earning Your Erections.txt"
 section: recap
 ---

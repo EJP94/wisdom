@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 1352
 minutes: 8
-recipe: v2
+instructions: v2
 source: "350 - Cold Power and Recognizing Wins.txt"
 section: recap
 ---

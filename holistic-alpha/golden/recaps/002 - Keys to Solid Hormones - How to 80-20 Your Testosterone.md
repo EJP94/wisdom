@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 2544
 minutes: 15
-recipe: v2
+instructions: v2
 source: "002 - Keys to Solid Hormones - How to 80-20 Your Testosterone.txt"
 section: recap
 ---

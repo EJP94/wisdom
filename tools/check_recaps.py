@@ -18,7 +18,7 @@ It never edits a Recap. For each Recap it reports:
          a number far from its source passage, an absolute word ("only", "every", "nobody"...) with
          no word of its kind near its source, and, with --omissions, transcript stretches that share
          almost no words with the Recap (possible omissions)
-Recipe v1 and v2 are both accepted. A Recap with "recipe: v2" in its frontmatter also gets the
+Instructions v1 and v2 are both accepted. A Recap with "instructions: v2" in its frontmatter also gets the
 v2 checks: id, type from the closed list, words, one-sentence TL;DR of at most 50 words.
   INFO   counts: words, ratio, bullets, quotes, numbers
 Exit code: 0, or 1 with --strict when any ERROR was found.
@@ -32,7 +32,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 
-VERSION = "0.4 (2026-10-28)"
+VERSION = "0.5 (2026-10-28)"
 
 # ---------------------------------------------------------------- text helpers
 STOP = set("""a about above after again against all also am an and any are aren as at be because been before being
@@ -339,8 +339,8 @@ def check_one(recap_path, transcripts_dir, inventory, omissions=False):
     body = lines[body_start:]
 
     # --- frontmatter
-    v2 = fm.get("recipe", "").lower().startswith("v2")
-    required = ["id", "title", "date", "type", "host", "words", "recipe", "source", "section"] if v2 else \
+    v2 = fm.get("instructions", "").lower().startswith("v2")
+    required = ["id", "title", "date", "type", "host", "words", "instructions", "source", "section"] if v2 else \
                ["episode", "title", "date", "host", "source", "section"]
     for k in required:
         if k not in fm:

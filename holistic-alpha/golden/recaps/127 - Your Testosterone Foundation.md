@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 5413
 minutes: 34
-recipe: v2
+instructions: v2
 source: "127 - Your Testosterone Foundation.txt"
 section: recap
 ---

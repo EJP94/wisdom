@@ -9,7 +9,7 @@ part: 2
 host: Steven Mathis
 words: 1549
 minutes: 13
-recipe: v2
+instructions: v2
 source: "252 - The Power of Deep Relaxation, Part 2 - A Guided Exercise.txt"
 section: recap
 ---

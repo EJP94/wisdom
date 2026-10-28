@@ -3,8 +3,8 @@ export const meta = {
   description: 'Write, review and fix Holistic Alpha episode Recaps in blocks: an Opus writer, a Sonnet reviewer and an Opus fixer per block, then an Opus spot-check that escalates the block when it still finds serious slips',
   whenToUse: 'After tools/plan_blocks.py has written the run plan. args: that plan JSON { repo, date, python, mode, overwrite, outDir, header, chains: [[{ label, ids, spot, rows }]] }, plus optional writerModel, reviewerModel, spotModel, spotCheck, escalateS2',
   phases: [
-    { title: 'Write', detail: 'one writer reads each transcript once, writes its Recap under the recipe and runs check_recaps.py', model: 'opus' },
-    { title: 'Review', detail: 'one reviewer checks the block with the recipe checklist: checker items, recall walk, fidelity, format', model: 'sonnet' },
+    { title: 'Write', detail: 'one writer reads each transcript once, writes its Recap under the instructions and runs check_recaps.py', model: 'opus' },
+    { title: 'Review', detail: 'one reviewer checks the block with the checklist of the instructions: checker items, recall walk, fidelity, format', model: 'sonnet' },
     { title: 'Fix', detail: 'one agent verifies the findings, fixes the real ones and logs every finding', model: 'opus' },
     { title: 'Spot-check', detail: 'a second reviewer checks the riskiest episodes of the block after the fix, and escalates to a full review when it finds an S1 or two S2', model: 'opus' },
   ],
@@ -16,7 +16,7 @@ export const meta = {
 //
 // Modes:
 //   write   (default) write -> review -> fix -> spot-check. Skips episodes that have a Recap unless overwrite.
-//   review  review -> fix -> spot-check on existing Recaps (after a recipe change, or to finish an unreviewed block).
+//   review  review -> fix -> spot-check on existing Recaps (after a change to the instructions, or to finish an unreviewed block).
 //   audit   review only, no edits; returns every finding (calibration: score it with tools/score_review.py).
 // args (from tools/plan_blocks.py, which reads episodes.csv: this script cannot read files):
 //   repo          absolute path of the wisdom repo
@@ -24,7 +24,7 @@ export const meta = {
 //   python        "python3", or "py -3" on Windows
 //   chains        array of chains; each chain is an array of blocks { label, ids, spot, rows }
 //   header        episodes.csv header line; each block's rows are its episodes' CSV lines
-//   overwrite     true = rewrite existing Recaps from scratch (after a recipe change). Default false.
+//   overwrite     true = rewrite existing Recaps from scratch (after a change to the instructions). Default false.
 //   outDir        optional test folder for the Recaps, relative to the repo. Absent = holistic-alpha/recaps.
 //   writerModel 'opus', reviewerModel 'sonnet', spotModel 'opus'. Sonnet won the reviewer calibration.
 //   spotCheck     default true (ignored in audit mode)
@@ -45,14 +45,14 @@ const DATE = A.date || new Date().toISOString().slice(0, 10)
 const RECAPS = A.outDir || 'holistic-alpha/recaps'
 
 const list = ids => ids.join(', ')
-const SOURCES = `Repo root: \`${A.repo}\`. Run every command from there. The rules are in \`holistic-alpha/recap-recipe.md\`. Each transcript is \`holistic-alpha/transcripts/<stem>.txt\` and each Recap is \`${RECAPS}/<stem>.md\`, where <stem> is the \`stem\` column of the episode's row in \`holistic-alpha/episodes.csv\`. Never edit a transcript, \`episodes.csv\` or the recipe.`
+const SOURCES = `Repo root: \`${A.repo}\`. Run every command from there. The rules are in the Recap instructions, \`holistic-alpha/recap-instructions.md\`. Each transcript is \`holistic-alpha/transcripts/<stem>.txt\` and each Recap is \`${RECAPS}/<stem>.md\`, where <stem> is the \`stem\` column of the episode's row in \`holistic-alpha/episodes.csv\`. Never edit a transcript, \`episodes.csv\` or the instructions.`
 const rowsOf = (b, ids) => {
   const keep = b.rows.filter(r => ids.some(id => r.startsWith(id + ',')))
   return `Their rows from \`holistic-alpha/episodes.csv\`:\n${A.header}\n${keep.join('\n')}`
 }
 const check = (ids, tag) => `\`${PY} -I tools/check_recaps.py --recaps "${RECAPS}/" --transcripts holistic-alpha/transcripts/ --episodes holistic-alpha/episodes.csv --only ${ids.join(' ')} --out holistic-alpha/logs/checker/${tag}.md\``
 const overwrite = A.overwrite
-  ? 'Some of these episodes may already have a Recap written under older rules. Do NOT edit it: rewrite it from scratch under the current recipe, overwriting the file.'
+  ? 'Some of these episodes may already have a Recap written under older rules. Do NOT edit it: rewrite it from scratch under the current instructions, overwriting the file.'
   : 'If an episode already has a Recap, skip it and say so in your reply.'
 
 const KINDS = ['idea missing', 'advice hedge lost', 'scope widened', 'source lost', 'certainty hedge lost', 'hedge added',
@@ -98,7 +98,7 @@ function reviewPrompt(b, ids, tag, second) {
   return `${intro}
 ${SOURCES}
 ${rowsOf(b, ids)}
-Read the recipe first, then follow its reviewer checklist (section 14) for each episode, in full:
+Read the instructions first, then follow their reviewer checklist (section 14) for each episode, in full:
 0. Checker items. Run ${check(ids, tag)} and read the report. Verify each WARN and LOOK against the transcript and report the real ones. A LOOK is a candidate, often a false alarm.
 1. Recall. Walk the transcript in order, about two minutes at a time, and find the bullet that carries each stretch's ideas. Report every idea with no bullet. In the pilot, one review reported no missing idea in five episodes where an audit later found 14: walk every stretch, don't skim.
 2. Fidelity. For each bullet, find its source passage and compare: hedges of all four kinds ("I would suggest" turned into an order, "some of" or "most times" dropped, "guys I've worked with" turned into "many men"), hedges added, the sources he cites, watch-list words, every number, every quote (one unbroken run of the transcript) and, in interviews and groups, who says what, line by line.
@@ -110,9 +110,9 @@ function fixPrompt(b, entries, who, tag) {
   const ids = entries.map(e => e.id)
   return `Fix the Holistic Alpha Recaps of episodes ${list(ids)}.
 ${SOURCES}
-A reviewer (${who}) reported the findings below. Follow the fixer rules of the recipe (section 15): check each finding against the transcript, fix it only if it is real, with the smallest edit that follows the recipe, and reject false alarms. Fix every real S1 and S2, and an S3 when the edit is small. Missing content is real whenever the transcript holds it. If you change a bullet, check that the TL;DR still matches it.
+A reviewer (${who}) reported the findings below. Follow the fixer rules of the instructions (section 15): check each finding against the transcript, fix it only if it is real, with the smallest edit that follows the instructions, and reject false alarms. Fix every real S1 and S2, and an S3 when the edit is small. Missing content is real whenever the transcript holds it. If you change a bullet, check that the TL;DR still matches it.
 ${JSON.stringify(entries, null, 1)}
-Log every finding, fixed or rejected, as one JSON line appended to \`holistic-alpha/logs/findings/${b.label}.jsonl\` (create the folder if needed), with "date": "${DATE}", "recipe" from the Recap's frontmatter, "block": "${b.label}", "reviewer": "${who}", "verdict": "fixed" or "rejected", and the other fields of section 15.
+Log every finding, fixed or rejected, as one JSON line appended to \`holistic-alpha/logs/findings/${b.label}.jsonl\` (create the folder if needed), with "date": "${DATE}", "instructions" from the Recap's frontmatter, "block": "${b.label}", "reviewer": "${who}", "verdict": "fixed" or "rejected", and the other fields of section 15.
 Afterwards run ${check(b.ids, tag)} and make sure no ERROR remains. Reply with one line per episode: "<id>: fixed <n>, rejected <n>".`
 }
 
@@ -123,12 +123,12 @@ async function runBlock(b) {
       `Write the Holistic Alpha Recaps of episodes ${list(b.ids)}, one episode at a time, in this order.
 ${SOURCES}
 ${rowsOf(b, b.ids)}
-Read the recipe once, in full, and follow it exactly. Its core: every idea kept (compress, never drop one), only what the episode says, the message without the messenger (his name only in the frontmatter and in the line under the TL;DR), every hedge kept in his own words, the sources he cites named, quotes copied as one unbroken run of the transcript.
+Read the instructions once, in full, and follow them exactly. Their core: every idea kept (compress, never drop one), only what the episode says, the message without the messenger (his name only in the frontmatter and in the line under the TL;DR), every hedge kept in his own words, the sources he cites named, quotes copied as one unbroken run of the transcript.
 ${overwrite}
 For each episode:
-1. Take its frontmatter from its row (recipe section 11). Confirm the type from the transcript (section 9).
+1. Take its frontmatter from its row (instructions section 11). Confirm the type from the transcript (section 9).
 2. Read the whole transcript once. Write the bullets, then the TL;DR, then the line under it.
-3. Run the recipe's self-check (section 13).
+3. Run the self-check of the instructions (section 13).
 Write UTF-8 with LF line endings. Modify no other file.
 When the block is done, run ${check(b.ids, label + '-write')}. Fix every ERROR. Read every WARN and LOOK against the transcript and fix the real ones. Run it again until no ERROR remains. Reply with just "done", plus one line for each episode you skipped or whose type you changed.`,
       { label: `write ${label}`, phase: 'Write', model: writerModel })

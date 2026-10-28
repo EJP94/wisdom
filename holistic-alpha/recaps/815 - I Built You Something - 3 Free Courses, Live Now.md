@@ -7,7 +7,7 @@ type: promo
 host: Steven Mathis
 words: 713
 minutes: 5
-recipe: v2
+instructions: v2
 source: "815 - I Built You Something - 3 Free Courses, Live Now.txt"
 section: recap
 ---

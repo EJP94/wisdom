@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 9586
 minutes: 50
-recipe: v2
+instructions: v2
 source: "275 - The Male Sex Muscle - Understanding It, Training It, and Using It.txt"
 section: recap
 ---

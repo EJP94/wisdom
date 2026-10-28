@@ -8,7 +8,7 @@ guest: Scott Palmer; Rick; Corey
 host: Steven Mathis
 words: 4471
 minutes: 25
-recipe: v2
+instructions: v2
 source: "565 - A Group Discussion on Mindful Edging.txt"
 section: recap
 ---
