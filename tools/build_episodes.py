@@ -320,6 +320,7 @@ def main(argv=None):
         lines.append(f"- {k}: " + ", ".join(by_type[k]))
     report = "\n".join(lines) + "\n"
     if a.report:
+        os.makedirs(os.path.dirname(os.path.abspath(a.report)), exist_ok=True)
         with open(a.report, "w", encoding="utf-8") as fh:
             fh.write(report)
     sys.stdout.write(report)

@@ -229,6 +229,7 @@ def main(argv=None):
     }
     text = json.dumps(plan, indent=1, ensure_ascii=False) + "\n"
     if a.out:
+        os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
         with open(a.out, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(text)
     else:

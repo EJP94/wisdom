@@ -659,11 +659,13 @@ def main():
             out.append("- OK")
     report = "\n".join(out) + "\n"
     if a.out:
+        os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
         with open(a.out, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(report)
     else:
         sys.stdout.write(report)
     if a.json:
+        os.makedirs(os.path.dirname(os.path.abspath(a.json)), exist_ok=True)
         with open(a.json, "w", encoding="utf-8") as fh:
             json.dump(results, fh, indent=1, ensure_ascii=False)
     totals = Counter("ERROR" if r["errors"] else ("WARN" if r["warns"] else "OK") for r in results)
