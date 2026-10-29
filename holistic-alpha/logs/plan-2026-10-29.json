@@ -1,0 +1,76 @@
+{
+ "planner": "plan_blocks.py 0.2 (2026-10-28)",
+ "date": "2026-10-29",
+ "repo": "/home/user/wisdom",
+ "python": "python3",
+ "mode": "write",
+ "overwrite": false,
+ "outDir": null,
+ "header": "id,episode,title,date,date_estimated,type,guest,series,part,words,minutes,replays,stem,recap,status,flags",
+ "chains": [
+  [
+   {
+    "label": "001-008",
+    "ids": [
+     "001",
+     "002",
+     "003",
+     "004",
+     "005",
+     "006",
+     "007",
+     "008"
+    ],
+    "spot": [
+     "006"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 16569,
+    "estimate": 19.5,
+    "rows": [
+     "001,1,The War Against Resistance,2019-09-17,,solo,,,,1953,13,,001 - The War Against Resistance,001 - The War Against Resistance.md,available,",
+     "002,2,Keys to Solid Hormones - How to 80/20 Your Testosterone,2019-09-18,,solo,,,,2544,15,,002 - Keys to Solid Hormones - How to 80-20 Your Testosterone,002 - Keys to Solid Hormones - How to 80-20 Your Testosterone.md,available,",
+     "003,3,Every. Single. Day....Becomes Who You ARE,2019-09-19,,solo,,,,1382,9,,003 - Every. Single. Day....Becomes Who You ARE,003 - Every. Single. Day....Becomes Who You ARE.md,available,",
+     "004,4,Willpower - Kick Resistance in the Nuts with Cold Showers,2019-09-19,,solo,,,,1552,9,,004 - Willpower - Kick Resistance in the Nuts with Cold Showers,004 - Willpower - Kick Resistance in the Nuts with Cold Showers.md,available,",
+     "005,5,Build Strength Quickly with Total Daily Volume,2019-09-22,,solo,,,,1970,11,,005 - Build Strength Quickly with Total Daily Volume,005 - Build Strength Quickly with Total Daily Volume.md,available,",
+     "006,6,Harnessing & Building Your Sex Energy,2019-09-22,,solo,,,,3386,19,,006 - Harnessing & Building Your Sex Energy,006 - Harnessing & Building Your Sex Energy.md,available,",
+     "007,7,Push vs. Pull... The Importance of Balance in our Lives AND Our Body,2019-09-24,,solo,,,,1493,9,,007 - Push vs. Pull... The Importance of Balance in our Lives AND Our Body,007 - Push vs. Pull... The Importance of Balance in our Lives AND Our Body.md,available,",
+     "008,8,Intermittent Fasting — How the Eating Window Can Fuel Your Life,2019-09-25,,solo,,,,2289,14,,008 - Intermittent Fasting — How the Eating Window Can Fuel Your Life,008 - Intermittent Fasting — How the Eating Window Can Fuel Your Life.md,available,"
+    ]
+   },
+   {
+    "label": "009-010",
+    "ids": [
+     "009",
+     "010"
+    ],
+    "spot": [
+     "010"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 4107,
+    "estimate": 7.6,
+    "rows": [
+     "009,9,Coffee Enemas — Serious Man Fueling Power,2019-09-26,yes,solo,,,,1978,13,,009 - Coffee Enemas — Serious Man Fueling Power,009 - Coffee Enemas — Serious Man Fueling Power.md,available,date_estimated",
+     "010,10,The Power of Intentional Discomfort,2019-09-27,,solo,,,,2129,14,,010 - The Power of Intentional Discomfort,010 - The Power of Intentional Discomfort.md,available,"
+    ]
+   }
+  ]
+ ],
+ "qa": [
+  "006"
+ ],
+ "estimate": {
+  "episodes": 10,
+  "blocks": 2,
+  "words": 20676,
+  "spot_episodes": 2,
+  "cu": 27.1,
+  "windows": 0.5,
+  "left_for_later": 0
+ }
+}
