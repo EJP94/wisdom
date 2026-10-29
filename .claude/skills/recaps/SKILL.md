@@ -69,11 +69,13 @@ Options, only when needed:
 
 ## Calibration (done 2026-10-28)
 The results are in `holistic-alpha/logs/calibration/`. Every step ran at xhigh effort. Rerun a step only for new instructions, a new model or a new effort level.
-1. **Reviewer.** Sonnet and Opus each reviewed the 10 pilot Recaps (instructions v1, kept in `holistic-alpha/golden/pilots-v1/`) in audit mode, with a blind copy of the instructions (`instructions-blind.md`), because instructions v2 quote 13 of the 15 pilot S2 as examples.
+1. **Reviewer.** Sonnet and Opus each reviewed the 10 pilot Recaps under instructions v1 in audit mode, with a blind copy of the instructions (`instructions-blind.md`), because instructions v2 quote 13 of the 15 pilot S2 as examples.
+   - The v1 pilots left the repo on 2026-10-29, so each Recap has one version. For a rerun, extract them from git into a test folder outside `holistic-alpha/recaps/`:
+     `git archive dd2aaa6 holistic-alpha/golden/pilots-v1 | tar -x -C <test folder>`
    - Score: `python3 -I tools/score_review.py --key holistic-alpha/golden/answer-key.jsonl --review <result.json>`. Check its "not in the key" list by hand: some are real findings the audit missed. Add them to the key.
    - Result: Sonnet found 19 of the 19 S2 and 54 of the 75 findings, Opus 17 S2 and 56. Sonnet stays the reviewer.
    - Rule for a rerun: Sonnet finds 80% or more of the S2, keep Sonnet. 50 to 80%: Opus reviews interviews, groups and episodes over 8,000 words. Under 50%: Opus reviews everything.
-2. **Golden set.** The 10 pilots, fixed with the answer key and migrated to instructions v2, are in `holistic-alpha/golden/recaps/` and, as production Recaps, in `holistic-alpha/recaps/`.
+2. **Golden set.** `holistic-alpha/golden/set.txt` lists its ids. The 10 pilots, fixed with the answer key and migrated to instructions v2, are canonical Recaps in `holistic-alpha/recaps/`. There are no copies.
 3. **Calibration run.** 14 episodes of every type: `--ids 079 088 150 175 252 350 404b1 549 556 565 675 720 812 815 --order oldest`, in 3 blocks.
    - Cost 33.3 cu: writer 1.1 cu per episode, reviewer 0.4, fixer 0.4, spot-check and its fix 3.4 per spot episode. These are the defaults of `plan_blocks.py`. A block of 8 took about 30 minutes.
    - The first review left work for the spot-checks: 549 had 13 S3, 565 one S2 and 12 S3. No block escalated.
@@ -82,5 +84,5 @@ The results are in `holistic-alpha/logs/calibration/`. Every step ran at xhigh e
 
 ## Changes to the instructions
 - Every change gets a changelog line in the instructions and a new `instructions:` value (v2.1).
-- Before a production run under new instructions, rerun the golden set into a test folder (`--out-dir holistic-alpha/golden/rerun-<date> --overwrite`) and compare it with `holistic-alpha/golden/recaps/`.
+- Before a production run under new instructions, rerun the golden set into a test folder (`--out-dir holistic-alpha/golden/rerun-<date> --overwrite`) and compare it with the same episodes in `holistic-alpha/recaps/`. The ids: `--ids $(grep -v '^#' holistic-alpha/golden/set.txt)`.
 - Existing Recaps: a format change goes through a script or `mode: "review"`, never a full rewrite. A content rule goes through `mode: "review"` on the Recaps it touches (find them with the findings logs or a search). `overwrite: true` only for an S1-class problem that is widespread.
