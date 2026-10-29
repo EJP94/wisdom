@@ -7,7 +7,7 @@ type: qa
 host: Steven Mathis
 words: 2297
 minutes: 14
-recipe: v2
+instructions: v2
 source: "675 - Listener Question - The Semen Retention Emotional Wall.txt"
 section: recap
 ---

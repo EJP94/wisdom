@@ -8,7 +8,7 @@ guest: Charles Martin
 host: Steven Mathis
 words: 8396
 minutes: 42
-recipe: v2
+instructions: v2
 source: "549 - Reigniting Momentum from Within the Funk, a Community Convo with Charles.txt"
 section: recap
 ---

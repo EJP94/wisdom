@@ -1,4 +1,8 @@
-# Episode Recap — recipe v2
+# Recap instructions v2
+
+## Rename (2026-10-28)
+
+This file was called the recipe (`recap-recipe.md`). The frontmatter field `recipe` is now `instructions`, in every Recap and findings log. No rule changed, so the version stays v2.
 
 ## Changelog v1 → v2 (2026-10-28)
 
@@ -12,13 +16,13 @@ Every change comes from the audit of the 10 pilot Recaps (`auditoria.md`). Times
 6. **A watch list of words the writer must not add.** "Stranger" (127 [01:26], a word v1 itself banned), "coach" (537 [19:09]), "beginners" (004, 005), "often" (813 [14:31]), "every" (537 [22:24]), "nobody" (275 [48:56]).
 7. **Output file = transcript file name + `.md`.** v1 said `NNN - <original title>.md`, but titles hold `/`, `:`, `?` and `*` ("80/20", "C*ck"). The pilots already used the transcript's name.
 8. **`episodes.csv` replaces `INVENTARIO.csv`.** The inventory has 8 titles broken by quotes, 18 rows without a date, a row with two files (404 and 404b1) and three unnumbered specials. `tools/build_episodes.py` fixes all of that for free.
-9. **Frontmatter v2:** `id`, `type`, `words`, `minutes`, `recipe`, plus `series`/`part`, `replays` and `date_estimated` when they apply. The guest gets his full name (537 had only "Dustin"). The script fills every field. No topics or timestamps yet: later views can add them for free or cheaply.
+9. **Frontmatter v2:** `id`, `type`, `words`, `minutes`, `instructions`, plus `series`/`part`, `replays` and `date_estimated` when they apply. The guest gets his full name (537 had only "Dustin"). The script fills every field. No topics or timestamps yet: later views can add them for free or cheaply.
 10. **Eight episode types with their own rules:** solo, interview, group, qa, guided, challenge, compilation, promo. 175 replays five earlier episodes (90 to 97% identical text). The 2024-12-25 special is 142 words of promotion. 079 is 141 words. 252 is a guided exercise. 565 has four voices.
 11. **New markers:** `**Listener question:**`, `**Listener story:**`, `**Quote:**`, `**Guided practice:**`.
 12. **TL;DR: one sentence, at most 45 words.** 537 had 70 words, 275 had 58, and 005 had two sentences.
 13. **Tense:** ideas in the present, stories in the past. v1 asked for present tense everywhere, yet every pilot told its stories in the past, which reads better.
 14. **A glossary** of mishearings and of his own terms, so the same thing is spelled the same way in 809 Recaps.
-15. **The process is part of the recipe:** the writer runs the checker, the reviewer follows a three-pass checklist with a severity scale, and the fixer logs every finding. In the pilot, one review pass reported no missing idea in 127–813. The audit found 14 there, and 15 serious drifts had survived.
+15. **The process is part of the instructions:** the writer runs the checker, the reviewer follows a three-pass checklist with a severity scale, and the fixer logs every finding. In the pilot, one review pass reported no missing idea in 127–813. The audit found 14 there, and 15 serious drifts had survived.
 16. **No length target** for episodes under 700 words, promos and compilations.
 
 Unchanged and working well: one Recap per episode, every idea kept, the message without the messenger, **Story:** markers, the interview markers, quantities, specifics, cutting calls to action, bullets in order of first appearance, at most one bold term per bullet.
@@ -226,7 +230,7 @@ type: solo
 host: Steven Mathis
 words: 2486
 minutes: 15
-recipe: v2
+instructions: v2
 source: "663 - The Pause-Intention Bridge - Quitting Porn + Building Discipline & More.txt"
 section: recap
 ---
@@ -332,11 +336,11 @@ Severity:
 
 ## 15. Fixer: rules
 
-1. Check each finding against the transcript. Fix it only if it is real, with the smallest edit that follows this recipe. Reject false alarms and say why.
+1. Check each finding against the transcript. Fix it only if it is real, with the smallest edit that follows these instructions. Reject false alarms and say why.
 2. Fix every S1 and S2. Fix an S3 when the edit is small.
 3. If you change a bullet, check the TL;DR still matches it.
 4. Run the checker again. No ERROR may remain.
 5. Append one JSON line per finding, fixed or rejected, to the block's log `holistic-alpha/logs/findings/<block>.jsonl`. One file per block, so parallel runs never write to the same file:
 ```json
-{"date": "2026-11-02", "recipe": "v2", "block": "663-656", "id": "663", "reviewer": "sonnet", "severity": "S2", "kind": "advice hedge lost", "ts": "05:47", "verdict": "fixed", "note": "I would suggest"}
+{"date": "2026-11-02", "instructions": "v2", "block": "663-656", "id": "663", "reviewer": "sonnet", "severity": "S2", "kind": "advice hedge lost", "ts": "05:47", "verdict": "fixed", "note": "I would suggest"}
 ```

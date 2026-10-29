@@ -1,4 +1,4 @@
-# Episode Recap — recipe v2
+# Recap instructions v2
 
 (Calibration copy: the examples taken from the pilot episodes are removed.)
 
@@ -176,7 +176,7 @@ type: solo
 host: Steven Mathis
 words: 2486
 minutes: 15
-recipe: v2
+instructions: v2
 source: "663 - The Pause-Intention Bridge - Quitting Porn + Building Discipline & More.txt"
 section: recap
 ---
@@ -281,11 +281,11 @@ Severity:
 
 ## 15. Fixer: rules
 
-1. Check each finding against the transcript. Fix it only if it is real, with the smallest edit that follows this recipe. Reject false alarms and say why.
+1. Check each finding against the transcript. Fix it only if it is real, with the smallest edit that follows these instructions. Reject false alarms and say why.
 2. Fix every S1 and S2. Fix an S3 when the edit is small.
 3. If you change a bullet, check the TL;DR still matches it.
 4. Run the checker again. No ERROR may remain.
 5. Append one JSON line per finding, fixed or rejected, to the block's log `holistic-alpha/logs/findings/<block>.jsonl`. One file per block, so parallel runs never write to the same file:
 ```json
-{"date": "2026-11-02", "recipe": "v2", "block": "900-893", "id": "900", "reviewer": "sonnet", "severity": "S2", "kind": "advice hedge lost", "ts": "08:12", "verdict": "fixed", "note": "you might want to"}
+{"date": "2026-11-02", "instructions": "v2", "block": "900-893", "id": "900", "reviewer": "sonnet", "severity": "S2", "kind": "advice hedge lost", "ts": "08:12", "verdict": "fixed", "note": "you might want to"}
 ```

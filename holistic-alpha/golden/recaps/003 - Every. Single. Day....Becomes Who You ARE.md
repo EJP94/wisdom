@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 1382
 minutes: 9
-recipe: v2
+instructions: v2
 source: "003 - Every. Single. Day....Becomes Who You ARE.txt"
 section: recap
 ---

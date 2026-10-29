@@ -8,7 +8,7 @@ replays: ["037", "097", "099", "117", "130"]
 host: Steven Mathis
 words: 13852
 minutes: 81
-recipe: v2
+instructions: v2
 source: "175 - 5 Episodes in One on Sexual Health.txt"
 section: recap
 ---

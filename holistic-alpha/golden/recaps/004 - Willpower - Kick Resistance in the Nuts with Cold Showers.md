@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 1552
 minutes: 9
-recipe: v2
+instructions: v2
 source: "004 - Willpower - Kick Resistance in the Nuts with Cold Showers.txt"
 section: recap
 ---

@@ -9,7 +9,7 @@ part: 3
 host: Steven Mathis
 words: 2527
 minutes: 14
-recipe: v2
+instructions: v2
 source: "404b1 - Building Better Stamina - Part 3 - The Warm Draw.txt"
 section: recap
 ---

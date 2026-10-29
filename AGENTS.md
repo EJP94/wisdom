@@ -11,7 +11,7 @@ Steven gave full permission to share his material.
 
 ## Rules
 
-- **The recipe is the only rule for a Recap:** `holistic-alpha/recap-recipe.md`. Read it in full before writing, reviewing or fixing one
+- **The Recap instructions are the only rule for a Recap:** `holistic-alpha/recap-instructions.md`. Read them in full before writing, reviewing or fixing one
 - The pipeline is the `/recaps` skill (`.claude/skills/recaps/SKILL.md`) and the `recap-writeups` workflow
 - Vault content is in English. Talk to the user (Esteban) in Spanish
 - The user decides which episodes get processed. Never widen a range on your own
@@ -23,7 +23,7 @@ Steven gave full permission to share his material.
 
 ## Known facts
 
-- The host is Steven Mathis. The transcriber writes "Stephen". "Alpha Mail" is "Alpha Male". More in the recipe's glossary
+- The host is Steven Mathis. The transcriber writes "Stephen". "Alpha Mail" is "Alpha Male". More in the glossary of the Recap instructions
 - Episode numbers are the official "Ep. #N" of the feed. Numbers 51-58, 76, 86 and 666 don't exist. `404b1` is a second episode numbered 404. Specials have no number: `especial - YYYY-MM-DD - Title`
 - 175 is a compilation of 037, 097, 099, 117 and 130
 - New audio: `tools/transcription/descargar.py` downloads from the RSS feed, `tools/transcription/transcribir_parakeet.py` transcribes on a GPU. See `tools/transcription/GUIA-PARAKEET.md`

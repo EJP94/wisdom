@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 1641
 minutes: 11
-recipe: v2
+instructions: v2
 source: "150 - Dealing with Extended Periods Without Sex.txt"
 section: recap
 ---

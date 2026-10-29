@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 3795
 minutes: 25
-recipe: v2
+instructions: v2
 source: "813 - Simplifying Sexual Stamina - The 3 Dials That Control It.txt"
 section: recap
 ---

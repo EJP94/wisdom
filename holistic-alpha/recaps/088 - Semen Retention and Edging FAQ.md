@@ -7,7 +7,7 @@ type: qa
 host: Steven Mathis
 words: 4934
 minutes: 28
-recipe: v2
+instructions: v2
 source: "088 - Semen Retention and Edging FAQ.txt"
 section: recap
 ---

@@ -10,7 +10,7 @@ part: 4
 host: Steven Mathis
 words: 10608
 minutes: 64
-recipe: v2
+instructions: v2
 source: "537 - Community Convos #4 - Dustin Desheles.txt"
 section: recap
 ---

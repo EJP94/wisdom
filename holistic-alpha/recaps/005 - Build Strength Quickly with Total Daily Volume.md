@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 1970
 minutes: 11
-recipe: v2
+instructions: v2
 source: "005 - Build Strength Quickly with Total Daily Volume.txt"
 section: recap
 ---

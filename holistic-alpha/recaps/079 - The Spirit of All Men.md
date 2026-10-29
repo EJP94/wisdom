@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 141
 minutes: 1
-recipe: v2
+instructions: v2
 source: "079 - The Spirit of All Men.txt"
 section: recap
 ---

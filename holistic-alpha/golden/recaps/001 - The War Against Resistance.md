@@ -7,7 +7,7 @@ type: solo
 host: Steven Mathis
 words: 1953
 minutes: 13
-recipe: v2
+instructions: v2
 source: "001 - The War Against Resistance.txt"
 section: recap
 ---
