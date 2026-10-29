@@ -1,12 +1,12 @@
 ---
 name: recaps
-description: Turn Holistic Alpha transcripts into Recaps in the wisdom repo, end to end - rebuild episodes.csv, plan the blocks, run the recap-writeups workflow (Opus writer, Sonnet reviewer, Opus fixer, Opus spot-check), check and report. Use when the user says /recaps <range>, "process episodes X-Y", "the next batch" or "the new episode".
+description: Turn Holistic Alpha transcripts into Recaps in the wisdom repo, end to end - rebuild episodes.csv, plan the blocks, run the recap-writeups workflow (Opus writer, Sonnet reviewer, Opus fixer, Opus spot-check, all at xhigh effort), check and report. Use when the user says /recaps <range>, "process episodes X-Y", "the next batch" or "the new episode".
 ---
 
 # /recaps <range>
 
 Calibrated on 2026-10-28 (see Calibration).
-Without a workflow tool, as in a claude.ai cloud session, run section 3 by hand: one agent per step and block, with the prompts that `recap-writeups.js` builds.
+Without a workflow tool, as in a claude.ai cloud session, run section 3 by hand: one agent per step and block, with the prompts, model and effort that `recap-writeups.js` sets.
 Reply to the user in Spanish. Recaps, logs and the instructions stay in English.
 What a Recap must be is in the Recap instructions, `holistic-alpha/recap-instructions.md`. This skill only runs the pipeline.
 
@@ -36,7 +36,9 @@ python3 -I tools/plan_blocks.py --episodes holistic-alpha/episodes.csv --recaps 
 - Default order: newest first.
 
 ## 3. Write, review, fix, spot-check (AI)
-Run the saved workflow **`recap-writeups`**, with the plan JSON as its args, unchanged. In each block:
+Run the saved workflow **`recap-writeups`**, with the plan JSON as its args, unchanged.
+Every step runs at **xhigh** effort, set in the workflow. The calibration ran at xhigh, so its quality and cost hold only at xhigh. By hand, pass `effort: "xhigh"` to each agent: without it, an agent takes the effort of the session that launches it.
+In each block:
 1. An Opus writer reads each transcript once, writes its Recap under the instructions and runs `check_recaps.py`.
 2. A Sonnet reviewer follows the checklist of the instructions (checker items, recall walk, fidelity, format) and returns findings with a severity.
 3. An Opus fixer checks each finding against the transcript, fixes the real ones and logs every finding in `holistic-alpha/logs/findings/<block>.jsonl`.
@@ -46,6 +48,7 @@ Options, only when needed:
 - `mode: "review"`: review, fix and spot-check existing Recaps (after a change to the instructions, or a block that came back `reviewed: false`).
 - `mode: "audit"`: findings only, no edits (calibration).
 - `reviewerModel`: `sonnet`, from the calibration.
+- `writerEffort` (writer and fixer), `reviewerEffort`, `spotEffort`: `xhigh`, from the calibration. Change one only after rerunning the calibration at the new level.
 
 ## 4. After the run (free)
 1. Run the checker on the run's ids. Expect no ERROR:
@@ -65,7 +68,7 @@ Options, only when needed:
 - Anything pending.
 
 ## Calibration (done 2026-10-28)
-The results are in `holistic-alpha/logs/calibration/`. Rerun a step only for new instructions or a new model.
+The results are in `holistic-alpha/logs/calibration/`. Every step ran at xhigh effort. Rerun a step only for new instructions, a new model or a new effort level.
 1. **Reviewer.** Sonnet and Opus each reviewed the 10 pilot Recaps (instructions v1, kept in `holistic-alpha/golden/pilots-v1/`) in audit mode, with a blind copy of the instructions (`instructions-blind.md`), because instructions v2 quote 13 of the 15 pilot S2 as examples.
    - Score: `python3 -I tools/score_review.py --key holistic-alpha/golden/answer-key.jsonl --review <result.json>`. Check its "not in the key" list by hand: some are real findings the audit missed. Add them to the key.
    - Result: Sonnet found 19 of the 19 S2 and 54 of the 75 findings, Opus 17 S2 and 56. Sonnet stays the reviewer.

@@ -1,7 +1,7 @@
 export const meta = {
   name: 'recap-writeups',
   description: 'Write, review and fix Holistic Alpha episode Recaps in blocks: an Opus writer, a Sonnet reviewer and an Opus fixer per block, then an Opus spot-check that escalates the block when it still finds serious slips',
-  whenToUse: 'After tools/plan_blocks.py has written the run plan. args: that plan JSON { repo, date, python, mode, overwrite, outDir, header, chains: [[{ label, ids, spot, rows }]] }, plus optional writerModel, reviewerModel, spotModel, spotCheck, escalateS2',
+  whenToUse: 'After tools/plan_blocks.py has written the run plan. args: that plan JSON { repo, date, python, mode, overwrite, outDir, header, chains: [[{ label, ids, spot, rows }]] }, plus optional writerModel, reviewerModel, spotModel, writerEffort, reviewerEffort, spotEffort, spotCheck, escalateS2',
   phases: [
     { title: 'Write', detail: 'one writer reads each transcript once, writes its Recap under the instructions and runs check_recaps.py', model: 'opus' },
     { title: 'Review', detail: 'one reviewer checks the block with the checklist of the instructions: checker items, recall walk, fidelity, format', model: 'sonnet' },
@@ -27,6 +27,8 @@ export const meta = {
 //   overwrite     true = rewrite existing Recaps from scratch (after a change to the instructions). Default false.
 //   outDir        optional test folder for the Recaps, relative to the repo. Absent = holistic-alpha/recaps.
 //   writerModel 'opus', reviewerModel 'sonnet', spotModel 'opus'. Sonnet won the reviewer calibration.
+//   writerEffort (writer and fixer), reviewerEffort, spotEffort: 'xhigh', the level the calibration ran at.
+//                 Set here so a run doesn't take the effort of whatever session launches it.
 //   spotCheck     default true (ignored in audit mode)
 //   escalateS2    S2 findings in the spot-check that trigger a full Opus review of the block. Default 2.
 const A = args || {}
@@ -38,6 +40,9 @@ if (!['write', 'review', 'audit'].includes(mode)) throw new Error(`unknown mode 
 const writerModel = A.writerModel || 'opus'
 const reviewerModel = A.reviewerModel || 'sonnet'
 const spotModel = A.spotModel || 'opus'
+const writerEffort = A.writerEffort || 'xhigh'
+const reviewerEffort = A.reviewerEffort || 'xhigh'
+const spotEffort = A.spotEffort || 'xhigh'
 const spotCheck = A.spotCheck !== false && mode !== 'audit'
 const escalateS2 = A.escalateS2 || 2
 const PY = A.python || 'python3'
@@ -131,11 +136,11 @@ For each episode:
 3. Run the self-check of the instructions (section 13).
 Write UTF-8 with LF line endings. Modify no other file.
 When the block is done, run ${check(b.ids, label + '-write')}. Fix every ERROR. Read every WARN and LOOK against the transcript and fix the real ones. Run it again until no ERROR remains. Reply with just "done", plus one line for each episode you skipped or whose type you changed.`,
-      { label: `write ${label}`, phase: 'Write', model: writerModel })
+      { label: `write ${label}`, phase: 'Write', model: writerModel, effort: writerEffort })
   }
 
   const review = await agent(reviewPrompt(b, b.ids, label + '-review', false),
-    { label: `review ${label}`, phase: 'Review', model: reviewerModel, schema: REVIEW })
+    { label: `review ${label}`, phase: 'Review', model: reviewerModel, effort: reviewerEffort, schema: REVIEW })
   const entries = (review && review.episodes) || []
   if (!review) {
     log(`block ${label}: review failed, so the Recaps are unreviewed. Rerun this block in review mode.`)
@@ -149,14 +154,14 @@ When the block is done, run ${check(b.ids, label + '-write')}. Fix every ERROR. 
 
   const bad = entries.filter(e => !e.ok && (e.findings || []).length)
   if (bad.length) {
-    await agent(fixPrompt(b, bad, reviewerModel, label + '-fix'), { label: `fix ${label}`, phase: 'Fix', model: writerModel })
+    await agent(fixPrompt(b, bad, reviewerModel, label + '-fix'), { label: `fix ${label}`, phase: 'Fix', model: writerModel, effort: writerEffort })
   }
 
   let spot = null
   let escalated = false
   if (spotCheck && (b.spot || []).length) {
     const s = await agent(reviewPrompt(b, b.spot, label + '-spot', true),
-      { label: `spot ${label}`, phase: 'Spot-check', model: spotModel, schema: REVIEW })
+      { label: `spot ${label}`, phase: 'Spot-check', model: spotModel, effort: spotEffort, schema: REVIEW })
     const sEntries = (s && s.episodes) || []
     spot = { ids: b.spot, ...tally(sEntries) }
     let toFix = sEntries.filter(e => (e.findings || []).length)
@@ -165,13 +170,13 @@ When the block is done, run ${check(b.ids, label + '-write')}. Fix every ERROR. 
       const rest = b.ids.filter(id => !b.spot.includes(id))
       if (rest.length) {
         const x = await agent(reviewPrompt(b, rest, label + '-escalation', true),
-          { label: `escalation ${label}`, phase: 'Spot-check', model: spotModel, schema: REVIEW })
+          { label: `escalation ${label}`, phase: 'Spot-check', model: spotModel, effort: spotEffort, schema: REVIEW })
         toFix = toFix.concat(((x && x.episodes) || []).filter(e => (e.findings || []).length))
       }
     }
     if (toFix.length) {
       await agent(fixPrompt(b, toFix, escalated ? `${spotModel} escalation` : `${spotModel} spot-check`, label + '-final'),
-        { label: `fix ${label} after spot-check`, phase: 'Spot-check', model: writerModel })
+        { label: `fix ${label} after spot-check`, phase: 'Spot-check', model: writerModel, effort: writerEffort })
     }
   }
 
@@ -189,4 +194,4 @@ async function runChain(chain) {
 }
 
 const results = await parallel(chains.map(c => () => runChain(c)))
-return { mode, writerModel, reviewerModel, spotModel, date: DATE, results: results.filter(Boolean).flat() }
+return { mode, writerModel, reviewerModel, spotModel, writerEffort, reviewerEffort, spotEffort, date: DATE, results: results.filter(Boolean).flat() }
