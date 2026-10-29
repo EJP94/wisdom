@@ -1,0 +1,269 @@
+{
+ "planner": "plan_blocks.py 0.2 (2026-10-28)",
+ "date": "2026-10-29",
+ "repo": "/home/user/wisdom",
+ "python": "python3",
+ "mode": "write",
+ "overwrite": false,
+ "outDir": null,
+ "header": "id,episode,title,date,date_estimated,type,guest,series,part,words,minutes,replays,stem,recap,status,flags",
+ "chains": [
+  [
+   {
+    "label": "011-018",
+    "ids": [
+     "011",
+     "012",
+     "013",
+     "014",
+     "015",
+     "016",
+     "017",
+     "018"
+    ],
+    "spot": [
+     "013"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 17047,
+    "estimate": 19.5,
+    "rows": [
+     "011,11,\"Morning Wood, We Salute You!\",2019-09-29,,solo,,,,1749,11,,\"011 - Morning Wood, We Salute You!\",\"011 - Morning Wood, We Salute You!.md\",available,",
+     "012,12,The Terrible Price We Pay When Resistance Wins,2019-10-01,,solo,,,,2371,15,,012 - The Terrible Price We Pay When Resistance Wins,012 - The Terrible Price We Pay When Resistance Wins.md,available,",
+     "013,13,\"Energy - My Top 5 Supplements for More Real, Healthy Vitality\",2019-10-03,yes,solo,,,,3135,21,,\"013 - Energy - My Top 5 Supplements for More Real, Healthy Vitality\",\"013 - Energy - My Top 5 Supplements for More Real, Healthy Vitality.md\",available,date_estimated",
+     "014,14,The Most Important Exercise for All Men,2019-10-04,,solo,,,,2216,14,,014 - The Most Important Exercise for All Men,014 - The Most Important Exercise for All Men.md,available,",
+     "015,15,Recovery Will Make Or Break You,2019-10-06,,solo,,,,1777,11,,015 - Recovery Will Make Or Break You,015 - Recovery Will Make Or Break You.md,available,",
+     "016,16,Sex Energy Supplements — What to Avoid and 3 Nutrients That Work,2019-10-08,yes,solo,,,,2555,17,,016 - Sex Energy Supplements — What to Avoid and 3 Nutrients That Work,016 - Sex Energy Supplements — What to Avoid and 3 Nutrients That Work.md,available,date_estimated",
+     "017,17,\"Live Your Truth, Find Your Power\",2019-10-09,,solo,,,,1221,8,,\"017 - Live Your Truth, Find Your Power\",\"017 - Live Your Truth, Find Your Power.md\",available,",
+     "018,18,How to Do Kegels for Maximum Performance,2019-10-10,,solo,,,,2023,12,,018 - How to Do Kegels for Maximum Performance,018 - How to Do Kegels for Maximum Performance.md,available,"
+    ]
+   },
+   {
+    "label": "019-026",
+    "ids": [
+     "019",
+     "020",
+     "021",
+     "022",
+     "023",
+     "024",
+     "025",
+     "026"
+    ],
+    "spot": [
+     "024"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 17906,
+    "estimate": 19.5,
+    "rows": [
+     "019,19,1/96th of The Day Will Change Your Life,2019-10-13,,solo,,,,2543,14,,019 - 1-96th of The Day Will Change Your Life,019 - 1-96th of The Day Will Change Your Life.md,available,",
+     "020,20,Meditation & Sex: 4 Powerful Ways Meditation Boosts Your Sex Life & Libido,2019-10-13,,solo,,,,1795,12,,020 - Meditation & Sex - 4 Powerful Ways Meditation Boosts Your Sex Life & Libido,020 - Meditation & Sex - 4 Powerful Ways Meditation Boosts Your Sex Life & Libido.md,available,",
+     "021,21,Happiness Is the Ultimate Alpha Male Trait,2019-10-14,,solo,,,,1545,9,,021 - Happiness Is the Ultimate Alpha Male Trait,021 - Happiness Is the Ultimate Alpha Male Trait.md,available,",
+     "022,22,Brain Boost - My Top 4 Nootropic Supplements for Brain Optimization,2019-10-15,yes,solo,,,,2803,17,,022 - Brain Boost - My Top 4 Nootropic Supplements for Brain Optimization,022 - Brain Boost - My Top 4 Nootropic Supplements for Brain Optimization.md,available,date_estimated",
+     "023,23,Sprint Your Way to Better Testosterone,2019-10-16,,solo,,,,2054,12,,023 - Sprint Your Way to Better Testosterone,023 - Sprint Your Way to Better Testosterone.md,available,",
+     "024,24,Your Pain is Your Power,2019-10-17,,solo,,,,2890,17,,024 - Your Pain is Your Power,024 - Your Pain is Your Power.md,available,",
+     "025,25,The Power of the Meditative Moment Before Battle,2019-10-19,,solo,,,,1388,9,,025 - The Power of the Meditative Moment Before Battle,025 - The Power of the Meditative Moment Before Battle.md,available,",
+     "026,26,\"Oxytocin, A Little-known Yet Incredibly Powerful Hormone\",2019-10-20,,solo,,,,2888,19,,\"026 - Oxytocin, A Little-known Yet Incredibly Powerful Hormone\",\"026 - Oxytocin, A Little-known Yet Incredibly Powerful Hormone.md\",available,"
+    ]
+   },
+   {
+    "label": "027-034",
+    "ids": [
+     "027",
+     "028",
+     "029",
+     "030",
+     "031",
+     "032",
+     "033",
+     "034"
+    ],
+    "spot": [
+     "032"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 22317,
+    "estimate": 19.5,
+    "rows": [
+     "027,27,Sex Energy is Creative Energy & Life Power,2019-10-21,,solo,,,,2533,16,,027 - Sex Energy is Creative Energy & Life Power,027 - Sex Energy is Creative Energy & Life Power.md,available,",
+     "028,28,Endurance Training and Testosterone - Part 1,2019-10-21,,solo,,Endurance Training and Testosterone,1,2802,16,,028 - Endurance Training and Testosterone - Part 1,028 - Endurance Training and Testosterone - Part 1.md,available,",
+     "029,29,Endurance Training and Testosterone Pt. 2,2019-10-23,,solo,,Endurance Training and Testosterone,2,4361,26,,029 - Endurance Training and Testosterone Pt. 2,029 - Endurance Training and Testosterone Pt. 2.md,available,",
+     "030,30,2 Tricks to Get Rid of Pain & Tightness Throughout Your Body,2019-10-24,,solo,,,,2050,11,,030 - 2 Tricks to Get Rid of Pain & Tightness Throughout Your Body,030 - 2 Tricks to Get Rid of Pain & Tightness Throughout Your Body.md,available,",
+     "031,31,Slaying Resistance and Regret,2019-10-25,,solo,,,,2219,13,,031 - Slaying Resistance and Regret,031 - Slaying Resistance and Regret.md,available,",
+     "032,32,Is It Too Late for You?,2019-10-26,,solo,,,,2481,14,,032 - Is It Too Late for You,032 - Is It Too Late for You.md,available,",
+     "033,33,Stop Ball Shrinkage by Eliminating Toxins,2019-10-27,,solo,,,,2977,18,,033 - Stop Ball Shrinkage by Eliminating Toxins,033 - Stop Ball Shrinkage by Eliminating Toxins.md,available,",
+     "034,34,Multiple Orgasms Without Ejaculation,2019-10-28,,solo,,,,2894,17,,034 - Multiple Orgasms Without Ejaculation,034 - Multiple Orgasms Without Ejaculation.md,available,"
+    ]
+   },
+   {
+    "label": "035-042",
+    "ids": [
+     "035",
+     "036",
+     "037",
+     "038",
+     "039",
+     "040",
+     "041",
+     "042"
+    ],
+    "spot": [
+     "042"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 16911,
+    "estimate": 19.5,
+    "rows": [
+     "035,35,When You're Feeling Beaten Down,2019-10-29,,solo,,,,2549,14,,035 - When You're Feeling Beaten Down,035 - When You're Feeling Beaten Down.md,available,",
+     "036,36,Fighting Resistance Is an Inside Game,2019-10-30,,solo,,,,1531,9,,036 - Fighting Resistance Is an Inside Game,036 - Fighting Resistance Is an Inside Game.md,available,",
+     "037,37,3 Daily Practices to Be a Multi-Orgasmic Man,2019-11-02,,solo,,,,1368,9,,037 - 3 Daily Practices to Be a Multi-Orgasmic Man,037 - 3 Daily Practices to Be a Multi-Orgasmic Man.md,available,",
+     "038,38,Powerful Health & Wellness Tool - Coffee Enemas,2019-11-02,,solo,,,,2281,13,,038 - Powerful Health & Wellness Tool - Coffee Enemas,038 - Powerful Health & Wellness Tool - Coffee Enemas.md,available,",
+     "039,39,Harnessing Sex Energy in Other Areas of Life,2019-11-04,,solo,,,,1506,9,,039 - Harnessing Sex Energy in Other Areas of Life,039 - Harnessing Sex Energy in Other Areas of Life.md,available,",
+     "040,40,Nutrition & Fats - How to Optimize Your Fat Intake to Support Testosterone and Overall Health,2019-11-06,,solo,,,,2470,15,,040 - Nutrition & Fats - How to Optimize Your Fat Intake to Support Testosterone and Overall Health,040 - Nutrition & Fats - How to Optimize Your Fat Intake to Support Testosterone and Overall Health.md,available,",
+     "041,41,Discipline Vs. Lifestyle,2019-11-07,,solo,,,,2104,12,,041 - Discipline Vs. Lifestyle,041 - Discipline Vs. Lifestyle.md,available,",
+     "042,42,Rhodiola - Boost Mood & Resiliency with this Powerful Herb & Adaptogen,2019-11-09,yes,solo,,,,3102,19,,042 - Rhodiola - Boost Mood & Resiliency with this Powerful Herb & Adaptogen,042 - Rhodiola - Boost Mood & Resiliency with this Powerful Herb & Adaptogen.md,available,date_estimated"
+    ]
+   },
+   {
+    "label": "043-050",
+    "ids": [
+     "043",
+     "044",
+     "045",
+     "046",
+     "047",
+     "048",
+     "049",
+     "050"
+    ],
+    "spot": [
+     "050"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 20451,
+    "estimate": 19.5,
+    "rows": [
+     "043,43,Sex and The Single Man,2019-11-12,,solo,,,,2810,16,,043 - Sex and The Single Man,043 - Sex and The Single Man.md,available,",
+     "044,44,Testosterone and Carbohydrates - Optimizing Carbs in Your Nutrition,2019-11-15,,solo,,,,2016,12,,044 - Testosterone and Carbohydrates - Optimizing Carbs in Your Nutrition,044 - Testosterone and Carbohydrates - Optimizing Carbs in Your Nutrition.md,available,",
+     "045,45,Honey - Boost Testosterone & Support Your Brain,2019-11-17,,solo,,,,1626,10,,045 - Honey - Boost Testosterone & Support Your Brain,045 - Honey - Boost Testosterone & Support Your Brain.md,available,",
+     "046,46,1 Simple Pilates Exercise for Better Sex and Better Abs,2019-11-19,,solo,,,,2967,17,,046 - 1 Simple Pilates Exercise for Better Sex and Better Abs,046 - 1 Simple Pilates Exercise for Better Sex and Better Abs.md,available,",
+     "047,47,Plugging the Leaks in Your Power,2019-11-21,,solo,,,,2814,15,,047 - Plugging the Leaks in Your Power,047 - Plugging the Leaks in Your Power.md,available,",
+     "048,48,Your Presence Is Your Power,2019-11-22,,solo,,,,2106,13,,048 - Your Presence Is Your Power,048 - Your Presence Is Your Power.md,available,",
+     "049,49,Get Out of Your Head for Better Sex and Better Fitness,2019-11-26,,solo,,,,1192,7,,049 - Get Out of Your Head for Better Sex and Better Fitness,049 - Get Out of Your Head for Better Sex and Better Fitness.md,available,",
+     "050,50,Your Sexual Fire - 5 Keys to Improve Your Sex Energy & Performance,2019-11-27,,solo,,,,4920,27,,050 - Your Sexual Fire - 5 Keys to Improve Your Sex Energy & Performance,050 - Your Sexual Fire - 5 Keys to Improve Your Sex Energy & Performance.md,available,"
+    ]
+   },
+   {
+    "label": "059-066",
+    "ids": [
+     "059",
+     "060",
+     "061",
+     "062",
+     "063",
+     "064",
+     "065",
+     "066"
+    ],
+    "spot": [
+     "066"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 18169,
+    "estimate": 19.5,
+    "rows": [
+     "059,59,\"Kegels for Men - Better Erections, Better Sex, & More Life Force Energy\",2019-12-01,,solo,,,,1902,10,,\"059 - Kegels for Men - Better Erections, Better Sex, & More Life Force Energy\",\"059 - Kegels for Men - Better Erections, Better Sex, & More Life Force Energy.md\",available,",
+     "060,60,Finding Your Confidence,2019-12-03,,solo,,,,2945,17,,060 - Finding Your Confidence,060 - Finding Your Confidence.md,available,",
+     "061,61,The Body You Got,2019-12-05,,solo,,,,2234,13,,061 - The Body You Got,061 - The Body You Got.md,available,",
+     "062,62,The 3 Essential Supplements for All Men,2019-12-07,yes,solo,,,,2153,13,,062 - The 3 Essential Supplements for All Men,062 - The 3 Essential Supplements for All Men.md,available,date_estimated",
+     "063,63,It's All About Your Purpose,2019-12-09,,solo,,,,1933,11,,063 - It's All About Your Purpose,063 - It's All About Your Purpose.md,available,",
+     "064,64,Harnessing Reverse Kegels - a Game Changer for Sexual Performance and Avoiding PE,2019-12-11,,solo,,,,3500,20,,064 - Harnessing Reverse Kegels - a Game Changer for Sexual Performance and Avoiding PE,064 - Harnessing Reverse Kegels - a Game Changer for Sexual Performance and Avoiding PE.md,available,",
+     "065,65,The Link Between Presence and Exercise,2019-12-12,,solo,,,,1795,11,,065 - The Link Between Presence and Exercise,065 - The Link Between Presence and Exercise.md,available,",
+     "066,66,4 Keys for Translating Exercise Into Real Life Force Power & Energy,2019-12-13,,solo,,,,1707,11,,066 - 4 Keys for Translating Exercise Into Real Life Force Power & Energy,066 - 4 Keys for Translating Exercise Into Real Life Force Power & Energy.md,available,"
+    ]
+   },
+   {
+    "label": "067-074",
+    "ids": [
+     "067",
+     "068",
+     "069",
+     "070",
+     "071",
+     "072",
+     "073",
+     "074"
+    ],
+    "spot": [
+     "073"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 18530,
+    "estimate": 19.5,
+    "rows": [
+     "067,67,Breathing for Better Sex,2019-12-13,,solo,,,,1080,7,,067 - Breathing for Better Sex,067 - Breathing for Better Sex.md,available,",
+     "068,68,Why Balls Should Be Massaged Daily,2019-12-15,,solo,,,,1627,9,,068 - Why Balls Should Be Massaged Daily,068 - Why Balls Should Be Massaged Daily.md,available,",
+     "069,69,\"Why Meditation is Manly - How to Get Started, and How to Maximize the Benefit\",2019-12-15,,solo,,,,2291,13,,\"069 - Why Meditation is Manly - How to Get Started, and How to Maximize the Benefit\",\"069 - Why Meditation is Manly - How to Get Started, and How to Maximize the Benefit.md\",available,",
+     "070,70,Rebuilding Your Sexual Fire After a Divorce or Breakup,2019-12-16,,solo,,,,2076,13,,070 - Rebuilding Your Sexual Fire After a Divorce or Breakup,070 - Rebuilding Your Sexual Fire After a Divorce or Breakup.md,available,",
+     "071,71,More Fire and Focus in Your Next Workout - The Natural 2 Step Process,2019-12-19,,solo,,,,3097,18,,071 - More Fire and Focus in Your Next Workout - The Natural 2 Step Process,071 - More Fire and Focus in Your Next Workout - The Natural 2 Step Process.md,available,",
+     "072,72,Why Monitoring Morning Wood is So Important,2019-12-20,,solo,,,,1305,8,,072 - Why Monitoring Morning Wood is So Important,072 - Why Monitoring Morning Wood is So Important.md,available,",
+     "073,73,Semen Retention - The Life Altering Power of Your Life Creation Energy,2019-12-23,,solo,,,,3875,23,,073 - Semen Retention - The Life Altering Power of Your Life Creation Energy,073 - Semen Retention - The Life Altering Power of Your Life Creation Energy.md,available,",
+     "074,74,Edging - The Key Alpha Male Sexual Method,2019-12-24,,solo,,,,3179,18,,074 - Edging - The Key Alpha Male Sexual Method,074 - Edging - The Key Alpha Male Sexual Method.md,available,"
+    ]
+   },
+   {
+    "label": "075-080",
+    "ids": [
+     "075",
+     "077",
+     "078",
+     "079",
+     "080"
+    ],
+    "spot": [
+     "077"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 7914,
+    "estimate": 13.5,
+    "rows": [
+     "075,75,The Greatest Gift You Can Give as a Man,2019-12-25,,solo,,,,1538,11,,075 - The Greatest Gift You Can Give as a Man,075 - The Greatest Gift You Can Give as a Man.md,available,",
+     "077,77,The One Exercise Tool to Rule Them All,2019-12-27,,solo,,,,2582,15,,077 - The One Exercise Tool to Rule Them All,077 - The One Exercise Tool to Rule Them All.md,available,",
+     "078,78,\"Acetyl L Carnitine - A Proven Sexual, Brain, and Body Boost\",2019-12-29,yes,solo,,,,2311,14,,\"078 - Acetyl L Carnitine - A Proven Sexual, Brain, and Body Boost\",\"078 - Acetyl L Carnitine - A Proven Sexual, Brain, and Body Boost.md\",available,date_estimated",
+     "079,79,The Spirit of All Men,2019-12-30,,solo,,,,141,1,,079 - The Spirit of All Men,079 - The Spirit of All Men.md,available,short",
+     "080,80,The Most Powerful Change We Can Make This Year,2020-01-01,,solo,,,,1342,10,,080 - The Most Powerful Change We Can Make This Year,080 - The Most Powerful Change We Can Make This Year.md,available,"
+    ]
+   }
+  ]
+ ],
+ "qa": [
+  "023",
+  "048"
+ ],
+ "estimate": {
+  "episodes": 61,
+  "blocks": 8,
+  "words": 139245,
+  "spot_episodes": 8,
+  "cu": 150.0,
+  "windows": 3.0,
+  "left_for_later": 0
+ }
+}
