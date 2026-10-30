@@ -1,7 +1,7 @@
 slug,area,name,status,explicitness,min_hits,keywords
 resistance,mind,Resistance,topic,general,3,\bresistance\b(?! (?:training|work|band|exercise))
 meditation,mind,Meditation and presence,topic,general,3,meditat\w*
-every-day,mind,"Every day, small steps",topic,general,8,every single day|\bevery day\b|15 minutes|fifteen minutes|\bone minute\b|small steps?|little steps?|tiny steps?|\btoday\b
+every-day,mind,"Every day, small steps",topic,general,8,every single day|\bevery day\b|15 minutes|fifteen minutes|\bone minute\b|small steps?|little steps?|tiny steps?
 regret,mind,Regret and death,topic,general,3,\bregret\w*|deathbed|going to die|\bwe(?:'re| are) all going to die
 discomfort,mind,Discomfort and pain as power,topic,general,3,discomfort|uncomfortable|hard things|hard shit|pain is (?:your )?power|galvaniz\w*
 never-too-late,mind,Never too late,topic,general,2,too late|too old|how old you are|\bnot stuck\b
@@ -10,7 +10,7 @@ cold,mind,Cold exposure,parked,general,5,cold showers?|ice baths?|cold plunge|co
 work,mind,Work and business,parked,general,6,\bjobs?\b|\bbusiness\w*|\bcareer\b|\bboss\b
 semen-retention,sex-energy,Semen retention,topic,explicit,3,ejaculat\w*|semen|no ?fap|no fab|\bretention\b
 life-force,sex-energy,Sex energy as life force,topic,sexual-health,3,life force|transmut\w*|creative energy|napoleon hill|think and grow rich
-kegels,sex-energy,Kegels and reverse Kegels,topic,sexual-health,5,\bk(?:e|ee|ea)g(?:e|a)ls?\b
+kegels,sex-energy,Root muscle and Kegels,topic,sexual-health,5,\bk(?:e|ee|ea)g(?:e|a)ls?\b|root (?:muscle|squeeze|push|hold|lock)s?|pelvic floor|sex muscle
 edging,sex-energy,Edging and arousal control,topic,explicit,3,\bedging\b|arousal|ride the edge|\bedge session
 morning-wood,sex-energy,Morning wood,topic,sexual-health,1,morning wood|morning erection
 porn,sex-energy,Porn,parked,sexual-health,5,\bporn\w*

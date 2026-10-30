@@ -10,15 +10,17 @@ Updated 2026-10-30. Read this first. Update it in the commit of any run that cha
   - 19 episodes from 2019-2026, restored from commit `dd2aaa6`: 079 088 127 150 175 252 275 350 404b1 537 549 556 565 663 675 720 812 813 815. The pilots among them (127 275 537 663 813) had a review against the v2 checklist on 2026-10-30
   - 4 new on 2026-10-30: 289 303 721 731
 - Topics: the rules are written (`holistic-alpha/topic-instructions.md` v1, `holistic-alpha/topics.csv`, `tools/topic_episodes.py`). No topic note exists yet
+  - Keywords tuned on 2026-10-30. `kegels`, now named "Root muscle and Kegels", also finds root muscle, pelvic floor and sex muscle, the words of later years: 64 to 108 episodes. `every-day` lost `today`, which matched almost every intro: 114 to 50 episodes
+  - A first test of the notes with v1 on 24 Recaps (001-024) merged nothing: each line copied a whole Recap bullet with several claims, so no two episodes shared a line. It cost 45.8 cu, and the cost per Recap grew with the notes (1.5, 1.9, 2.3 cu). Its notes, logs and costs are on the branch `claude/topic-notes-v1-test`, kept to compare and never merged
 - Views and pieces: none yet
 
 ## Next
 
 Each step runs only when Esteban asks for it, with its cost in front of him first.
 
-1. Test notes from 57 Recaps, marked partial, to try every topic rule: 60-110 cu, a guess. Running. The 57 are 001-034 plus 23 episodes from 2019-2026 picked to test each rule: guests, listener questions, a compilation, a guided practice, a promo, explicit content and changes of view
-2. First complete topic, cold exposure: keywords match 29 episodes and 25 lack a Recap. Recaps plus notes: 60-85 cu
-3. Second topic, Kegels: keywords match 64 episodes and 10 have a Recap. It tests changes of view, since 721 asks "Are Kegels Critical or Counterproductive?"
+1. Topic notes in two steps, a pilot. Step A, per Recap: split each bullet into claims, one row per claim in a registry, without reading notes. Step B, per topic: build the note from all its claims at once and rebuild it from the registry. A script checks that every claim is in the note. The pilot: A on 2 blocks to measure the cost per Recap, then A on the rest of the 57, then B on kegels, resistance and testosterone. Estimate: 50-80 cu, 10-15 of them for the first 2 blocks. Waiting for Esteban's go
+2. First complete topic, cold exposure: keywords match 29 episodes and 25 lack a Recap. Recaps plus notes: 60-85 cu, to estimate again after the pilot
+3. Second topic, root muscle and Kegels: keywords match 108 episodes and 11 have a Recap. It tests changes of view, since 721 asks "Are Kegels Critical or Counterproductive?"
 
 The cost unit (cu) is defined in `tools/usage_report.py`. One 5-hour window holds about 50 cu. A Recap costs about 2.5 cu with the spot-check: the saved plans give 226 cu for 92 episodes.
 
