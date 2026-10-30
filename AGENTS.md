@@ -2,6 +2,7 @@
 
 Distilled knowledge vaults. The first vault is the Holistic Alpha podcast (host Steven Mathis, 809 transcribed episodes, 2019-2026).
 Steven gave full permission to share, reproduce and monetize his material. Credit to him and to every source is added to the pieces at the end.
+**Where we are, what comes next and what was decided: `STATUS.md`.** Read it first.
 
 ## Layers
 
@@ -24,6 +25,7 @@ Steven gave full permission to share, reproduce and monetize his material. Credi
 - `holistic-alpha/INVENTARIO.csv` is the source inventory from the download script. Don't edit it by hand
 - Python scripts use the standard library only. Run them as `python3 -I tools/<script>.py` (Windows: `py -3 -I`)
 - One commit per run, only when the user says yes
+- A run that changes what is done or what comes next updates `STATUS.md` in its commit
 
 ## Known facts
 
