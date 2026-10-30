@@ -18,7 +18,9 @@ Updated 2026-10-30. Read this first. Update it in the commit of any run that cha
 
 Each step runs only when Esteban asks for it, with its cost in front of him first.
 
-1. Topic notes in two steps, a pilot. Step A, per Recap: split each bullet into claims, one row per claim in a registry, without reading notes. Step B, per topic: build the note from all its claims at once and rebuild it from the registry. A script checks that every claim is in the note. The pilot: A on 2 blocks to measure the cost per Recap, then A on the rest of the 57, then B on kegels, resistance and testosterone. Estimate: 50-80 cu, 10-15 of them for the first 2 blocks. Waiting for Esteban's go
+1. Topic notes in two steps, a pilot on the branch `claude/topic-notes-two-steps`, never merged until Esteban approves. Rules: `holistic-alpha/topic-instructions.md` v2 draft there
+   - Stages 0 and 1 done on 2026-10-30: step A split 14 Recaps (001-008, 537-675) into 604 claims, with Opus as the writer. Opus beat Sonnet in a blind review. About 46 cu in all, against 16-25 estimated. Report: `holistic-alpha/logs/runs/2026-10-30-pilot-stages-0-1.md`
+   - Next, waiting for Esteban's go: stage 2, step A on the other 43 Recaps, 50-55 cu. Then stage 3, step B on kegels, testosterone and semen-retention, 10-18 cu
 2. First complete topic, cold exposure: keywords match 29 episodes and 25 lack a Recap. Recaps plus notes: 60-85 cu, to estimate again after the pilot
 3. Second topic, root muscle and Kegels: keywords match 108 episodes and 11 have a Recap. It tests changes of view, since 721 asks "Are Kegels Critical or Counterproductive?"
 

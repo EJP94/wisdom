@@ -1,0 +1,30 @@
+{"episodes": [
+  {"id": "001", "ok": true, "findings": []},
+  {"id": "002", "ok": true, "findings": []},
+  {"id": "003", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 28, "claim": "003-19",
+     "recap": "Not \"hey honey, we should sit down once a week and talk\", not three workouts this week, not attention to your kids two days this week because stress lets you focus only on those two. Not three, two or five times a week. Make it every day, non-negotiable, and you will see tremendous change and impact",
+     "found": "Not \"hey honey, we should sit down once a week and talk\", not three workouts this week, not attention to your kids two days this week because stress lets you focus only on those two. Not three, two or five times a week. Make it every day, non-negotiable, and you will see tremendous change and impact",
+     "fix": "The claim opens with \"Not ...\" and has no subject: out of its bullet it does not say what is not enough. Name it, keeping every word: \"To change something, not \\\"hey honey, we should sit down once a week and talk\\\", not three workouts this week, not attention to your kids two days this week because stress lets you focus only on those two. Not three, two or five times a week. Make it every day, non-negotiable, and you will see tremendous change and impact\""}
+  ]},
+  {"id": "004", "ok": false, "findings": [
+    {"severity": "S3", "kind": "wrong topic", "line": 35, "claim": "004-30",
+     "recap": "If you've never taken one, it's hard to see cold as anything but discomfort. It is a little, but like working out, it's temporary discomfort that leads to much more powerful things",
+     "found": "topic cold, also [discomfort]: \"Cold is a little discomfort, but like working out, it's temporary discomfort that leads to much more powerful things\"",
+     "fix": "The idea carried is that temporary discomfort leads to more powerful things, which is the subject of the discomfort topic (cold is the example, and cold is parked). Set topic discomfort, also [cold]. 004-29 can stay on cold"}
+  ]},
+  {"id": "005", "ok": true, "findings": []},
+  {"id": "006", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 21, "claim": "006-09",
+     "recap": "In this view, building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid:",
+     "found": "In this view, building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid: porn and jerking off to the point of ejaculation",
+     "fix": "\"In this view\" points to the previous bullet, outside the claim. Drop it: \"Building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid: porn and jerking off to the point of ejaculation\""}
+  ]},
+  {"id": "007", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 25, "claim": "007-10",
+     "recap": "Not surprising: too much pulling makes push muscles weak comparatively",
+     "found": "Not surprising: too much pulling makes push muscles weak comparatively",
+     "fix": "\"Not surprising\" refers to the climbing story in the same bullet, which the claim does not carry. Drop the opener: \"Too much pulling makes push muscles weak comparatively\""}
+  ]},
+  {"id": "008", "ok": true, "findings": []}
+]}

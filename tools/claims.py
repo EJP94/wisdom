@@ -29,13 +29,13 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = "0.1 (2026-10-30)"
+VERSION = "0.2 (2026-10-30)"
 ROOT = Path(__file__).resolve().parent.parent
 HA = ROOT / "holistic-alpha"
 REGISTRY = HA / "claims"
 AREAS = {"mind", "sex-energy", "hormones", "training", "fuel", "relationships"}
 LEVELS = ["general", "sexual-health", "explicit"]
-MARKER = re.compile(r"^(?:Story|Host story|Guest(?: story)?(?: \([^)]+\))?|Guest advice|Guest question"
+MARKER = re.compile(r"^(?:Story|Host story|Guest(?: story| advice| question)?(?: \([^)]+\))?"
                     r"|Listener question|Listener story|Quote|Guided practice)?$")
 FIELDS = ["id", "ep", "date", "line", "topic", "also", "section", "marker", "level", "claim", "name", "area"]
 WRITER_FIELDS = {"line", "topic", "also", "section", "marker", "level", "claim"}
@@ -152,8 +152,6 @@ def check_file(ep, folder, episodes, topics, proposals):
         t = r["topic"]
         if t.startswith("+"):
             slug = t[1:]
-            if slug in topics:
-                errors.append(f"{where}: {t} is already a topic, use {slug}")
             if not r.get("name") or r.get("area") not in AREAS | {"?"}:
                 errors.append(f"{where}: {t} needs a name and an area")
             else:
@@ -245,6 +243,8 @@ def cmd_stats(args, episodes, topics):
         out.append(f"| **total** | {tot_b} | {tot_c} | {tot_c / tot_b:.1f} | | |")
     eps_by, claims_by, level_by, ptr_by = defaultdict(set), defaultdict(int), defaultdict(int), defaultdict(int)
     for r in rows:
+        if r["topic"].lstrip("+") in topics:
+            r["topic"] = r["topic"].lstrip("+")
         eps_by[r["topic"]].add(r["ep"])
         claims_by[r["topic"]] += 1
         level_by[r["topic"]] = max(level_by[r["topic"]], LEVELS.index(r["level"]))

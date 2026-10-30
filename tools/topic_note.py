@@ -30,7 +30,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-VERSION = "0.1 (2026-10-30)"
+VERSION = "0.2 (2026-10-30)"
 ROOT = Path(__file__).resolve().parent.parent
 HA = ROOT / "holistic-alpha"
 REGISTRY = HA / "claims"
@@ -42,12 +42,15 @@ OTHER = "In other notes"
 
 
 def load_claims(folder):
+    """A born proposal keeps its +slug in the registry: read it as the slug."""
     claims = {}
     for p in sorted(Path(folder).glob("*.jsonl")):
         with open(p, encoding="utf-8") as f:
             for line in f:
                 if line.strip():
                     r = json.loads(line)
+                    r["topic"] = r["topic"].lstrip("+")
+                    r["also"] = [a.lstrip("+") for a in r["also"]]
                     claims[r["id"]] = r
     return claims
 
@@ -96,15 +99,24 @@ def note_path(topic):
     return HA / "topics" / topic["area"] / f"{topic['slug']}.md"
 
 
-def render_line(depth, later, ids, claims, arrow=""):
+def render_line(depth, later, ids, claims):
     first = claims[ids[0]]
     text = ""
     if later:
         text += f"**Later view ({first['date'][:4]}):** "
     if first["marker"]:
         text += f"**{first['marker']}:** "
-    text += first["claim"] + arrow
+    text += first["claim"]
     return f"{'  ' * depth}- {text} ({', '.join(episode_ids(ids, claims))}) <!-- {' '.join(ids)} -->"
+
+
+def pointer_lines(slug, claims):
+    """One line per home topic: the link and the ids, never text."""
+    homes = {}
+    for i in by_date([i for i, c in claims.items() if slug in c["also"]], claims):
+        homes.setdefault(claims[i]["topic"], []).append(i)
+    return [f"- See [[{home}]] ({', '.join(episode_ids(ids, claims))}) <!-- {' '.join(ids)} -->"
+            for home, ids in sorted(homes.items())]
 
 
 def cmd_claims(args):
@@ -140,12 +152,9 @@ def cmd_render(args):
             out += ["", f"## {it[1]}", ""]
         else:
             out.append(render_line(it[1], it[2], it[3], claims))
-    ptr = by_date([i for i, c in claims.items() if args.slug in c["also"]], claims)
+    ptr = pointer_lines(args.slug, claims)
     if ptr:
-        out += ["", f"## {OTHER}", ""]
-        for i in ptr:
-            home = claims[i]["topic"].lstrip("+")
-            out.append(render_line(0, False, [i], claims, arrow=f" → [[{home}]]"))
+        out += ["", f"## {OTHER}", ""] + ptr
     note_path(topic).write_text("\n".join(out) + "\n", encoding="utf-8")
     print(f"{note_path(topic).relative_to(ROOT)}: {len(used)} claims, {len(eps)} episodes")
 
@@ -174,6 +183,15 @@ def cmd_verify(args):
         if bad:
             errors.append(f"line {n}: unknown ids {bad}")
             continue
+        if section == OTHER:
+            pm = re.match(r"^See \[\[([^\]]+)\]\]$", text)
+            if not pm or any(claims[i]["topic"] != pm.group(1) for i in ids):
+                errors.append(f"line {n}: a pointer has only the link to the home topic of its claims")
+            if any(args.slug not in claims[i]["also"] for i in ids):
+                errors.append(f"line {n}: pointer to a claim that does not name {args.slug} in also")
+            if shown != episode_ids(ids, claims):
+                errors.append(f"line {n}: episodes shown {shown}, claims say {episode_ids(ids, claims)}")
+            continue
         is_later = False
         lm = re.match(r"^\*\*Later view \((\d{4})\):\*\* (.*)$", text)
         if lm:
@@ -188,19 +206,14 @@ def cmd_verify(args):
             if not text.startswith(f"**{mk}:** "):
                 errors.append(f"line {n}: marker {mk!r} missing")
             text = text[len(f"**{mk}:** "):]
-        if section == OTHER:
-            text = re.sub(r" → \[\[[^\]]+\]\]$", "", text)
-            if any(args.slug not in claims[i]["also"] for i in ids):
-                errors.append(f"line {n}: pointer to a claim that does not name {args.slug} in also")
-        else:
-            for i in ids:
-                if claims[i]["topic"] != args.slug:
-                    errors.append(f"line {n}: {i} belongs to {claims[i]['topic']}, not {args.slug}")
-                seen[i] += 1
-            n_lines += 1
-            merged += len({claims[i]["ep"] for i in ids}) > 1
-            nested += depth > 0
-            later += is_later
+        for i in ids:
+            if claims[i]["topic"] != args.slug:
+                errors.append(f"line {n}: {i} belongs to {claims[i]['topic']}, not {args.slug}")
+            seen[i] += 1
+        n_lines += 1
+        merged += len({claims[i]["ep"] for i in ids}) > 1
+        nested += depth > 0
+        later += is_later
         if not any(text == claims[i]["claim"] for i in ids):
             errors.append(f"line {n}: text is not word for word one of its claims: {text[:70]}")
         if shown != episode_ids(ids, claims):

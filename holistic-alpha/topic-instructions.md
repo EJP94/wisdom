@@ -44,11 +44,14 @@ Every bullet line of the Recap, nested ones included: a line that starts with `-
 
 Every bullet line gives at least one claim. Nothing is dropped: a bullet about the podcast itself (why it exists, what a future episode covers, a plug) gives a claim with topic `none`.
 
+A bullet that only introduces its nested bullets, a label such as "How:" or "Benefits:", gives one claim with its own words and topic `none`. Its nested bullets carry the subject in their own claims. Don't summarize them in the label's claim.
+
 ### 3.2 What a claim is
 
 - **One statement**: one fact, view, instruction, reason, number with its subject, or example. A bullet often holds two or three
 - **It reads alone.** Step B never adds words, so a claim carries the few words it needs from its bullet, its parent bullet or the bullet before: the subject ("For testosterone, …"), what "it" is. No "this", "it" or "that" pointing outside the claim
 - **The Recap's words**: every hedge, number, specific, cited source and quote, exactly. Never stronger, never wider. A claim keeps its reason when the reason makes no sense alone
+- **What covers the whole bullet goes into every claim.** A hedge, number or source that opens a bullet, or its parent bullet, can cover several statements. Each claim split from them carries it. In 014, "a strong belief" covers everything said about the prostate: split into three claims, all three carry it
 - **These stay whole, as one claim:** a story (**Story:**, **Host story:**, **Guest story:**, **Listener story:**) told in one bullet, a **Quote:**, a **Listener question:**, a **Guest question:**. A story told over several bullet lines gives one claim per line, with the same topic and marker. A **Guided practice:** gives one claim per step
 - **English**, like the Recap
 
@@ -60,10 +63,10 @@ Step A writes one JSON object per line, in Recap order, with these fields:
 |---|---|
 | `line` | The number of the Recap line the claim comes from, counted from 1 in the file, frontmatter included |
 | `topic` | The slug of the topic the claim is mainly about, from `topics.csv` (`topic` or `parked`). `+<slug>` for a proposed subject (3.4). `none` for the podcast itself |
-| `also` | Other slugs the claim is also about, often `[]`. The script lists the claim in those notes as a pointer |
+| `also` | Secondary topics: other slugs the claim is also about, often `[]`. The script writes a pointer to the claim in those notes |
 | `section` | A suggested section for the note, as a short question or label: "How to practice", "Why it matters", "What goes wrong" |
-| `marker` | The Recap marker that governs the claim's sentence, without bold and colon: `Story`, `Host story`, `Guest`, `Guest (Rick)`, `Guest story`, `Guest advice`, `Guest question`, `Listener question`, `Listener story`, `Quote`, `Guided practice`. Empty for the host's view. A marker can open a sentence inside a bullet: each claim takes the one that governs its own sentence |
-| `level` | `general`, `sexual-health` or `explicit` (section 9) |
+| `marker` | The Recap marker that governs the claim's sentence, without bold and colon: `Story`, `Host story`, `Guest`, `Guest story`, `Guest advice`, `Guest question` (each Guest marker can carry a name: `Guest (Rick)`, `Guest advice (Rick)`), `Listener question`, `Listener story`, `Quote`, `Guided practice`. Empty for the host's view. A marker can open a sentence inside a bullet: each claim takes the one that governs its own sentence |
+| `level` | `general`, `sexual-health` or `explicit` (section 7) |
 | `claim` | The text |
 | `name`, `area` | Only on rows with a `+<slug>` topic: a short English name and one of the six areas |
 
@@ -79,7 +82,7 @@ Then `python3 -I tools/claims.py fill <id>` adds `id` (`<episode>-<n>`, such as 
 2. If none fits, propose one: topic `+<slug>`, with `name` (short, English) and `area` (one of the six). Step A never edits `topics.csv`
 3. Before writing, read `claims/_proposed.csv`. If the subject is already proposed, use that slug, name and area. This is why blocks of step A run one after another
 4. With fewer than 3 episodes, a proposed subject stays parked in the registry. It has no file of its own
-5. When the script counts 3 episodes, the run report lists it, and it enters `topics.csv` as a `topic` in that run's commit, with keywords guessed from its claims
+5. When the script counts 3 episodes, the run report lists it, and it enters `topics.csv` as a `topic` in that run's commit, with keywords guessed from its claims. Its rows keep `+<slug>`: the scripts read a born proposal as its slug
 6. A subject that fits no area takes area `?`. The run report asks Esteban
 
 ### 3.5 The registry is never rewritten
@@ -92,7 +95,7 @@ Once a Recap's claims pass review, its file is final. Step B only reads it. One 
 
 `python3 -I tools/topic_note.py claims <slug>` prints every claim of the topic, oldest first: id, date, marker, level, suggested section, text. Step B reads only that, never the Recaps or other notes.
 
-Claims of other topics that name this one in `also` are not B's work. The script lists them at the end of the note as pointers.
+Claims of other topics that name this one in `also` are not B's work. The script writes their pointers at the end of the note.
 
 ### 4.2 The layout
 
@@ -137,7 +140,7 @@ When a claim contradicts or changes an older one, nest it under the older line w
 - Frontmatter: `topic`, `title`, `area`, `claims`, `episodes`, `explicitness` (the highest `level` of its claims), `instructions: v2-draft`, `section: topic`
 - The In short, the italic line, then the sections
 - Each line: the marker in bold when the first claim has one, the first claim's text, the episode ids oldest first, and the claim ids in a comment: `- **Guest:** text (537, 565) <!-- 537-12 565-04 -->`
-- `## In other notes` at the end: each claim whose `also` names this topic, with a link to its home note
+- `## In other notes` at the end: one pointer line per home topic, for the claims whose `also` names this topic. A pointer has the link and the ids, never text: `- See [[edging]] (537, 565) <!-- 537-12 565-03 -->`. A complete note so loses no claim that lives in another topic
 
 Then `python3 -I tools/topic_note.py verify <slug>` checks the rendered note against the registry:
 - The text of each line, without its marker, ids and comment, equals the text of one of the line's claims. The In short and the section titles are the only exceptions
@@ -145,6 +148,7 @@ Then `python3 -I tools/topic_note.py verify <slug>` checks the rendered note aga
 - Every id on a line exists and belongs to the topic
 - The episode ids shown are those of the line's claims
 - All claims on a line share one marker
+- Each pointer links the home topic of its claims, and its claims name this topic in `also`
 - It counts lines, merges (lines with claims from 2 or more episodes), nested lines and later views
 
 ## 5. Order: one topic at a time
@@ -198,10 +202,10 @@ Opus writes, Sonnet reviews, Opus fixes, all at xhigh effort, as in the Recap pi
 
 Severity:
 - **S1**: a statement of the Recap in no claim. A claim changed or reversed. The wrong speaker (marker). A claim the Recap doesn't hold
-- **S2**: a hedge, number, specific or source lost. A claim stronger or wider than the Recap. A claim that doesn't read alone
+- **S2**: a hedge, number, specific or source lost, including one lost in a split: a hedge, number or source that covers several statements of a bullet and is missing from one of their claims. A claim stronger or wider than the Recap. A claim that doesn't read alone
 - **S3**: two claims in one row. The wrong topic or a missed `also`. The wrong level. A proposal that duplicates a topic or another proposal. Format
 
-`kind` is one of: idea lost, claim changed, speaker wrong, line invented, hedge lost, number lost, source lost, claim strengthened, not standalone, not split, wrong topic, wrong level, duplicate proposal, format.
+`kind` is one of: idea lost, claim changed, speaker wrong, line invented, hedge lost, number lost, source lost, lost in split, claim strengthened, not standalone, not split, wrong topic, wrong level, duplicate proposal, format.
 
 **Fixer.** Same rules as section 15 of the Recap instructions. Edits the claims files, logs every finding with its verdict in `holistic-alpha/logs/claims/findings/<run>.jsonl`, runs `fill` and `check` again.
 

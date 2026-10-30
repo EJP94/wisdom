@@ -1,0 +1,64 @@
+{"episodes": [
+  {"id": "001", "ok": false, "findings": [
+    {"severity": "S3", "kind": "format", "line": 28, "claim": "001-14",
+     "recap": "Beating resistance seems to come down to a few things:",
+     "found": "Beating resistance seems to come down to a few things: physical well-being, hormones, fasting, sexual energy and the mind (topic resistance)",
+     "fix": "The bullet only introduces its nested bullets (3.1): one claim with its own words and topic none: \"Beating resistance seems to come down to a few things\". Don't summarize the five nested bullets in it"}
+  ]},
+  {"id": "002", "ok": false, "findings": [
+    {"severity": "S3", "kind": "format", "line": 21, "claim": "002-05",
+     "recap": "Lifestyle:",
+     "found": "Lifestyle is one of the four areas of the testosterone 80/20, with three keys: sleep, low stress, removing toxins like fragrance (topic testosterone)",
+     "fix": "Label bullet (3.1): one claim with its own words and topic none: \"Lifestyle, one of the four areas of the testosterone 80/20\". Drop the list of keys: the nested bullets carry them"},
+    {"severity": "S3", "kind": "format", "line": 33, "claim": "002-41",
+     "recap": "Fitness:",
+     "found": "Fitness is one of the four areas of the testosterone 80/20, with three keys: daily activity, intensity and compound resistance work (topic testosterone)",
+     "fix": "Label bullet (3.1): one claim with its own words and topic none: \"Fitness, one of the four areas of the testosterone 80/20\". Drop the list of keys: the nested bullets carry them"},
+    {"severity": "S3", "kind": "format", "line": 25, "claim": "002-20",
+     "recap": "but it seems to boil down to three keys:",
+     "found": "For testosterone, nutrition seems to boil down to three keys: good fats, no toxic fats, no sugar",
+     "fix": "The tail of the bullet only introduces its nested bullets (3.1). Keep the hedge, drop the summary of the nested bullets: \"For testosterone, nutrition seems to boil down to three keys\""},
+    {"severity": "S3", "kind": "wrong topic", "line": 22, "claim": "002-06",
+     "recap": "Sleep is absolutely crucial.",
+     "found": "topic testosterone, also [sleep]",
+     "fix": "The claim is mainly about sleep, as in 002-11 (stress) and 002-14 (toxins), which take their own subject as topic. Topic sleep, also [testosterone]"}
+  ]},
+  {"id": "003", "ok": false, "findings": [
+    {"severity": "S3", "kind": "not split", "line": 24, "claim": "003-10",
+     "recap": "The podcast is daily for a couple of reasons: to help you feel better and more powerful every day, not occasionally, since every day becomes who you are and the life you experience; and personally, to dramatically impact your life and as many other lives as possible, what is done every single day has to shift",
+     "found": "one claim holding both reasons",
+     "fix": "Two reasons, two statements. Split in two claims, each carrying \"The podcast is daily\": (1) \"The podcast is daily to help you feel better and more powerful every day, not occasionally, since every day becomes who you are and the life you experience\"; (2) \"The podcast is daily because, personally, to dramatically impact your life and as many other lives as possible, what is done every single day has to shift\". Topic none, also [every-day] on both"}
+  ]},
+  {"id": "004", "ok": false, "findings": [
+    {"severity": "S3", "kind": "format", "line": 23, "claim": "004-11",
+     "recap": "How:",
+     "found": "How to take cold showers: the earlier in the day, the better; if you have never taken one, start by finishing on cold; otherwise straight cold, gradually building how long you stay in (topic cold)",
+     "fix": "Label bullet (3.1): one claim with its own words and topic none: \"How to take cold showers\". Don't summarize the nested bullets (the summary also drops \"then move to just cold\")"},
+    {"severity": "S3", "kind": "format", "line": 27, "claim": "004-17",
+     "recap": "Benefits:",
+     "found": "The benefits of cold showers: lower stress, alertness, immune response and, the biggest, increased willpower (topic cold)",
+     "fix": "Label bullet (3.1): one claim with its own words and topic none: \"The benefits of cold showers\". Don't summarize the nested bullets"}
+  ]},
+  {"id": "005", "ok": false, "findings": [
+    {"severity": "S3", "kind": "not split", "line": 30, "claim": "005-21",
+     "recap": "It also seems an awesome way to set a new sort of record for yourself, and it adjusts your perspective",
+     "found": "Total daily volume also seems an awesome way to set a new sort of record for yourself, and it adjusts your perspective",
+     "fix": "Two statements. Split: (1) \"Total daily volume seems an awesome way to set a new sort of record for yourself\"; (2) \"Total daily volume adjusts your perspective\". The hedge \"seems\" stays on (1); keep it on (2) only if the Recap's \"also seems\" is read as covering both"}
+  ]},
+  {"id": "006", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 21, "claim": "006-09",
+     "recap": "In this view, building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid:",
+     "found": "In this view, building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid: porn and jerking off to the point of ejaculation",
+     "fix": "\"In this view\" points outside the claim. Remove it: \"Building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid\""},
+    {"severity": "S3", "kind": "format", "line": 21, "claim": "006-09",
+     "recap": "building sex power the Holistic Alpha way has a few basic, core fundamentals, starting with a couple of things to avoid:",
+     "found": "...starting with a couple of things to avoid: porn and jerking off to the point of ejaculation (topic life-force)",
+     "fix": "The bullet only introduces its nested bullets (3.1): its own words, topic none. Don't summarize the two nested bullets (porn, jerking off to ejaculation) in it: 006-10 to 006-15 carry them"},
+    {"severity": "S3", "kind": "format", "line": 37, "claim": "006-44",
+     "recap": "What to practice to move towards that and gain control:",
+     "found": "What to practice to move towards separating orgasm and ejaculation and gain control: Kegels and reverse Kegels, deep breathing, meditation and daily edging alone without ejaculating (topic semen-retention)",
+     "fix": "Label bullet (3.1): one claim with its own words and topic none: \"What to practice to move towards separating orgasm and ejaculation and gain control\". Don't summarize the nested bullets: 006-45 to 006-52 carry them"}
+  ]},
+  {"id": "007", "ok": true, "findings": []},
+  {"id": "008", "ok": true, "findings": []}
+]}
