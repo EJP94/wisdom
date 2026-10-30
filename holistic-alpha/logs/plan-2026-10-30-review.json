@@ -1,0 +1,68 @@
+{
+ "planner": "plan_blocks.py 0.2 (2026-10-28)",
+ "date": "2026-10-30",
+ "repo": "/home/user/wisdom",
+ "python": "python3",
+ "mode": "review",
+ "overwrite": false,
+ "outDir": null,
+ "header": "id,episode,title,date,date_estimated,type,guest,series,part,words,minutes,replays,stem,recap,status,flags",
+ "chains": [
+  [
+   {
+    "label": "127-663",
+    "ids": [
+     "127",
+     "275",
+     "537",
+     "663"
+    ],
+    "spot": [
+     "537"
+    ],
+    "types": [
+     "interview",
+     "solo"
+    ],
+    "words": 28093,
+    "estimate": 6.8,
+    "rows": [
+     "127,127,Your Testosterone Foundation,2020-08-17,,solo,,,,5413,34,,127 - Your Testosterone Foundation,127 - Your Testosterone Foundation.md,available,",
+     "275,275,\"The Male Sex Muscle: Understanding It, Training It, and Using It\",2021-11-07,,solo,,,,9586,50,,\"275 - The Male Sex Muscle - Understanding It, Training It, and Using It\",\"275 - The Male Sex Muscle - Understanding It, Training It, and Using It.md\",available,",
+     "537,537,Community Convos #4 - Dustin Desheles,2023-11-29,,interview,Dustin Desheles,Community Convos,4,10608,64,,537 - Community Convos #4 - Dustin Desheles,537 - Community Convos #4 - Dustin Desheles.md,available,",
+     "663,663,The Pause-Intention Bridge: Quitting Porn + Building Discipline & More,2024-08-04,,solo,,,,2486,14,,663 - The Pause-Intention Bridge - Quitting Porn + Building Discipline & More,663 - The Pause-Intention Bridge - Quitting Porn + Building Discipline & More.md,available,"
+    ]
+   },
+   {
+    "label": "813",
+    "ids": [
+     "813"
+    ],
+    "spot": [
+     "813"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 3795,
+    "estimate": 4.4,
+    "rows": [
+     "813,813,Simplifying Sexual Stamina: The 3 Dials That Control It,2026-07-02,,solo,,,,3795,25,,813 - Simplifying Sexual Stamina - The 3 Dials That Control It,813 - Simplifying Sexual Stamina - The 3 Dials That Control It.md,available,"
+    ]
+   }
+  ]
+ ],
+ "qa": [
+  "537"
+ ],
+ "estimate": {
+  "episodes": 5,
+  "blocks": 2,
+  "words": 31888,
+  "spot_episodes": 2,
+  "cu": 11.2,
+  "windows": 0.2,
+  "left_for_later": 0
+ },
+ "spotCheck": false
+}

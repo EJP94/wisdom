@@ -5,7 +5,9 @@ Updated 2026-10-30. Read this first. Update it in the commit of any run that cha
 ## Where we are: Holistic Alpha
 
 - Transcripts: 809 of 809
-- Recaps: 34 of 809, episodes 001-034, all from 2019. Recap instructions v2
+- Recaps: 53 of 809. Recap instructions v2
+  - 001-034, all from 2019
+  - 19 episodes from 2019-2026, restored from commit `dd2aaa6`: 079 088 127 150 175 252 275 350 404b1 537 549 556 565 663 675 720 812 813 815. The pilots among them (127 275 537 663 813) had a review against the v2 checklist on 2026-10-30
 - Topics: the rules are written (`holistic-alpha/topic-instructions.md` v1, `holistic-alpha/topics.csv`, `tools/topic_episodes.py`). No topic note exists yet
 - Views and pieces: none yet
 
@@ -13,11 +15,11 @@ Updated 2026-10-30. Read this first. Update it in the commit of any run that cha
 
 Each step runs only when Esteban asks for it, with its cost in front of him first.
 
-1. Test notes from the 34 Recaps, marked partial, to try the topic rules: 20-35 cu, a guess
-2. First complete topic, cold exposure: keywords match 29 episodes and 28 lack a Recap. Recaps plus notes: 60-85 cu
-3. Second topic, Kegels: keywords match 64 episodes and 6 have a Recap. It tests changes of view, since 721 asks "Are Kegels Critical or Counterproductive?"
+1. Test notes from 57 Recaps, marked partial, to try every topic rule: 60-110 cu, a guess. Running. The 57 are 001-034 plus 23 episodes from 2019-2026 picked to test each rule: guests, listener questions, a compilation, a guided practice, a promo, explicit content and changes of view
+2. First complete topic, cold exposure: keywords match 29 episodes and 26 lack a Recap. Recaps plus notes: 60-85 cu
+3. Second topic, Kegels: keywords match 64 episodes and 9 have a Recap. It tests changes of view, since 721 asks "Are Kegels Critical or Counterproductive?"
 
-The cost unit (cu) is defined in `tools/usage_report.py`. One 5-hour window holds about 50 cu. A Recap costs about 1.9 cu.
+The cost unit (cu) is defined in `tools/usage_report.py`. One 5-hour window holds about 50 cu. A Recap costs about 2.5 cu with the spot-check: the saved plans give 226 cu for 92 episodes.
 
 ## Decisions
 
