@@ -87,7 +87,10 @@ Then `python3 -I tools/claims.py fill <id>` adds `id` (`<episode>-<n>`, such as 
 
 ### 3.5 The registry is never rewritten
 
-Once a Recap's claims pass review, its file is final. Step B only reads it. One exception: if the Recap is corrected later, step A runs again for that Recap alone and its file is replaced. Git keeps the old one.
+Once a Recap's claims pass review, its file is final. Step B only reads it. Git keeps every old version. Two exceptions:
+
+- If the Recap is corrected later, step A runs again for that Recap alone and its file is replaced
+- If Esteban merges two topics, `python3 -I tools/claims.py merge <from> <into>` moves the claims of one to the other. It changes only the slug fields (`topic`, `also`, `name`, `area`), never a claim's text or id. The note of `<into>` is then rendered again, and step B places the incoming claims that `verify` lists as on no line
 
 ## 4. Step B: a topic becomes a note
 

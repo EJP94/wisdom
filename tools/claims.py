@@ -8,6 +8,7 @@ Python 3 standard library only. Run it isolated, from the repo root:
     python3 -I tools/claims.py proposed [--dir DIR]
     python3 -I tools/claims.py stats [--dir DIR] [--out FILE]
     python3 -I tools/claims.py compare DIR_A DIR_B <id> [<id> ...] [--out FILE]
+    python3 -I tools/claims.py merge <from> <into> [--dir DIR]
 
 The registry is holistic-alpha/claims/<id>.jsonl, one row per claim, in Recap order. <id> is the
 episode id of episodes.csv. --dir points at another folder with the same layout (the pilot keeps a
@@ -19,6 +20,8 @@ second writer's claims under logs/ to compare).
 - proposed: writes _proposed.csv in the folder: subjects proposed with a +slug topic, their episodes
 - stats: claims per Recap and per topic, births, explicitness to raise. Markdown
 - compare: two writers' claims of the same Recaps, bullet by bullet. Markdown
+- merge: moves every claim of topic <from> to topic <into>, in topic and in also. Changes only the
+  slug fields (topic, also, name, area), never a claim's text or id. Then writes _proposed.csv again
 """
 
 import argparse
@@ -29,7 +32,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = "0.2 (2026-10-30)"
+VERSION = "0.3 (2026-10-30)"
 ROOT = Path(__file__).resolve().parent.parent
 HA = ROOT / "holistic-alpha"
 REGISTRY = HA / "claims"
@@ -225,6 +228,47 @@ def cmd_proposed(args, topics):
     print(f"{out}: {len(table)} proposed subjects")
 
 
+def cmd_merge(args, topics):
+    """Esteban decides a merge. The note of <into> is then rendered again and step B places the
+    incoming claims, which verify lists as on no line."""
+    old, new = args.old.lstrip("+"), args.new.lstrip("+")
+    rows = all_rows(args.dir)
+    if old == new or not any(r["topic"].lstrip("+") == old for r in rows):
+        sys.exit(f"{old}: no claim has this topic")
+    if new in topics:
+        target, name, area = new, "", ""
+    else:
+        target = "+" + new
+        known = [r for r in rows if r["topic"] == target]
+        if not known:
+            sys.exit(f"{new}: not in topics.csv and not proposed")
+        name, area = known[0]["name"], known[0]["area"]
+    moved = pointers = 0
+    for path in registry_files(args.dir):
+        rows, changed = read_rows(path), False
+        for r in rows:
+            if r["topic"].lstrip("+") == old:
+                r["topic"] = target
+                r.pop("name", None), r.pop("area", None)
+                if name:
+                    r["name"], r["area"] = name, area
+                moved += 1
+                changed = True
+            also = []
+            for a in r["also"]:
+                if a.lstrip("+") == old:
+                    a = target
+                    pointers += 1
+                    changed = True
+                if a.lstrip("+") != r["topic"].lstrip("+") and a not in also:
+                    also.append(a)
+            r["also"] = also
+        if changed:
+            write_rows(path, rows)
+    print(f"{old} -> {target}: {moved} claims moved, {pointers} pointers moved")
+    cmd_proposed(args, topics)
+
+
 def cmd_stats(args, episodes, topics):
     files = registry_files(args.dir)
     rows = all_rows(args.dir)
@@ -311,6 +355,10 @@ def main():
     p.add_argument("dir_b")
     p.add_argument("ids", nargs="+")
     p.add_argument("--out")
+    p = sub.add_parser("merge")
+    p.add_argument("old", metavar="from")
+    p.add_argument("new", metavar="into")
+    p.add_argument("--dir", default=str(REGISTRY))
     args = ap.parse_args()
     episodes, topics = load_episodes(), load_topics()
     if args.cmd == "fill":
@@ -321,6 +369,8 @@ def main():
         cmd_proposed(args, topics)
     elif args.cmd == "stats":
         cmd_stats(args, episodes, topics)
+    elif args.cmd == "merge":
+        cmd_merge(args, topics)
     else:
         cmd_compare(args, episodes)
 
