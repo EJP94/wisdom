@@ -1,0 +1,49 @@
+{
+ "planner": "plan_blocks.py 0.2 (2026-10-28)",
+ "date": "2026-10-30",
+ "repo": "/home/user/wisdom",
+ "python": "python3",
+ "mode": "write",
+ "overwrite": false,
+ "outDir": null,
+ "header": "id,episode,title,date,date_estimated,type,guest,series,part,words,minutes,replays,stem,recap,status,flags",
+ "chains": [
+  [
+   {
+    "label": "289-731",
+    "ids": [
+     "289",
+     "303",
+     "721",
+     "731"
+    ],
+    "spot": [
+     "303"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 14844,
+    "estimate": 11.6,
+    "rows": [
+     "289,289,\"Starting Conversations, Cold Exposure, and Releasing Emotional Triggers\",2021-12-11,,solo,,,,3659,22,,\"289 - Starting Conversations, Cold Exposure, and Releasing Emotional Triggers\",\"289 - Starting Conversations, Cold Exposure, and Releasing Emotional Triggers.md\",available,",
+     "303,303,\"Glycine, and Constructive Conflict in Relationships\",2022-01-25,,solo,,,,6118,40,,\"303 - Glycine, and Constructive Conflict in Relationships\",\"303 - Glycine, and Constructive Conflict in Relationships.md\",available,",
+     "721,721,Are Kegels Critical or Counterproductive?,2024-12-10,,solo,,,,1598,9,,721 - Are Kegels Critical or Counterproductive,721 - Are Kegels Critical or Counterproductive.md,available,",
+     "731,731,Ejaculation Frequency in Conscious Semen Retention + Why NoFap Sucks,2025-01-05,,solo,,,,3469,20,,731 - Ejaculation Frequency in Conscious Semen Retention + Why NoFap Sucks,731 - Ejaculation Frequency in Conscious Semen Retention + Why NoFap Sucks.md,available,"
+    ]
+   }
+  ]
+ ],
+ "qa": [
+  "721"
+ ],
+ "estimate": {
+  "episodes": 4,
+  "blocks": 1,
+  "words": 14844,
+  "spot_episodes": 1,
+  "cu": 11.6,
+  "windows": 0.2,
+  "left_for_later": 0
+ }
+}
