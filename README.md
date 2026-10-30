@@ -6,12 +6,17 @@ La primera vault es el podcast Holistic Alpha de Steven Mathis.
 ## Capas
 
 1. **Transcripts** (`holistic-alpha/transcripts/`): los 809 episodios tal como salieron de Parakeet. No se editan
-2. **Recaps** (`holistic-alpha/recaps/`): un Recap por episodio. Es la fuente de todo lo demás. Desde el 2026-10-29 está vacía: se procesa todo desde cero
-3. Vistas sacadas de los Recaps: notas por tema, manual por problema, contenido. Todavía no existen
+2. **Recaps** (`holistic-alpha/recaps/`): un Recap por episodio. Es la fuente de todo lo demás
+3. **Temas** (`holistic-alpha/topics/`): una nota por tema, sacada solo de los Recaps, en 6 áreas. Cada idea es una línea con los episodios donde aparece. Todavía no existen
+4. **Vistas** sacadas de los temas: pensum, manual por problema, programa de transformación, grafo de ideas. Todavía no existen
+5. **Piezas**: lo que se publica. Esteban verifica los datos de cada pieza antes de publicarla
 
 ## Dónde está cada cosa
 
 - `holistic-alpha/recap-instructions.md`: las instrucciones de recap, la única regla de cómo se escribe un Recap
+- `holistic-alpha/topic-instructions.md`: las instrucciones de tema, la única regla de cómo se escribe una nota de tema
+- `holistic-alpha/topics.csv`: la lista cerrada de temas, con su área, explicitud y palabras clave
+- `holistic-alpha/topic-episodes.csv`: los episodios de cada tema. Lo genera `tools/topic_episodes.py`
 - `holistic-alpha/episodes.csv`: un renglón por episodio. Lo genera `tools/build_episodes.py` desde `INVENTARIO.csv`
 - `holistic-alpha/logs/`: lo crean las corridas: planes, reportes del checker y hallazgos de revisión
 - `tools/`: scripts gratis (Python, sin dependencias) para armar la tabla, planear bloques, revisar formato, puntuar revisores y medir el costo
