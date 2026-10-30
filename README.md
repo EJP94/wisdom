@@ -13,6 +13,7 @@ La primera vault es el podcast Holistic Alpha de Steven Mathis.
 
 ## Dónde está cada cosa
 
+- `STATUS.md`: dónde estamos, qué sigue y qué se decidió. Empieza por aquí
 - `holistic-alpha/recap-instructions.md`: las instrucciones de recap, la única regla de cómo se escribe un Recap
 - `holistic-alpha/topic-instructions.md`: las instrucciones de tema, la única regla de cómo se escribe una nota de tema
 - `holistic-alpha/topics.csv`: la lista cerrada de temas, con su área, explicitud y palabras clave
