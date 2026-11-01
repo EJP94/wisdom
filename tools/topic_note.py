@@ -4,11 +4,12 @@
 
 Python 3 standard library only. Run it isolated, from the repo root:
 
-    python3 -I tools/topic_note.py claims <slug> [--dir DIR]
+    python3 -I tools/topic_note.py claims <slug> [--pointers] [--dir DIR]
     python3 -I tools/topic_note.py render <slug> [--dir DIR]
     python3 -I tools/topic_note.py verify <slug> [--dir DIR]
 
-- claims: every claim of the topic, oldest first, for the writer of step B
+- claims: every claim of the topic, oldest first, for the writer of step B. --pointers lists instead
+  the claims of other topics that name it in also, for the reviewer
 - render: reads holistic-alpha/topics/<area>/<slug>.layout and the registry, writes <slug>.md.
   Each line's text is the text of its first claim, word for word
 - verify: checks the rendered note against the registry and the layout. Exit code 1 on any ERROR
@@ -30,7 +31,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-VERSION = "0.2 (2026-10-30)"
+VERSION = "0.3 (2026-11-01)"
 ROOT = Path(__file__).resolve().parent.parent
 HA = ROOT / "holistic-alpha"
 REGISTRY = HA / "claims"
@@ -110,12 +111,22 @@ def render_line(depth, later, ids, claims):
     return f"{'  ' * depth}- {text} ({', '.join(episode_ids(ids, claims))}) <!-- {' '.join(ids)} -->"
 
 
+def topic_slugs():
+    with open(HA / "topics.csv", newline="", encoding="utf-8") as f:
+        return {r["slug"] for r in csv.DictReader(f)}
+
+
+def pointer_text(home, slugs):
+    """A link only to a topic of topics.csv: a proposal has no note yet."""
+    return f"See [[{home}]]" if home in slugs else f"See {home}, a proposed topic"
+
+
 def pointer_lines(slug, claims):
     """One line per home topic: the link and the ids, never text."""
-    homes = {}
+    homes, slugs = {}, topic_slugs()
     for i in by_date([i for i, c in claims.items() if slug in c["also"]], claims):
         homes.setdefault(claims[i]["topic"], []).append(i)
-    return [f"- See [[{home}]] ({', '.join(episode_ids(ids, claims))}) <!-- {' '.join(ids)} -->"
+    return [f"- {pointer_text(home, slugs)} ({', '.join(episode_ids(ids, claims))}) <!-- {' '.join(ids)} -->"
             for home, ids in sorted(homes.items())]
 
 
@@ -126,6 +137,11 @@ def cmd_claims(args):
     ptr = [i for i, c in claims.items() if args.slug in c["also"]]
     print(f"# {topic['name']} ({args.slug}): {len(mine)} claims from {len(episode_ids(mine, claims))} episodes, "
           f"{len(ptr)} pointers rendered by the script")
+    if args.pointers:
+        print("# id | date | home topic | claim")
+        for i in by_date(ptr, claims):
+            print(f"{i} | {claims[i]['date']} | {claims[i]['topic']} | {claims[i]['claim']}")
+        return
     print("# id | date | marker | level | suggested section | claim")
     for i in mine:
         c = claims[i]
@@ -166,7 +182,7 @@ def cmd_verify(args):
     _, _, misplaced, errors = parse_layout(path.with_suffix(".layout"))
     lines = path.read_text(encoding="utf-8").splitlines()
     end = lines.index("---", 1) if lines and lines[0] == "---" else -1
-    section, seen = "", Counter()
+    section, seen, slugs = "", Counter(), topic_slugs()
     n_lines = merged = nested = later = 0
     for n, raw in enumerate(lines[end + 1:], end + 2):
         if raw.startswith("## "):
@@ -184,8 +200,8 @@ def cmd_verify(args):
             errors.append(f"line {n}: unknown ids {bad}")
             continue
         if section == OTHER:
-            pm = re.match(r"^See \[\[([^\]]+)\]\]$", text)
-            if not pm or any(claims[i]["topic"] != pm.group(1) for i in ids):
+            home = claims[ids[0]]["topic"]
+            if text != pointer_text(home, slugs) or any(claims[i]["topic"] != home for i in ids):
                 errors.append(f"line {n}: a pointer has only the link to the home topic of its claims")
             if any(args.slug not in claims[i]["also"] for i in ids):
                 errors.append(f"line {n}: pointer to a claim that does not name {args.slug} in also")
@@ -242,6 +258,8 @@ def main():
         p = sub.add_parser(name)
         p.add_argument("slug")
         p.add_argument("--dir", default=str(REGISTRY))
+        if name == "claims":
+            p.add_argument("--pointers", action="store_true")
     args = ap.parse_args()
     {"claims": cmd_claims, "render": cmd_render, "verify": cmd_verify}[args.cmd](args)
 

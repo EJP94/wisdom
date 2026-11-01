@@ -143,7 +143,7 @@ When a claim contradicts or changes an older one, nest it under the older line w
 - Frontmatter: `topic`, `title`, `area`, `claims`, `episodes`, `explicitness` (the highest `level` of its claims), `instructions: v2-draft`, `section: topic`
 - The In short, the italic line, then the sections
 - Each line: the marker in bold when the first claim has one, the first claim's text, the episode ids oldest first, and the claim ids in a comment: `- **Guest:** text (537, 565) <!-- 537-12 565-04 -->`
-- `## In other notes` at the end: one pointer line per home topic, for the claims whose `also` names this topic. A pointer has the link and the ids, never text: `- See [[edging]] (537, 565) <!-- 537-12 565-03 -->`. A complete note so loses no claim that lives in another topic
+- `## In other notes` at the end: one pointer line per home topic, for the claims whose `also` names this topic. A pointer has the link and the ids, never text: `- See [[edging]] (537, 565) <!-- 537-12 565-03 -->`. A proposed topic has no note yet, so its pointer has no link: `- See habits, a proposed topic (549) <!-- 549-39 -->`. A complete note so loses no claim that lives in another topic
 
 Then `python3 -I tools/topic_note.py verify <slug>` checks the rendered note against the registry:
 - The text of each line, without its marker, ids and comment, equals the text of one of the line's claims. The In short and the section titles are the only exceptions
@@ -219,8 +219,10 @@ Severity:
 **Reviewer.** Reads the claims and the rendered note. Doesn't edit. Reports:
 - **S1**: two different claims merged on one line. A change of view dropped
 - **S2**: a merge across different strength or scope. A change of view not marked `later`. An In short stronger than its claims
-- **S3**: a missed merge. A wrong section or nesting. A claim that belongs in `misplaced`, or one put there wrongly
+- **S3**: a missed merge. A wrong section or nesting. A claim that belongs in `misplaced`, or one put there wrongly. A pointer whose claim is mainly about this topic, so its home topic is wrong in the registry
 
-`kind` is one of: merge wrong, merge widened, view change hidden, summary strengthened, merge missed, wrong section, wrong nesting, misplaced.
+`kind` is one of: merge wrong, merge widened, view change hidden, summary strengthened, merge missed, wrong section, wrong nesting, misplaced, pointer.
+
+A `misplaced` claim and a `pointer` finding are fixed in the registry, not in the layout. The run report lists them.
 
 **Fixer.** Edits the layout, runs `render` and `verify`, logs findings in `holistic-alpha/logs/topics/findings/<run>.jsonl`.

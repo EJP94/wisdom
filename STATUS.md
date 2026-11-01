@@ -1,6 +1,6 @@
 # Status
 
-Updated 2026-10-30. Read this first. Update it in the commit of any run that changes what is done or what comes next.
+Updated 2026-11-01. Read this first. Update it in the commit of any run that changes what is done or what comes next.
 
 ## Where we are: Holistic Alpha
 
@@ -20,8 +20,10 @@ Each step runs only when Esteban asks for it, with its cost in front of him firs
 
 1. Topic notes in two steps, a pilot on the branch `claude/topic-notes-two-steps`, never merged until Esteban approves. Rules: `holistic-alpha/topic-instructions.md` v2 draft there
    - Stages 0 and 1 done on 2026-10-30: step A split 14 Recaps (001-008, 537-675) into 604 claims, with Opus as the writer. Opus beat Sonnet in a blind review. About 46 cu in all, against 16-25 estimated. Report: `holistic-alpha/logs/runs/2026-10-30-pilot-stages-0-1.md`
-   - Next, approved by Esteban on 2026-10-30: a test of step B on semen-retention alone, 2-4 cu, from a new session after the window resets. Its brief and criteria: `holistic-alpha/logs/runs/2026-10-30-pilot-B-test-brief.md`. If it gives 3 or fewer merged lines, stop and diagnose
-   - Then, waiting for Esteban's go: stage 2, step A on the other 43 Recaps, 50-55 cu. Then stage 3, step B on kegels and testosterone. The topic list is decided after stage 2, with all the proposals
+   - Test of step B on semen-retention done on 2026-11-01: `verify` OK, 72 lines, **0 merged**, 28 nested, 4 later views. 7 lines group claims from 2 or more episodes by nesting. Agents 4.3 cu, 0.059 cu per claim. Report: `holistic-alpha/logs/runs/2026-11-01-pilot-B-test.md`
+   - Stopped at the stop line (3 or fewer merges). Cause: 4.3 merges only claims of the same strength and scope, and step A keeps each Recap's hedges, so repeats nest. Also a thin sample: 6 of the 18 Recapped episodes on the topic have claims
+   - Next, waiting for Esteban's decision: what counts as a merge, then stage 2 (50-55 cu) or a second B test on semen-retention with its 12 other Recapped episodes (about 30 cu, the step A part counts for stage 2). The topic list is decided after stage 2, with all the proposals
+   - Whole vault projected at 5,400-6,100 cu with full review. Review by sample saves about 1,000, short-session orchestration 600-800, claims written by the Recap writer 300-500
 2. First complete topic, cold exposure: keywords match 29 episodes and 25 lack a Recap. Recaps plus notes: 60-85 cu, to estimate again after the pilot
 3. Second topic, root muscle and Kegels: keywords match 108 episodes and 11 have a Recap. It tests changes of view, since 721 asks "Are Kegels Critical or Counterproductive?"
 
