@@ -121,6 +121,7 @@ misplaced: 027-05
 - `## <title>` opens a section. Sections group lines by question: what it is, why it matters, how to practice, what goes wrong. Choose them from the claims. The suggested sections are hints
 - `- <ids>` is one line. The first id gives the line's text. Pick as first the claim whose words read best alone. Every other id on the line makes the same claim, with the same strength and scope (4.3)
 - An indent of 2 spaces nests a line under the one above: the same claim with another strength or scope, or a detail of it (a number, a dose, a step, an example)
+- **A group** is a top-level line with the lines nested under it. Grouping, not merging, is how a note gathers what several episodes say: a group with 2 or more episodes is the measure of step B (Esteban, 2026-11-01)
 - `later` before the ids marks a change of view (4.4)
 - `misplaced:` lists claims that are not about this topic. The script leaves them out of the note and lists them in its report. They are fixed in the registry, never moved by B
 - Every claim of the topic appears exactly once: on a line or in `misplaced`
@@ -128,14 +129,17 @@ misplaced: 027-05
 ### 4.3 Merging: the riskiest step
 
 Put two ids on one line only when they make **the same claim, with the same strength and the same scope**.
-- Same claim, different strength or scope: a nested line. ✗ merging "Kegels seem to help erections" with "Kegels bring stronger erections"
+- Same claim, different strength or scope: a nested line. ✗ merging "Kegels seem to help erections" with "Kegels bring stronger erections". A merged line never takes the most cautious text for both
+- A claim that repeats another and adds a hedge or a clause: a nested line under it
 - A story never merges. It stays its own line, and a story told over several claims stays together, in id order
-- Claims with different markers never merge: a guest's or a listener's claim never shares a line with the host's. The script checks it
+- Claims with different markers never merge: a guest's or a listener's claim never shares a line with the host's. The script checks it. A guest who disagrees with the host is nested under the host's line, with the guest's marker, and is not a Later view
 - Never strengthen a line because more episodes repeat it. Five episodes saying "probably" still say "probably"
 
 ### 4.4 Changes of view
 
 When a claim contradicts or changes an older one, nest it under the older line with `later`. The script opens it with **Later view (YEAR):**, the year of its episode. Never drop the older line.
+
+One Later view for each older line that changes: when a later episode changes several older lines, each of them gets its own `later` line. A Later view is the host changing his own view over time, never a guest disagreeing (4.3).
 
 ### 4.5 What the script renders
 
@@ -143,6 +147,7 @@ When a claim contradicts or changes an older one, nest it under the older line w
 - Frontmatter: `topic`, `title`, `area`, `claims`, `episodes`, `explicitness` (the highest `level` of its claims), `instructions: v2-draft`, `section: topic`
 - The In short, the italic line, then the sections
 - Each line: the marker in bold when the first claim has one, the first claim's text, the episode ids oldest first, and the claim ids in a comment: `- **Guest:** text (537, 565) <!-- 537-12 565-04 -->`
+- A top-level line also shows the episodes its nested lines add: `- text (002 · also 006, 675) <!-- 002-33 -->`
 - `## In other notes` at the end: one pointer line per home topic, for the claims whose `also` names this topic. A pointer has the link and the ids, never text: `- See [[edging]] (537, 565) <!-- 537-12 565-03 -->`. A proposed topic has no note yet, so its pointer has no link: `- See habits, a proposed topic (549) <!-- 549-39 -->`. A complete note so loses no claim that lives in another topic
 
 Then `python3 -I tools/topic_note.py verify <slug>` checks the rendered note against the registry:
@@ -152,7 +157,8 @@ Then `python3 -I tools/topic_note.py verify <slug>` checks the rendered note aga
 - The episode ids shown are those of the line's claims
 - All claims on a line share one marker
 - Each pointer links the home topic of its claims, and its claims name this topic in `also`
-- It counts lines, merges (lines with claims from 2 or more episodes), nested lines and later views
+- The episodes shown on a top-level line include those of its group
+- It counts lines, **groups with 2 or more episodes**, merges (lines with claims from 2 or more episodes), nested lines and later views
 
 ## 5. Order: one topic at a time
 
@@ -219,7 +225,7 @@ Severity:
 **Reviewer.** Reads the claims and the rendered note. Doesn't edit. Reports:
 - **S1**: two different claims merged on one line. A change of view dropped
 - **S2**: a merge across different strength or scope. A change of view not marked `later`. An In short stronger than its claims
-- **S3**: a missed merge. A wrong section or nesting. A claim that belongs in `misplaced`, or one put there wrongly. A pointer whose claim is mainly about this topic, so its home topic is wrong in the registry
+- **S3**: a missed merge or a missed group. A wrong section or nesting. A claim that belongs in `misplaced`, or one put there wrongly. A pointer whose claim is mainly about this topic, so its home topic is wrong in the registry
 
 `kind` is one of: merge wrong, merge widened, view change hidden, summary strengthened, merge missed, wrong section, wrong nesting, misplaced, pointer.
 

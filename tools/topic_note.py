@@ -5,14 +5,16 @@
 Python 3 standard library only. Run it isolated, from the repo root:
 
     python3 -I tools/topic_note.py claims <slug> [--pointers] [--dir DIR]
-    python3 -I tools/topic_note.py render <slug> [--dir DIR]
-    python3 -I tools/topic_note.py verify <slug> [--dir DIR]
+    python3 -I tools/topic_note.py render <slug> [--dir DIR] [--notes DIR]
+    python3 -I tools/topic_note.py verify <slug> [--dir DIR] [--notes DIR]
 
 - claims: every claim of the topic, oldest first, for the writer of step B. --pointers lists instead
   the claims of other topics that name it in also, for the reviewer
 - render: reads holistic-alpha/topics/<area>/<slug>.layout and the registry, writes <slug>.md.
   Each line's text is the text of its first claim, word for word
-- verify: checks the rendered note against the registry and the layout. Exit code 1 on any ERROR
+- verify: checks the rendered note against the registry and the layout. Exit code 1 on any ERROR.
+  It counts groups: a top-level line with the lines nested under it, when they hold 2 or more episodes
+--notes points at another folder with the layout of holistic-alpha/topics/ (to compare two writers)
 
 Layout format (one item per line):
     in short: <at most 60 words>
@@ -31,7 +33,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-VERSION = "0.3 (2026-11-01)"
+VERSION = "0.4 (2026-11-01)"
 ROOT = Path(__file__).resolve().parent.parent
 HA = ROOT / "holistic-alpha"
 REGISTRY = HA / "claims"
@@ -40,6 +42,11 @@ ITALIC = ("*Ideas from Holistic Alpha, as told by host Steven Mathis and, where 
           "listeners. Numbers in parentheses are episodes. Sources he credits are named where they appear. "
           "Not fact-checked.*")
 OTHER = "In other notes"
+
+
+def rel(path):
+    p = Path(path).resolve()
+    return p.relative_to(ROOT) if p.is_relative_to(ROOT) else p
 
 
 def load_claims(folder):
@@ -96,11 +103,32 @@ def parse_layout(path):
     return in_short, items, misplaced, errors
 
 
-def note_path(topic):
-    return HA / "topics" / topic["area"] / f"{topic['slug']}.md"
+def note_path(topic, notes):
+    return Path(notes) / topic["area"] / f"{topic['slug']}.md"
 
 
-def render_line(depth, later, ids, claims):
+def groups(depths):
+    """Index of each top-level line -> indexes of its group: itself and the lines nested under it.
+    depths: one depth per line, None for a section title."""
+    out, top = {}, None
+    for k, d in enumerate(depths):
+        if d is None:
+            top = None
+        elif d == 0:
+            top = k
+            out[k] = [k]
+        elif top is not None:
+            out[top].append(k)
+    return out
+
+
+def shown_episodes(own, group):
+    """The line's own episodes, then those its nested lines add: 002 · also 006, 675."""
+    also = [e for e in group if e not in own]
+    return ", ".join(own) + (f" · also {', '.join(also)}" if also else "")
+
+
+def render_line(depth, later, ids, claims, group=()):
     first = claims[ids[0]]
     text = ""
     if later:
@@ -108,7 +136,7 @@ def render_line(depth, later, ids, claims):
     if first["marker"]:
         text += f"**{first['marker']}:** "
     text += first["claim"]
-    return f"{'  ' * depth}- {text} ({', '.join(episode_ids(ids, claims))}) <!-- {' '.join(ids)} -->"
+    return f"{'  ' * depth}- {text} ({shown_episodes(episode_ids(ids, claims), group)}) <!-- {' '.join(ids)} -->"
 
 
 def topic_slugs():
@@ -151,7 +179,7 @@ def cmd_claims(args):
 def cmd_render(args):
     claims = load_claims(args.dir)
     topic = load_topic(args.slug)
-    layout = note_path(topic).with_suffix(".layout")
+    layout = note_path(topic, args.notes).with_suffix(".layout")
     in_short, items, misplaced, errors = parse_layout(layout)
     unknown = [i for it in items if it[0] == "line" for i in it[3] if i not in claims] + [i for i in misplaced if i not in claims]
     if errors or unknown:
@@ -163,27 +191,30 @@ def cmd_render(args):
            f"claims: {len(used)}", f"episodes: {len(eps)}", f"explicitness: {LEVELS[level]}",
            "instructions: v2-draft", "section: topic", "---", "",
            f"> **In short** — {in_short}", "", ITALIC]
-    for it in items:
+    grp = groups([None if it[0] == "section" else it[1] for it in items])
+    for k, it in enumerate(items):
         if it[0] == "section":
             out += ["", f"## {it[1]}", ""]
         else:
-            out.append(render_line(it[1], it[2], it[3], claims))
+            group = episode_ids([i for j in grp.get(k, []) for i in items[j][3]], claims)
+            out.append(render_line(it[1], it[2], it[3], claims, group))
     ptr = pointer_lines(args.slug, claims)
     if ptr:
         out += ["", f"## {OTHER}", ""] + ptr
-    note_path(topic).write_text("\n".join(out) + "\n", encoding="utf-8")
-    print(f"{note_path(topic).relative_to(ROOT)}: {len(used)} claims, {len(eps)} episodes")
+    note_path(topic, args.notes).write_text("\n".join(out) + "\n", encoding="utf-8")
+    print(f"{rel(note_path(topic, args.notes))}: {len(used)} claims, {len(eps)} episodes")
 
 
 def cmd_verify(args):
     claims = load_claims(args.dir)
     topic = load_topic(args.slug)
-    path = note_path(topic)
+    path = note_path(topic, args.notes)
     _, _, misplaced, errors = parse_layout(path.with_suffix(".layout"))
     lines = path.read_text(encoding="utf-8").splitlines()
     end = lines.index("---", 1) if lines and lines[0] == "---" else -1
     section, seen, slugs = "", Counter(), topic_slugs()
     n_lines = merged = nested = later = 0
+    rows = []
     for n, raw in enumerate(lines[end + 1:], end + 2):
         if raw.startswith("## "):
             section = raw[3:]
@@ -194,12 +225,13 @@ def cmd_verify(args):
         if not m:
             errors.append(f"line {n}: not a note line: {raw[:70]}")
             continue
-        depth, text, shown, ids = len(m.group(1)) // 2, m.group(2), m.group(3).split(", "), m.group(4).split()
+        depth, text, shown, ids = len(m.group(1)) // 2, m.group(2), m.group(3), m.group(4).split()
         bad = [i for i in ids if i not in claims]
         if bad:
             errors.append(f"line {n}: unknown ids {bad}")
             continue
         if section == OTHER:
+            shown = shown.split(", ")
             home = claims[ids[0]]["topic"]
             if text != pointer_text(home, slugs) or any(claims[i]["topic"] != home for i in ids):
                 errors.append(f"line {n}: a pointer has only the link to the home topic of its claims")
@@ -232,8 +264,21 @@ def cmd_verify(args):
         later += is_later
         if not any(text == claims[i]["claim"] for i in ids):
             errors.append(f"line {n}: text is not word for word one of its claims: {text[:70]}")
-        if shown != episode_ids(ids, claims):
-            errors.append(f"line {n}: episodes shown {shown}, claims say {episode_ids(ids, claims)}")
+        if rows and rows[-1][0] != section:
+            rows.append((section, None, n, [], ""))
+        rows.append((section, depth, n, ids, shown))
+    grp = groups([r[1] for r in rows])
+    grouped = grouped_claims = 0
+    for k, (_, depth, n, ids, shown) in enumerate(rows):
+        if depth is None:
+            continue
+        members = [i for j in grp.get(k, []) for i in rows[j][3]]
+        want = shown_episodes(episode_ids(ids, claims), episode_ids(members, claims))
+        if shown != want:
+            errors.append(f"line {n}: episodes shown ({shown}), claims say ({want})")
+        if len(episode_ids(members, claims)) > 1:
+            grouped += 1
+            grouped_claims += len(members)
     for i in misplaced:
         seen[i] += 1
     mine = {i for i, c in claims.items() if c["topic"] == args.slug}
@@ -242,7 +287,8 @@ def cmd_verify(args):
     for i, k in sorted(seen.items()):
         if k > 1:
             errors.append(f"claim {i} appears {k} times")
-    print(f"{args.slug}: {'ERROR' if errors else 'OK'}. {len(mine)} claims, {n_lines} lines, {merged} merged, "
+    print(f"{args.slug}: {'ERROR' if errors else 'OK'}. {len(mine)} claims, {n_lines} lines, "
+          f"{grouped} groups with 2+ episodes ({grouped_claims} claims), {merged} merged, "
           f"{nested} nested, {later} later views, {len(misplaced)} misplaced")
     for e in errors:
         print(f"  ERROR {e}")
@@ -258,6 +304,7 @@ def main():
         p = sub.add_parser(name)
         p.add_argument("slug")
         p.add_argument("--dir", default=str(REGISTRY))
+        p.add_argument("--notes", default=str(HA / "topics"))
         if name == "claims":
             p.add_argument("--pointers", action="store_true")
     args = ap.parse_args()

@@ -30,20 +30,20 @@ section: topic
 
 - The moment you ejaculate, alone or with a woman, you basically hit the reset button: your sexual energy goes back to sort of your baseline, as if nothing had been built (006) <!-- 006-21 -->
   - The reset after ejaculation varies a little with your hormones and situation, but you're back at essentially square one (006) <!-- 006-22 -->
-- Avoid excess ejaculation: too often, no matter how, it drains your hormones, your life energy, your "qi, as some people call it", in major ways (002) <!-- 002-33 -->
+- Avoid excess ejaculation: too often, no matter how, it drains your hormones, your life energy, your "qi, as some people call it", in major ways (002 · also 006, 675) <!-- 002-33 -->
   - Ejaculating too often, especially alone, takes you well below baseline and starts to suck life out of you (006) <!-- 006-23 -->
   - Too many releases will drag you down; unconscious ones, without intention, discipline or awareness, probably will (675) <!-- 675-22 -->
 
 ## Why retain
 
 - The more you conserve semen, the more you feel it in your hormones, life force energy and mind (002) <!-- 002-39 -->
-- The difference you'll feel on a fundamental level from the practice of not ejaculating is tremendous (006) <!-- 006-42 -->
+- The difference you'll feel on a fundamental level from the practice of not ejaculating is tremendous (006 · also 549) <!-- 006-42 -->
   - Emotionally, too, as both host and guest know, retention makes a huge difference in their emotions (the guest agrees) (549) <!-- 549-66 -->
 - One amazing benefit of edging without ejaculating: not letting yourself quite reach that point builds willpower (006) <!-- 006-28 -->
 
 ## Ejaculating alone
 
-- Stop ejaculating alone, which has the worst impact on your hormones: avoid it ever if at all possible, or do it very, very infrequently (002) <!-- 002-34 -->
+- Stop ejaculating alone, which has the worst impact on your hormones: avoid it ever if at all possible, or do it very, very infrequently (002 · also 006, 675) <!-- 002-34 -->
   - For sex power, jerking off to the point of ejaculation has to go (006) <!-- 006-14 -->
   - The difference between cutting out jerking off to the point of ejaculation and allowing it is absolutely ginormous (006) <!-- 006-15 -->
   - Partner or not, single or divorced, no ejaculating alone and no porn always apply: ejaculating alone and porn seem to be just fundamental things that suck the life out of you (006) <!-- 006-39 -->
@@ -52,19 +52,19 @@ section: topic
 ## Separating orgasm and ejaculation
 
 - Far enough along, fueling your sexual energy means separating orgasm and ejaculation, so you can be highly sexually active (in general, not with multiple people, though that's your choice) (002) <!-- 002-37 -->
-- You can absolutely work towards separating orgasm and ejaculation (002) <!-- 002-38 -->
+- You can absolutely work towards separating orgasm and ejaculation (002 · also 006) <!-- 002-38 -->
   - You can absolutely reach 10 on the arousal scale and have an amazing, longer-lasting orgasm without ejaculating, and end with incredible energy and power, way above baseline instead of back at square one (006) <!-- 006-30 -->
 - The more you reach orgasm without ejaculating, the more the energy builds (006) <!-- 006-31 -->
 
 ## How to practice
 
-- The Holistic Alpha way, it seems, single or not: masturbate and edge regularly, highly recommended, but absolutely don't ejaculate (006) <!-- 006-26 -->
+- The Holistic Alpha way, it seems, single or not: masturbate and edge regularly, highly recommended, but absolutely don't ejaculate (006 · also 675) <!-- 006-26 -->
   - Masturbating and edging without ejaculating takes practice and willpower, especially if you've always ejaculated since you were a kid (006) <!-- 006-27 -->
   - **Later view (2024):** An aware, intentional release at the right time for the right reasons can be incredibly powerful and beneficial (675) <!-- 675-23 -->
     - Through introspection (meditating, thinking, journaling, talking to a close friend), once clearly aware of something you really need to let go of, an intentional release aimed at letting it go "can be incredibly powerful" (675) <!-- 675-16 -->
     - With clear awareness of something you need to let go of and a clear intention, you'll very likely experience a lot of positive benefits from an intentional release (675) <!-- 675-17 -->
   - **Later view (2024):** With awareness of deeper things to let go of, releasing is probably a good call, if that's what you feel (675) <!-- 675-26 -->
-- The encouragement: learn to ride the edge of not ejaculating while getting the benefits of sexual activity, and eventually to separate ejaculation and orgasm (002) <!-- 002-40 -->
+- The encouragement: learn to ride the edge of not ejaculating while getting the benefits of sexual activity, and eventually to separate ejaculation and orgasm (002 · also 006) <!-- 002-40 -->
   - After the three fundamental shifts, you practice edging more and more, get better at controlling arousal, practice Kegels and reverse Kegels and get stronger, and after some practice you can reach a full-on, super powerful level 10 orgasm without ejaculating (006) <!-- 006-66 -->
   - To move towards separating orgasm and ejaculation and gain control, practice deep breathing (006) <!-- 006-46 -->
 - Orgasm without ejaculating takes practice for sure, and intention (006) <!-- 006-32 -->
@@ -73,7 +73,7 @@ section: topic
 ## With a partner
 
 - In a relationship, the tremendous power is in controlling ejaculation with your partner too (006) <!-- 006-29 -->
-- With a woman and regular sex, the goal still seems to be separating orgasm and ejaculation, which takes practice and can't really fit in one 15-minute episode (006) <!-- 006-43 -->
+- With a woman and regular sex, the goal still seems to be separating orgasm and ejaculation, which takes practice and can't really fit in one 15-minute episode (006 · also 549) <!-- 006-43 -->
   - **Later view (2023):** Retention is not for everybody: someone in a relationship comfortable releasing like once a week may not want to retain for 21 days, and that's fine (549) <!-- 549-63 -->
 
 ## Retention as a habit
