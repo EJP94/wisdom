@@ -1,0 +1,43 @@
+{
+  "episodes": [
+    {"id": "009", "ok": true, "findings": []},
+    {"id": "010", "ok": true, "findings": []},
+    {"id": "012", "ok": false, "findings": [
+      {"severity": "S3", "kind": "wrong topic", "line": 32, "claim": "012-32",
+       "recap": "That's why we fight resistance, build strength and physical power, train our mind and harness our sex power: to know at the end that we lived boldly, courageously, lovingly, intentionally, without painful regret",
+       "found": "topic regret, also [\"resistance\"]; the claim names \"harness our sex power\" and is given level sexual-health because of it, but has no pointer to the sex-energy topic",
+       "fix": "also: [\"resistance\", \"life-force\"] (013-02 has the same kind of mention, \"not wasting your sex energy\", with also life-force)"}
+    ]},
+    {"id": "013", "ok": false, "findings": [
+      {"severity": "S3", "kind": "not split", "line": 43, "claim": "013-53",
+       "recap": "Fulvic acid, of which it is pretty much the best source: an antioxidant that helps the body in a number of ways, including getting rid of toxins, fighting off reactions that cause allergy symptoms, reducing inflammation and preventing the growth of cancer, and it stimulates the immune system: it does lots of things in our body",
+       "found": "One row holds the antioxidant statement and five or six separate effects (toxins, allergy reactions, inflammation, cancer growth, immune system, lots of things). The shilajit science bullet of line 46 was split one row per effect",
+       "fix": "Split into one row per effect, each starting \"Fulvic acid, of which shilajit is pretty much the best source, is an antioxidant that helps the body in a number of ways, including ...\": getting rid of toxins (also toxins); fighting off reactions that cause allergy symptoms; reducing inflammation; preventing the growth of cancer; stimulating the immune system. Keep \"it does lots of things in our body\" as its own row or with the antioxidant row"}
+    ]},
+    {"id": "014", "ok": true, "findings": []},
+    {"id": "015", "ok": true, "findings": []},
+    {"id": "017", "ok": true, "findings": []},
+    {"id": "018", "ok": false, "findings": [
+      {"severity": "S3", "kind": "not split", "line": 25, "claim": "018-20",
+       "recap": "That gives much greater control over your arousal, and sort of a bigger life energy impact than the BC, just under your nuts",
+       "found": "Feeling the Kegel squeeze towards the back, against the coccyx bone, gives much greater control over your arousal, and sort of a bigger life energy impact than the BC, just under your nuts",
+       "fix": "Two rows: \"Feeling the Kegel squeeze towards the back, against the coccyx bone, gives much greater control over your arousal\" (also edging) and \"Feeling the Kegel squeeze towards the back, against the coccyx bone, gives sort of a bigger life energy impact than the BC, just under your nuts\" (also life-force)"},
+      {"severity": "S3", "kind": "not split", "line": 26, "claim": "018-22",
+       "recap": "Kegels strengthen the pelvic floor, for better control, stronger orgasms and more life force energy",
+       "found": "Three benefits in one row. 014 splits the same benefits (014-12 stronger orgasms, 014-16 life force energy), so step B cannot merge them across episodes",
+       "fix": "Three rows: \"Kegels strengthen the pelvic floor, for better control\"; \"Kegels strengthen the pelvic floor, for stronger orgasms\"; \"Kegels strengthen the pelvic floor, for more life force energy\" (also life-force)"},
+      {"severity": "S3", "kind": "wrong level", "line": 26, "claim": "018-24",
+       "recap": "If one part of Kegels helps you last longer in bed more than anything else, it's reverse Kegels",
+       "found": "level sexual-health. 014-15 says the same idea (for lasting longer, in sex or edging alone, reverse Kegels are really, really powerful) and is explicit",
+       "fix": "level explicit, to match 014-15 (it says which exercise to use to last longer in sex). If 014-15 is lowered to sexual-health instead, both stay equal"}
+    ]}
+  ],
+  "notes": [
+    "013 lines 22 and 23-46: the content carried from the label (personal top five supplements for real, healthy energy; the four other supplements named in 013-37) is correct. The label keeps its own claim with topic none (013-05), and each supplement's first claim carries 'one of the personal top five'. No defect.",
+    "014 line 28: the label claim 014-28 keeps its own words with topic none, and 014-29 to 014-32 carry 'In a daily Kegel routine' with all the Recap's hedges (maybe, say). No defect. 018 line 20 'Three keys' is carried as 'A key of Kegels' in 018-06, 018-10 and 018-21: no defect.",
+    "Story markers split inside a bullet (010 line 28, 012 line 25, 014 line 34, 015 lines 22, 28 and 29): in all six the marker governs only its own sentence and the sentences around it are correctly unmarked (010-23/24, 012-13/14, 014-35/36/37, 015-07/08/09, 015-20/21, 015-23/24/25). No defect. Not reported, but a judgment call: in 015-20 the clause 'some versions take two minutes or less of quick passes' sits inside the Story sentence of the Recap, so it keeps the Story marker.",
+    "Coffee claims of 013 (013-06 to 013-17, 013-56) filed in supplements with also +coffee: allowed by 3.4 point 1, because the episode presents coffee as one of the top five supplements and the topic of topics.csv fits. Caveat for the run report: tools/claims.py counts a proposal only from rows whose topic is +slug, so 'also +coffee' and 'also +breathing' do not count toward the 3 episodes. Coffee counts 1 episode (009) in _proposed.csv, not 2. Not reported as a defect.",
+    "Levels: no claim of 009-018 gives an instruction of what to do during stimulation that is below explicit, except the inconsistency 018-24 against 014-15 reported above. 014-09 and 014-15 are explicit because they name sex or edging as the setting; 018-25 'Do at least as many reverse Kegels as Kegels' stays sexual-health, as in the example of section 3.3.",
+    "tools/claims.py check passes for all eight files. Its three warnings (010-27, 012-09, 012-29) are impersonal 'It' and read alone: no defect. A script check found every number and every quoted phrase of the bullets in the claims of their line, and no hedge that opens a bullet missing from a claim it covers."
+  ]
+}

@@ -84,6 +84,7 @@ Then `python3 -I tools/claims.py fill <id>` adds `id` (`<episode>-<n>`, such as 
 4. With fewer than 3 episodes, a proposed subject stays parked in the registry. It has no file of its own
 5. When the script counts 3 episodes, the run report lists it, and it enters `topics.csv` as a `topic` in that run's commit, with keywords guessed from its claims. Its rows keep `+<slug>`: the scripts read a born proposal as its slug
 6. A subject that fits no area takes area `?`. The run report asks Esteban
+7. A context is not a subject. Covid, a season, a place: each claim goes to the topic it talks about (Esteban, 2026-11-01)
 
 ### 3.5 The registry is never rewritten
 
@@ -120,7 +121,8 @@ misplaced: 027-05
 - `in short:` is one line of at most 60 words, composed from the claims, keeping their hedges. With `## ` section titles, it is the only text B writes
 - `## <title>` opens a section. Sections group lines by question: what it is, why it matters, how to practice, what goes wrong. Choose them from the claims. The suggested sections are hints
 - `- <ids>` is one line. The first id gives the line's text. Pick as first the claim whose words read best alone. Every other id on the line makes the same claim, with the same strength and scope (4.3)
-- An indent of 2 spaces nests a line under the one above: the same claim with another strength or scope, or a detail of it (a number, a dose, a step, an example)
+- An indent of 2 spaces nests a line under the one above: the same claim with another strength or scope, or a detail of it (a number, a dose, a step, an example). A nested line can hold nested lines, 2 more spaces per level
+- A **Listener question:** or **Guest question:** is a top-level line. The host's answers to it nest under it
 - **A group** is a top-level line with the lines nested under it. Grouping, not merging, is how a note gathers what several episodes say: a group with 2 or more episodes is the measure of step B (Esteban, 2026-11-01)
 - `later` before the ids marks a change of view (4.4)
 - `misplaced:` lists claims that are not about this topic. The script leaves them out of the note and lists them in its report. They are fixed in the registry, never moved by B
@@ -137,9 +139,13 @@ Put two ids on one line only when they make **the same claim, with the same stre
 
 ### 4.4 Changes of view
 
-When a claim contradicts or changes an older one, nest it under the older line with `later`. The script opens it with **Later view (YEAR):**, the year of its episode. Never drop the older line.
+A later claim is a change of view when it would change what someone does or believes if they read only the older claim. Nest it under the older line with `later`. The script opens it with **Later view (YEAR):**, the year of its episode. Never drop the older line.
 
-One Later view for each older line that changes: when a later episode changes several older lines, each of them gets its own `later` line. A Later view is the host changing his own view over time, never a guest disagreeing (4.3).
+- A hedge or a nuance that leaves the advice as it was is not a change of view. It nests under the older line without `later`
+- One Later view per group, under the group's top line. When a later episode changes several groups, each of them gets its own `later` line
+- A Later view is the host changing his own view over time, never a guest disagreeing (4.3)
+
+Esteban set these rules on 2026-11-01.
 
 ### 4.5 What the script renders
 
@@ -181,7 +187,7 @@ Each claim has a `level`. A topic's `explicitness` in `topics.csv` is the highes
 |---|---|
 | general | have no sexual content |
 | sexual-health | speak of sexual function, anatomy, sex drive, porn or its effects, in plain words |
-| explicit | describe masturbation, edging or sex acts, step by step |
+| explicit | give any instruction of what to do during stimulation, even in one line, or describe masturbation, edging or sex acts |
 
 ## 8. Hard rules
 
@@ -193,7 +199,10 @@ Each claim has a `level`. A topic's `explicitness` in `topics.csv` is the highes
 
 ## 9. Process
 
-Opus writes, Sonnet reviews, Opus fixes, all at xhigh effort, as in the Recap pipeline. The pilot also tries Sonnet as the writer of step A.
+Every Recap and every note is reviewed in full. There is no review by sample (Esteban, 2026-11-01).
+
+- **Step A:** Opus writes, Sonnet reviews, Opus fixes, all at xhigh effort, as in the Recap pipeline. Opus beat Sonnet as the writer in a blind review
+- **Step B:** Sonnet writes at medium effort, Sonnet reviews at xhigh, Opus fixes at xhigh. Sonnet cost a fifth of Opus as the writer in the second test on semen-retention. When the first topic is complete, Esteban reads its note. If it groups too little, it is rebuilt with Opus as the writer
 
 ### 9.1 Step A
 

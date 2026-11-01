@@ -1,0 +1,50 @@
+{"episodes": [
+  {"id": "019", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 34, "claim": "019-42",
+     "recap": "If your days aren't going the way you want, look at what you do the first 15 minutes, for the next three weeks, to get that habit in place: on waking, set a 15-minute timer on your phone labeled something like \"15 minutes of focus\"",
+     "found": "If your days aren't going the way you want, look at what you do the first 15 minutes after waking, for the next three weeks, to get that habit in place",
+     "fix": "\"that habit\" pointed to the timer habit that 019-43 now carries, so it points outside the claim. Name it: \"If your days aren't going the way you want, look at what you do the first 15 minutes after waking, for the next three weeks, to get a first-15-minutes habit in place\""}
+  ]},
+  {"id": "020", "ok": false, "findings": [
+    {"severity": "S3", "kind": "not split", "line": 36, "claim": "020-31",
+     "recap": "With a more focused and quiet mind you're simply a better lover: you last longer, you're more attentive, you enjoy sex better and you're more able to control your arousal level",
+     "found": "one row holding the headline (a better lover) and four separate benefits: you last longer, more attentive, enjoy sex better, more able to control your arousal level",
+     "fix": "Split into rows that each start \"With a more focused and quiet mind\": you're simply a better lover; you last longer; you're more attentive; you enjoy sex better; you're more able to control your arousal level (the last one keeps also [\"edging\"], the others do not need it). All stay sexual-health"}
+  ]},
+  {"id": "021", "ok": false, "findings": [
+    {"severity": "S3", "kind": "wrong level", "line": 19, "claim": "021-02",
+     "recap": "Stuff, being in shape, a good sex life, awesome kids, the trappings of the modern world are nice, but nothing else matters but your happiness",
+     "found": "level general",
+     "fix": "level sexual-health. Section 7: general = no sexual content, and \"a good sex life\" is sex life in plain words. Every other claim of this block and of 014/018/020 that mentions a sex life or sex drive, even in passing (020-10, 020-32, 014-27), is sexual-health. Consequence: topic truth is general in topics.csv and rises to sexual-health in the run's commit (section 7). If Esteban does not want a list item to raise a topic, that needs a rule, not an exception on this row. No other claim of 021 has sexual content, and nothing in the block is an instruction of what to do during stimulation (019-13 to 019-16 only name jerking off and say to stop it: sexual-health, as in 006 and 088)"}
+  ]},
+  {"id": "022", "ok": false, "findings": [
+    {"severity": "S3", "kind": "not split", "line": 37, "claim": "022-38",
+     "recap": "Acting on mitochondria everywhere, it also reduces fatigue, shows notable improvements in sperm quality in the studies (obviously your balls have mitochondria too) and improves muscular endurance: really wide-ranging benefits",
+     "found": "Acting on mitochondria everywhere, acetyl-L-carnitine also reduces fatigue, shows notable improvements in sperm quality in the studies (obviously your balls have mitochondria too) and improves muscular endurance: really wide-ranging benefits",
+     "fix": "Three benefits in one row, and the sperm one drags the other two to sexual-health. Split: (1) general: \"Acting on mitochondria everywhere, acetyl-L-carnitine also reduces fatigue\"; (2) sexual-health: \"Acting on mitochondria everywhere, acetyl-L-carnitine shows notable improvements in sperm quality in the studies (obviously your balls have mitochondria too)\"; (3) general: \"Acting on mitochondria everywhere, acetyl-L-carnitine improves muscular endurance: really wide-ranging benefits\""},
+    {"severity": "S3", "kind": "not split", "line": 39, "claim": "022-44",
+     "recap": "ginkgo, a significant difference in memory, and the studies are really strong around memory too",
+     "found": "Personally, ginkgo biloba brings a significant difference in memory, and the studies are really strong around memory too",
+     "fix": "Two statements with two different sources (personal experience, studies). Split: \"Personally, ginkgo biloba brings a significant difference in memory\" and \"The studies on ginkgo biloba are really strong around memory too\""}
+  ]},
+  {"id": "023", "ok": true, "findings": []},
+  {"id": "024", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 33, "claim": "024-20",
+     "recap": "It's not something special about one man: we can all do that. You can absolutely be the strongest, best version of you at 30 or 40 or 50 or 60. From personal experience of that pain: you can overcome and benefit from whatever pain you're going through, the same way",
+     "found": "Getting from that pain to stronger and healthier than ever is not something special about one man: we can all do that",
+     "fix": "\"that pain\" has no antecedent in the claim. Use the Recap's words from line 32: \"Getting from the pain of being an alcoholic, fat and out of shape, completely emotionally and mentally lost, to stronger and healthier than ever is not something special about one man: we can all do that\""},
+    {"severity": "S2", "kind": "not standalone", "line": 33, "claim": "024-22",
+     "recap": "From personal experience of that pain: you can overcome and benefit from whatever pain you're going through, the same way",
+     "found": "From personal experience of pain: you can overcome and benefit from whatever pain you're going through, the same way",
+     "fix": "\"the same way\" has nothing to compare with once out of the bullet. Name the pain as in 024-20: \"From personal experience of the pain of being an alcoholic, fat and out of shape, completely emotionally and mentally lost: you can overcome and benefit from whatever pain you're going through, the same way\""},
+    {"severity": "S2", "kind": "not standalone", "line": 35, "claim": "024-24",
+     "recap": "The challenge: look at whatever challenges and pain you've gone through, or are going through now, the same way as the pain of Andrew's surgery. They're there for a reason, to create you into the person you are",
+     "found": "The challenge: look at whatever challenges and pain you've gone through, or are going through now, the same way as the pain of Andrew's surgery",
+     "fix": "The claim never says which way, and Andrew is not introduced (the other claims write \"the son Andrew\"). Fix: \"The challenge: look at whatever challenges and pain you've gone through, or are going through now, the same way as the pain of the son Andrew's surgery: they're there for a reason, to create you into the person you are\""},
+    {"severity": "S3", "kind": "wrong topic", "line": 34, "claim": "024-23",
+     "recap": "**Story:** a lot of years went into living for nothing other than money in a job, miserable; now it's the opposite, nothing other than helping people. If only one person is helped to avoid or get out of that pain, that's enough. For men feeling the pain of being out of shape ... that's why the podcast and the work with clients",
+     "found": "topic +purpose, also [\"work\"], name Purpose, area mind",
+     "fix": "Judgment call, the only inconsistency in the 024 story run. Section 3.2: a story told over several bullet lines gets one claim per line with the same topic and marker. Line 34 is the last bullet of the same life story as lines 20-26, 28-29 and 32 (all discomfort), and it closes the arc (the pain, then why the podcast exists). Moved to +purpose it would sit outside the story in the discomfort note, and purpose has only 2 episodes (024, 127), so under 3.4 rule 4 the claim would have no note for now. Recommended: topic discomfort, also [\"+purpose\", \"work\"], and delete the `name` and `area` fields (only rows with a +slug topic carry them). Minimum if the writer keeps +purpose: add \"discomfort\" to also, since the claim is about getting men out of the pain of being out of shape. Not a defect: 024-08 (line 24, stock trader job) and 024-09 (line 25, ICU months) match their Recap lines word for word with the right ids and lines, and 024-10 to 024-14 keep the story order"}
+  ]},
+  {"id": "025", "ok": true, "findings": []}
+]}

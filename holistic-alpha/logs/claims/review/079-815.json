@@ -1,0 +1,40 @@
+{"episodes": [
+  {"id": "079", "ok": true, "findings": []},
+  {"id": "252", "ok": true, "findings": []},
+  {"id": "289", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 30, "claim": "289-28",
+     "recap": "Personally, the two biggest benefits are: ... It gets us in touch with willpower: stepping into a little discomfort because it leads where I want to go",
+     "found": "Personally, the other of the two biggest benefits of cold exposure: it gets us in touch with willpower, stepping into a little discomfort because it leads where I want to go",
+     "fix": "Personally, one of the two biggest benefits of cold exposure: it gets us in touch with willpower, stepping into a little discomfort because it leads where I want to go. (\"The other of the two\" points to 289-25 and means nothing once the claims are placed apart in a note.)"},
+    {"severity": "S2", "kind": "hedge lost", "line": 41, "claim": "289-56",
+     "recap": "What seems to happen with a lot of this stuff when it gets stuck is that we lose the physical connection to it. A breakup, say, triggers you, fades, then comes back a day, a week or a month later, again and again, because we lose the physical connection with that stuck energy, and so it kind of hides in the body",
+     "found": "What seems to happen with stuck emotional energy: a breakup, say, triggers you, fades, then comes back a day, a week or a month later, again and again, because we lose the physical connection with that stuck energy, and so it kind of hides in the body",
+     "fix": "What seems to happen with a lot of stuck emotional energy: a breakup, say, triggers you, fades, then comes back a day, a week or a month later, again and again, because we lose the physical connection with that stuck energy, and so it kind of hides in the body. (289-55 keeps \"a lot of\"; 289-56 widens it to all stuck energy.)"}
+  ]},
+  {"id": "303", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 46, "claim": "303-87",
+     "recap": "All of these benefits come from the studies, with data to sort of back them up",
+     "found": "All of the benefits of glycine mentioned come from the studies, with data to sort of back them up",
+     "fix": "Name what \"these benefits\" covers, as 303-56 does for its list. The sentence closes the bullets after line 36, so: \"All of the benefits of glycine covered here (liver, heart and erections, nitric oxide, metabolic health, muscle wasting) come from the studies, with data to sort of back them up\". Re-check the scope against Recap lines 37-46. \"Mentioned\" points outside the claim."},
+    {"severity": "S3", "kind": "not split", "line": 51, "claim": "303-96",
+     "recap": "A lot of the studies use somewhere around maybe five grams, and some safety studies used as much as 90 grams per day for weeks with no serious side effects",
+     "found": "A lot of the studies use somewhere around maybe five grams of glycine, and some safety studies used as much as 90 grams per day for weeks with no serious side effects",
+     "fix": "Two rows: \"A lot of the studies on glycine use somewhere around maybe five grams\" and \"Some glycine safety studies used as much as 90 grams per day for weeks with no serious side effects\""}
+  ]},
+  {"id": "350", "ok": true, "findings": []},
+  {"id": "404b1", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 34, "claim": "404b1-25",
+     "recap": "It's really pretty simple: reach that point, squeeze the root muscle, clench the rest of your body as much as possible, maintain nasal breathing and mental calm, and with your intention and awareness pull the energy back to the base of your spine and up your spine",
+     "found": "The warm draw is really pretty simple: reach that point, squeeze the root muscle, clench the rest of your body as much as possible, maintain nasal breathing and mental calm, and with your intention and awareness pull the energy back to the base of your spine and up your spine, where it kind of goes to the place it can be stored",
+     "fix": "\"That point\" points outside the claim (it is the 7 or 8 out of 10, around 80%, of lines 23 and 25). Replace with: \"The warm draw is really pretty simple: reach the point of 7 or 8 out of 10 on the arousal scale, squeeze the root muscle, ...\""}
+  ]},
+  {"id": "720", "ok": true, "findings": []},
+  {"id": "721", "ok": true, "findings": []},
+  {"id": "812", "ok": false, "findings": [
+    {"severity": "S2", "kind": "source lost", "line": 21, "claim": "812-07",
+     "recap": "Undeniably, \"there is limitless really scientific data\", a bunch of studies, showing beyond a shadow of a doubt that exercise improves erection quality ... Beyond testosterone, hormones and well-being, exercise improves erections directly, period",
+     "found": "Beyond testosterone, hormones and well-being, exercise improves erections directly, period",
+     "fix": "The data/studies source opens the bullet and covers its statements; 812-05 and 812-06 carry it, 812-07 does not. Add it: \"Beyond testosterone, hormones and well-being, the scientific data shows exercise improves erections directly, period\""}
+  ]},
+  {"id": "815", "ok": true, "findings": []}
+]}

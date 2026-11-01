@@ -2,9 +2,9 @@
 topic: semen-retention
 title: "Semen retention"
 area: sex-energy
-claims: 218
+claims: 198
 episodes: 13
-explicitness: explicit
+explicitness: sexual-health
 instructions: v2-draft
 section: topic
 ---
@@ -128,36 +128,19 @@ section: topic
 
 ## Orgasm without ejaculation
 
-- Orgasm and ejaculation are two very different things, usually really close in our body, so, especially with the sexual habits a lot of us have growing up, we associate them as one (034) <!-- 034-05 -->
-- Guaranteed, you can have multiple orgasms without ejaculating: all men can, nothing magical (034 · also 002) <!-- 034-04 -->
-  - You can absolutely work towards separating orgasm and ejaculation (002) <!-- 002-38 -->
-  - Women can have multiple orgasms; you can too, without ejaculating (034) <!-- 034-02 -->
-  - With a little practice and the right technique, you can separate orgasm and ejaculation, ejaculate when you choose, and otherwise have awesome orgasms, building sexual power instead of hitting the reset button every time you ejaculate (034) <!-- 034-06 -->
+- You can absolutely work towards separating orgasm and ejaculation (002) <!-- 002-38 -->
 - Far enough along, fueling your sexual energy means separating orgasm and ejaculation, so you can be highly sexually active (in general, not with multiple people, though that's your choice) (002 · also 006, 029) <!-- 002-37 -->
   - The encouragement: learn to ride the edge of not ejaculating while getting the benefits of sexual activity, and eventually to separate ejaculation and orgasm (002) <!-- 002-40 -->
   - With a partner, not ejaculating as often means learning to separate orgasm and ejaculation (029) <!-- 029-52 -->
     - In a relationship, the tremendous power is in controlling ejaculation with your partner too (006) <!-- 006-29 -->
     - With a woman and regular sex, the goal still seems to be separating orgasm and ejaculation, which takes practice and can't really fit in one 15-minute episode (006) <!-- 006-43 -->
-- Multiple orgasms without ejaculating are an incredible source of pleasure and power (034 · also 006) <!-- 034-01 -->
-  - The more you reach orgasm without ejaculating, the more the energy builds (006) <!-- 006-31 -->
-  - Multiple orgasms without ejaculating are really amazing, and the most powerful way to build sex energy to transmute into all aspects of your life (034) <!-- 034-03 -->
-  - Learning orgasms without ejaculating, which you absolutely can, is when you really build serious sex energy, to transmute into a better sex life where you last so much longer and into every aspect of your life (034) <!-- 034-43 -->
-  - Probably, the idea of orgasms without ejaculating is so fundamental, and so many more guys need to be on board (034) <!-- 034-45 -->
-  - Probably, lasting as long as you want, and eventually a true level 10 orgasm without ejaculating, your whole world honestly will shift in so many ways (034) <!-- 034-47 -->
-- Arousal control plus Kegel strength lets you separate orgasm from ejaculation (034 · also 006, 027) <!-- 034-30 -->
-  - To move towards separating orgasm and ejaculation and gain control, practice deep breathing (006) <!-- 006-46 -->
-  - After the three fundamental shifts, you practice edging more and more, get better at controlling arousal, practice Kegels and reverse Kegels and get stronger, and after some practice you can reach a full-on, super powerful level 10 orgasm without ejaculating (006) <!-- 006-66 -->
-  - Controlling arousal eventually lets you fully orgasm without ejaculating (027) <!-- 027-41 -->
-  - There are a couple different methods to separate orgasm from ejaculation (034) <!-- 034-31 -->
-  - The bottom line of separating orgasm from ejaculation: a really hard, long-lasting Kegel combined with some breathing redirects the energy throughout your body as you have the orgasm, and holding the Kegel stops the contractions so you don't ejaculate (034) <!-- 034-32 -->
-- There are different intensities of orgasm (034 · also 006) <!-- 034-33 -->
-  - We think of orgasm a lot of times as an event, and probably, unfortunately, for a lot of us it kind of is a short-lived one (034) <!-- 034-34 -->
-  - Orgasm should be many types of intense feelings that last so much longer and happen over and over with the work of Kegels and arousal control (034) <!-- 034-35 -->
-  - A level 9 orgasmic feeling can be extended a really long time, or go up to nine point nine or 10, super intense, still without ejaculating: different, but still orgasm and still amazing (034) <!-- 034-36 -->
-    - You can absolutely reach 10 on the arousal scale and have an amazing, longer-lasting orgasm without ejaculating, and end with incredible energy and power, way above baseline instead of back at square one (006) <!-- 006-30 -->
-- Orgasm without ejaculating takes practice for sure, and intention (006 · also 034) <!-- 006-32 -->
+- The more you reach orgasm without ejaculating, the more the energy builds (006) <!-- 006-31 -->
+- To move towards separating orgasm and ejaculation and gain control, practice deep breathing (006) <!-- 006-46 -->
+- After the three fundamental shifts, you practice edging more and more, get better at controlling arousal, practice Kegels and reverse Kegels and get stronger, and after some practice you can reach a full-on, super powerful level 10 orgasm without ejaculating (006) <!-- 006-66 -->
+- Controlling arousal eventually lets you fully orgasm without ejaculating (027) <!-- 027-41 -->
+- You can absolutely reach 10 on the arousal scale and have an amazing, longer-lasting orgasm without ejaculating, and end with incredible energy and power, way above baseline instead of back at square one (006) <!-- 006-30 -->
+- Orgasm without ejaculating takes practice for sure, and intention (006) <!-- 006-32 -->
   - A level 10 orgasm without ejaculating doesn't come in three days: more important is shifting how you look at it and when you allow yourself to ejaculate, which has a huge impact (006) <!-- 006-67 -->
-  - Multiple orgasms without ejaculating isn't a listen-to-a-12-minute-podcast-and-instantly-get-it kind of thing (034) <!-- 034-48 -->
 
 ## With a partner
 
@@ -165,11 +148,8 @@ section: topic
   - With a partner, don't just decide within yourself to stop getting there, or to learn to eventually have an orgasm without ejaculation: there's no way it works with a partner who isn't on board (088) <!-- 088-40 -->
   - Your partner is going to want to see you be the best and most powerful you can be, "I hope. I certainly hope." (088) <!-- 088-42 -->
   - A way to put semen retention to your partner: this could be really powerful for me, to bust through and find this drive, and for us; I'll start edging, I won't come when we have sex, I'll focus on your pleasure and on the pleasure I can experience between 0 and 9.9; and I want to be the best I can be for you, and retaining that energy will make me dramatically better (088) <!-- 088-43 -->
-- When learning, an orgasm without ejaculating is way harder with a woman than alone, where you control all the sensation and stimulation (034 · also 088) <!-- 034-22 -->
-  - With a woman right now, absolutely keep having sex, but you won't instantly translate orgasm without ejaculation: it's harder with a partner (034) <!-- 034-57 -->
-  - First do orgasm without ejaculation alone; once you can separate orgasm and ejaculation there, move to a partner, truly world shifting (034) <!-- 034-58 -->
-  - In a relationship, not ejaculating takes more practice and willpower: a little more of an adjustment period, probably more accidents, more going on, more sensation and more out of your control; it's a little harder (088) <!-- 088-49 -->
-    - Not ejaculating in a relationship, be gentle with yourself; it's a process (088) <!-- 088-50 -->
+- In a relationship, not ejaculating takes more practice and willpower: a little more of an adjustment period, probably more accidents, more going on, more sensation and more out of your control; it's a little harder (088) <!-- 088-49 -->
+  - Not ejaculating in a relationship, be gentle with yourself; it's a process (088) <!-- 088-50 -->
 - Your performance, your ability to last and your ability to deeply connect will dramatically improve when you dial semen retention in (088 · also 034) <!-- 088-41 -->
   - The connection with a partner when you can truly last the way you want is entirely different (034) <!-- 034-44 -->
   - With semen retention, your ability to have the sexual experience you want with a partner will seriously go up (088) <!-- 088-44 -->
@@ -285,7 +265,7 @@ section: topic
 - See [[life-force]] (006, 027, 034, 127, 537) <!-- 006-65 027-21 027-45 034-46 127-74 537-48 -->
 - See [[meditation]] (006) <!-- 006-47 -->
 - See [[morning-wood]] (011) <!-- 011-20 011-21 011-22 011-30 -->
-- See orgasm, a proposed topic (275) <!-- 275-89 -->
+- See [[orgasm]] (034, 275) <!-- 034-01 034-02 034-03 034-04 034-05 034-06 034-22 034-30 034-31 034-32 034-33 034-34 034-35 034-36 034-43 034-45 034-47 034-48 034-57 034-58 275-88 275-89 -->
 - See [[porn]] (150, 731) <!-- 150-15 731-07 731-23 731-24 -->
 - See [[resistance]] (088) <!-- 088-29 -->
 - See [[setbacks]] (088) <!-- 088-61 088-62 088-63 088-64 088-78 -->
