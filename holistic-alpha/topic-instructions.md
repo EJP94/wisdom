@@ -1,10 +1,10 @@
-# Topic instructions v2 (draft, not adopted)
+# Topic instructions v2
 
 A **topic note** gathers what Holistic Alpha says about one subject, across every episode. It is built only from Recaps. It merges what episodes repeat. **It never drops an idea.** Reading a complete note, nobody should think the podcast said something about its subject that the note leaves out.
 
 These instructions are the only rule for topic notes. A Recap still follows `recap-instructions.md`.
 
-This is a draft for the two-step pilot of 2026-10-30. Version 1 stays the rule on `main` until Esteban adopts this one.
+Version 2 replaces version 1. It was tested in the two-step pilot of 2026-10-30 to 2026-11-01, on the 57 Recaps then written.
 
 ## Changes in v2
 
@@ -150,7 +150,7 @@ Esteban set these rules on 2026-11-01.
 ### 4.5 What the script renders
 
 `python3 -I tools/topic_note.py render <slug>` writes the note:
-- Frontmatter: `topic`, `title`, `area`, `claims`, `episodes`, `explicitness` (the highest `level` of its claims), `instructions: v2-draft`, `section: topic`
+- Frontmatter: `topic`, `title`, `area`, `claims`, `episodes`, `explicitness` (the highest `level` of its claims), `instructions: v2`, `section: topic`
 - The In short, the italic line, then the sections
 - Each line: the marker in bold when the first claim has one, the first claim's text, the episode ids oldest first, and the claim ids in a comment: `- **Guest:** text (537, 565) <!-- 537-12 565-04 -->`
 - A top-level line also shows the episodes its nested lines add: `- text (002 · also 006, 675) <!-- 002-33 -->`

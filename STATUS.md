@@ -9,7 +9,7 @@ Updated 2026-11-01. Read this first. Update it in the commit of any run that cha
   - 001-034, all from 2019
   - 19 episodes from 2019-2026, restored from commit `dd2aaa6`: 079 088 127 150 175 252 275 350 404b1 537 549 556 565 663 675 720 812 813 815. The pilots among them (127 275 537 663 813) had a review against the v2 checklist on 2026-10-30
   - 4 new on 2026-10-30: 289 303 721 731
-- Topics: the rules are written (`holistic-alpha/topic-instructions.md` v1, `holistic-alpha/topics.csv`, `tools/topic_episodes.py`). On main no topic note exists yet. The pilot's first note, semen-retention, is on its branch
+- Topics: rules v2 (`holistic-alpha/topic-instructions.md`), adopted after the two-step pilot. `holistic-alpha/topics.csv` lists the topics, `tools/claims.py` and `tools/topic_note.py` run the two steps. All 57 Recaps have claims. The pilot's note, semen-retention, is not complete: most of its episodes have no Recap yet
   - Keywords tuned on 2026-10-30. `kegels`, now named "Root muscle and Kegels", also finds root muscle, pelvic floor and sex muscle, the words of later years: 64 to 108 episodes. `every-day` lost `today`, which matched almost every intro: 114 to 50 episodes
   - A first test of the notes with v1 on 24 Recaps (001-024) merged nothing: each line copied a whole Recap bullet with several claims, so no two episodes shared a line. It cost 45.8 cu, and the cost per Recap grew with the notes (1.5, 1.9, 2.3 cu). Its notes, logs and costs are on the branch `claude/topic-notes-v1-test`, kept to compare and never merged
 - Views and pieces: none yet

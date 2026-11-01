@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""claims.py - step A of the topic notes: the claims registry (topic instructions v2 draft).
+"""claims.py - step A of the topic notes: the claims registry (topic instructions v2).
 
 Python 3 standard library only. Run it isolated, from the repo root:
 

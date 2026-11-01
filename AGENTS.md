@@ -8,7 +8,7 @@ Steven gave full permission to share, reproduce and monetize his material. Credi
 
 1. Transcripts, `holistic-alpha/transcripts/<stem>.txt`: raw Parakeet output, `[mm:ss] text` per 20-40 s chunk, no speaker labels. Never edit them
 2. Recaps, `holistic-alpha/recaps/<stem>.md`: one per episode, the canonical distilled layer. Every idea kept: compress, never drop an idea
-3. Topics, `holistic-alpha/topics/<area>/<slug>.md`: one note per subject, built only from Recaps, in 6 areas. An idea is one line with the episodes where it appears. Processed one topic at a time
+3. Topics, in two steps. Step A splits each Recap into claims, `holistic-alpha/claims/<stem>.jsonl`, one row per claim. Step B builds one note per subject from its claims, `holistic-alpha/topics/<area>/<slug>.md`, in 6 areas: a script writes each line word for word from a claim. Processed one topic at a time
 4. Views built from the topics (pensum, manual by problem, transformation program, idea graph). Not designed yet. Don't build them unless asked
 5. Pieces: what gets published (videos, threads, articles). Esteban fact-checks each piece before he publishes it. No fact-checking in the vault
 
@@ -16,7 +16,7 @@ Steven gave full permission to share, reproduce and monetize his material. Credi
 
 - **The Recap instructions are the only rule for a Recap:** `holistic-alpha/recap-instructions.md`. Read them in full before writing, reviewing or fixing one
 - The pipeline is the `/recaps` skill (`.claude/skills/recaps/SKILL.md`) and the `recap-writeups` workflow
-- **The topic instructions are the only rule for a topic note:** `holistic-alpha/topic-instructions.md`. The closed list of topics is `holistic-alpha/topics.csv`. Only the user adds, removes or renames an area
+- **The topic instructions are the only rule for a topic note:** `holistic-alpha/topic-instructions.md`. The closed list of topics is `holistic-alpha/topics.csv`. The scripts are `tools/claims.py` (step A) and `tools/topic_note.py` (step B). Only the user adds, removes or renames an area
 - Vault content is in English. Talk to the user (Esteban) in Spanish
 - The user decides which episodes get processed. Never widen a range on your own
 - Cost matters: scripts are free, agents use the plan. Give an estimate before a large run

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """topic_note.py - step B of the topic notes: list a topic's claims, render its note, verify it
-(topic instructions v2 draft).
+(topic instructions v2).
 
 Python 3 standard library only. Run it isolated, from the repo root:
 
@@ -189,7 +189,7 @@ def cmd_render(args):
     level = max((LEVELS.index(claims[i]["level"]) for i in used), default=0)
     out = ["---", f"topic: {topic['slug']}", f'title: "{topic["name"]}"', f"area: {topic['area']}",
            f"claims: {len(used)}", f"episodes: {len(eps)}", f"explicitness: {LEVELS[level]}",
-           "instructions: v2-draft", "section: topic", "---", "",
+           "instructions: v2", "section: topic", "---", "",
            f"> **In short** — {in_short}", "", ITALIC]
     grp = groups([None if it[0] == "section" else it[1] for it in items])
     for k, it in enumerate(items):
