@@ -1,0 +1,31 @@
+{"episodes": [
+  {"id": "011", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 26, "claim": "011-22",
+     "recap": "Maybe you still get it if you're younger and your hormones are in really good shape, but very likely that's kind of a sign too",
+     "found": "Maybe you still get morning wood after you ejaculate if you're younger and your hormones are in really good shape, but very likely that's kind of a sign too",
+     "fix": "Maybe you still get morning wood after you ejaculate if you're younger and your hormones are in really good shape, but very likely that's kind of a sign too, of ejaculating too often draining your energy (\"a sign too\" has no object once the claim is out of its bullet)"},
+    {"severity": "S3", "kind": "not split", "line": 29, "claim": "011-29",
+     "recap": "With a girlfriend, partner or wife, morning sex is an extremely good idea; without, spend a few minutes stimulating yourself",
+     "found": "A strong belief about using morning wood: with a girlfriend, partner or wife, morning sex is an extremely good idea; without, spend a few minutes stimulating yourself",
+     "fix": "Two rows, both topic morning-wood and both starting 'A strong belief about using morning wood:'. (1) 'with a girlfriend, partner or wife, morning sex is an extremely good idea' (sexual-health or explicit, writer's call). (2) 'without a partner, spend a few minutes stimulating yourself' (explicit). Today one row mixes two instructions for two situations at one level"}
+  ]},
+  {"id": "016", "ok": false, "findings": [
+    {"severity": "S2", "kind": "lost in split", "line": 27, "claim": "016-14",
+     "recap": "**Testosterone is not the target**: personally found, and a lot of the research supports it: there's not really, to be honest, a lot of supplements that make the 80% testosterone difference, a big market; none do, some give a slight boost. So judge these seemingly by what they bring to your sex energy",
+     "found": "Testosterone is not the target: judge sex power supplements seemingly by what they bring to your sex energy",
+     "fix": "Testosterone is not the target, personally found, and a lot of the research supports it: judge sex power supplements seemingly by what they bring to your sex energy (the 'personally found' and the research source open the bullet and cover its thesis; 016-13 carries them, 016-14 states the thesis flat)"}
+  ]},
+  {"id": "027", "ok": true, "findings": []},
+  {"id": "029", "ok": true, "findings": []},
+  {"id": "034", "ok": false, "findings": [
+    {"severity": "S2", "kind": "claim strengthened", "line": 32, "claim": "034-41",
+     "recap": "Ejaculating on a super regular basis drains our life force energy. From a scientific standpoint, prolactin goes up, which is not good",
+     "found": "From a scientific standpoint, with ejaculation prolactin goes up, which is not good",
+     "fix": "From a scientific standpoint, with ejaculating on a super regular basis prolactin goes up, which is not good (the Recap's sentence follows 'on a super regular basis'; the claim widens it to any ejaculation)"},
+    {"severity": "S2", "kind": "lost in split", "line": 34, "claim": "034-47",
+     "recap": "Probably, this idea is so fundamental, and so many more guys need to be on board: serious sex energy becomes power and confidence everywhere, plus so much more pleasure. Lasting as long as you want, and eventually a true level 10 orgasm without ejaculating, your whole world honestly will shift in so many ways",
+     "found": "Lasting as long as you want, and eventually a true level 10 orgasm without ejaculating, your whole world honestly will shift in so many ways",
+     "fix": "Probably, lasting as long as you want, and eventually a true level 10 orgasm without ejaculating, your whole world honestly will shift in so many ways (034-45 and 034-46 carry the opening 'Probably'; this third claim of the same bullet does not)"}
+  ]},
+  {"id": "088", "ok": true, "findings": []}
+]}

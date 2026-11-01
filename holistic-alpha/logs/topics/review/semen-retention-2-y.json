@@ -1,0 +1,71 @@
+{
+  "topic": "semen-retention",
+  "folder": "NOTES",
+  "merged_lines_checked": 0,
+  "groups_checked": 49,
+  "findings": [
+    {
+      "severity": "S2",
+      "kind": "view change hidden",
+      "ids": ["006-21", "006-22", "731-43", "731-44"],
+      "found": "006-21 says that the moment you ejaculate you 'hit the reset button ... as if nothing had been built' and 006-22 that you are 'back at essentially square one'. 731-43 ('If after release you feel essentially no change, or even better, a little more frequent ejaculation might be better') and 731-44 ('Guys who feel essentially no change after release ... if after years of retention you no longer really feel the drop-off ... it may be time to shorten those time frames') contradict a universal reset. Both sit as plain top-level lines in Ejaculation frequency; the older reset line has no Later view.",
+      "fix": "Under the line headed by 006-21 add `  - later 731-43` (move 731-43 out of Ejaculation frequency). 731-44 can stay where it is."
+    },
+    {
+      "severity": "S2",
+      "kind": "view change hidden",
+      "ids": ["006-26", "088-77", "675-26"],
+      "found": "006-26 (the 'Holistic Alpha way': masturbate and edge regularly 'but absolutely don't ejaculate') and 088-77 ('Decide you'll stop ejaculating alone for sure') are older absolute lines that the host later softens: 675-21 'Retention is not about never releasing', 675-26 'With awareness of deeper things to let go of, releasing is probably a good call', 731-09 and 731-55. The layout gives a Later view only to 002-34, 006-14 and 006-39. 006-26 and 088-77 are nested lines with no Later view of their own.",
+      "fix": "Promote 006-26 to a top-level line (in 'Masturbation is not off the table') and nest `later 675-26` under it (take 675-26 out of the 675-29 group). 088-77 is a detail of 088-48: either accept the Later view on 088-48's group or promote 088-77 and give it a `later` line from 731-55."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["002-39", "029-50"],
+      "found": "Two top-level lines of Why it matters make the same claim from different episodes: 002-39 'The more you conserve semen, the more you feel it in your hormones, life force energy and mind' and 029-50 'Conserving your semen helps in so many ways, your life force, your energy, your hormones'. 002-39 is only the dose-response form of 029-50. They sit apart, so the group of 029-50 (5 episodes) and 002-39 do not count 002 and 731 together.",
+      "fix": "Nest 002-39 under 029-50. Move `later 731-34` to sit under 029-50 as well (731-34 'longer without ejaculating is not always better' limits the whole 'conserving helps' group), or keep 731-34 under 002-39 if the format allows two levels."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["006-43", "029-52"],
+      "found": "029-52 'With a partner, not ejaculating as often means learning to separate orgasm and ejaculation' and 006-43 'With a woman and regular sex, the goal still seems to be separating orgasm and ejaculation, which takes practice' make the same claim from two episodes. 029-52 heads a group (with 006-29); 006-43 is nested elsewhere, under 034-22 'harder with a partner'. 006-43 is the hedged version ('still seems').",
+      "fix": "Nest 006-43 under 029-52 (next to 006-29) instead of under 034-22. Its 'takes practice' part is covered by 034-22 and 088-49 already."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["088-46", "027-19", "002-36", "027-20", "731-49", "731-51"],
+      "found": "The claim 'retention goes with staying sexually active, not with no activity' is split across two sections. In What it is: 027-19 'most definitely not about having no sexual activity, the opposite', 002-36 'doesn't mean not having sex', 088-46 'means staying active in whatever form while retaining that energy' (under 088-04). In Retention and activity: 027-20 'as much awesome sex activity as you can have ... without ejaculating', 731-49, 731-50 and 731-51 'Hard mode, avoiding sexual activity, is not the way'. 027-19 and 027-20 are adjacent claims of one episode, and 731-51 repeats 027-19 and 002-36 with a different scope (hard mode). These groups are in two sections and never count 002, 027, 088 and 731 together.",
+      "fix": "Make one group in Retention and activity: head 027-20 (or 088-46), with 027-19, 002-36, 088-46, 731-49, 731-50 nested, and keep 731-51/731-53 beside it. Leave 088-02, 088-03 and 027-17 (independent of sexual activity) in What it is."
+    },
+    {
+      "severity": "S3",
+      "kind": "wrong section",
+      "ids": ["088-24", "088-25", "088-82"],
+      "found": "088-24 'A week of semen retention won't magically change your life situation; things take time' and 088-25 'things will start to change' are what-to-expect claims (the registry's own suggestion) but sit in Why it matters, while What to expect holds only 088-82 'people are seeing awesome results'.",
+      "fix": "Move the `- 088-25 / - 088-24` group into What to expect with 088-82."
+    },
+    {
+      "severity": "S3",
+      "kind": "wrong nesting",
+      "ids": ["731-21", "731-22", "731-20", "731-25", "731-38", "731-45", "731-37"],
+      "found": "Nested lines that are not the same claim or a detail of their parent. Under 731-21 (definition: conscious retention is an intentional choice about ejaculation): 731-20 'Conscious semen retention is much, much better than NoFap', 731-25 'Neither getting rid of porn nor swearing off PMO is a magic bullet' and 731-22 'a game changer, but only ... with an approach that works' are separate claims. Under 731-38 (beginners: longer is better): 731-45 'think about your long-term energetic position' repeats 731-37 'weigh your sexual charge now and over time', which is a separate top-level line.",
+      "fix": "Move 731-20 to Semen retention and NoFap as its own line; make 731-25 and 731-22 their own lines in Conscious retention (731-22 can stay nested only if read as a limit on 731-21). Nest 731-45 under 731-37 instead of 731-38."
+    },
+    {
+      "severity": "S3",
+      "kind": "misplaced",
+      "ids": ["011-25"],
+      "found": "011-25 'No morning wood while ejaculating on a really regular basis: maybe think about building your sex energy instead of letting it leave you' is the same morning-wood-as-signal point as 011-20, 011-21, 011-22 and 011-30, which the registry homes in morning-wood and the note shows only as pointers. Here it stands alone in Why it matters.",
+      "fix": "Registry: move 011-25 to morning-wood with `also` semen-retention. Then it leaves the layout (or goes to `misplaced:` until then)."
+    },
+    {
+      "severity": "S3",
+      "kind": "pointer",
+      "ids": ["565-40"],
+      "found": "565-40 (home topic: edging) 'starting out they go three, four or five days without anything, to retain, edge a day or two, release, and repeat' describes a retain-release rhythm for beginners. Its subject is retention timing, the same question as 731-38 to 731-40 and 731-46 (how long to go early on), more than edging technique.",
+      "fix": "Registry: make semen-retention its home topic, with `also` edging. Then place it near 731-38 in Ejaculation frequency."
+    }
+  ]
+}

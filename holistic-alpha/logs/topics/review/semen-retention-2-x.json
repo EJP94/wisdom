@@ -1,0 +1,50 @@
+{
+  "topic": "semen-retention",
+  "folder": "NOTES",
+  "merged_lines_checked": 0,
+  "groups_checked": 49,
+  "findings": [
+    {
+      "severity": "S3",
+      "kind": "wrong nesting",
+      "ids": ["549-63", "029-52", "088-31"],
+      "found": "549-63 \"Retention is not for everybody: someone in a relationship comfortable releasing like once a week may not want to retain for 21 days, and that's fine\" is nested as a Later view under 029-52 \"With a partner, not ejaculating as often means learning to separate orgasm and ejaculation\". 029-52 says nothing that 549-63 changes, so the Later view label is false there. The older line it actually narrows is 088-31 \"Whatever your situation, wherever resistance holds you back, semen retention is a really powerful way to bust through\", which has no Later view. In its own episode it also qualifies 549-64 and sits beside 549-67 \"highly encouraged, not absolutely required\".",
+      "fix": "Remove `later 549-63` from under 029-52. Nest it as `later 549-63` under 088-31 (Against resistance), or, if it is not read as a change of view, as a plain nested line under 549-64 next to 549-67."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["675-21", "731-56", "731-57"],
+      "found": "675-21 \"Retention is not about never releasing, nor about seeing a release as a bad thing, 'because it's not'\" (Release section) and 731-56 \"Ejaculation is not bad\" (Later view under 002-34, Alone section) make the same claim from two episodes, but sit in two sections. 731-57 \"Ejaculation is a beautiful, powerful, incredible thing, but ... needs care: that is really the difference\" is the elaboration of 731-56, yet is nested under 675-21, so the 731-56/731-57 pair is split. 675-21 also changes 002-34/006-39 (\"no ejaculating alone ... always apply\") and is not linked to those older lines, while the only Later view there is the thin 731-56.",
+      "fix": "Under 002-34 replace `- later 731-56` with `- later 675-21`, nesting `- 731-56` and `- 731-57` below it. Remove the top-level 675-21 line (and its child 731-57) from Release."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["731-51", "027-19", "731-49"],
+      "found": "731-51 \"Hard mode, avoiding sexual activity, is not the way: we don't use it, we lose it\" (NoFap section, with 537-22, 731-52, 731-53) restates 027-19 \"Retaining your semen is most definitely not about having no sexual activity, the opposite\" (What it is, with 002-36, 088-46, 731-49 > 731-50). 731-49/731-50 (\"more beneficial with regular activity\") are the same episode and the same passage as 731-51, yet are split from it. The 027-19 group misses a narrower-scope variant, and 731-51 sits alone with only its own episode and a guest.",
+      "fix": "Nest the 731-51 line, with its children 537-22, 731-52 and 731-53, under 027-19 beside 731-49. The NoFap section keeps its other lines."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["002-37", "029-52", "006-43"],
+      "found": "002-37 \"Far enough along, fueling your sexual energy means separating orgasm and ejaculation, so you can be highly sexually active\" (Orgasm without ejaculation, group of one episode) states the same goal as 029-52 \"With a partner, not ejaculating as often means learning to separate orgasm and ejaculation\" and 006-43 (hedged \"seems\") in the With a partner section. The 3-episode claim is split into a 1-episode line and a 3-episode group.",
+      "fix": "Nest 002-37 (with its child 002-40) under 029-52 in With a partner, or nest the 029-52 group under 002-37; either way the three episodes end up in one group."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["002-39", "029-50", "006-42"],
+      "found": "002-39 \"The more you conserve semen, the more you feel it in your hormones, life force energy and mind\" is the felt-benefit claim of 029-50 \"Conserving your semen helps in so many ways, your life force, your energy, your hormones\" and 006-42 (\"the difference you'll feel ... is tremendous\"), with a dose-response clause added. It sits in How often to ejaculate as the parent of the 731 lines instead of in the Why retain group.",
+      "fix": "Nest 002-39 under 029-50 in Why retain. Keep its children (731-38 group and `later 731-34 > 731-35`) under it, so the Later view still has its older line, and drop the now-empty position in How often to ejaculate."
+    },
+    {
+      "severity": "S3",
+      "kind": "misplaced",
+      "ids": ["731-25", "731-24"],
+      "found": "731-25 \"Neither getting rid of porn nor swearing off PMO is a magic bullet\" is about porn removal, not semen retention. It is the same claim as pointer 731-24 \"Removing porn is not the end-all be-all\", whose home topic is porn. The two claims of one passage have different home topics, and 731-25 stands alone in the NoFap section.",
+      "fix": "Registry: change the topic of 731-25 to porn with `also: semen-retention`. Then remove it from the layout (it becomes a pointer)."
+    }
+  ]
+}

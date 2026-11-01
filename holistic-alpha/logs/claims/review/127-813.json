@@ -1,0 +1,27 @@
+{"episodes": [
+  {"id": "127", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 25, "claim": "127-11",
+     "recap": "Ask the right question. Most men probably care less about a lab number than about how they feel: erections, energy, strength, being lean. Raising testosterone matters, but the end goal is the feeling",
+     "found": "Raising testosterone matters, but the end goal is the feeling",
+     "fix": "Raising testosterone matters, but the end goal is the feeling, how you feel. (\"The feeling\" has its antecedent only in the sentence before, claim 127-10. Borderline: keep as is if Step B always places 127-11 right after 127-10.)"}
+  ]},
+  {"id": "150", "ok": true, "findings": []},
+  {"id": "175", "ok": true, "findings": []},
+  {"id": "275", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 41, "claim": "275-38",
+     "recap": "**Balance:** a common mistake. When the squeeze side is strong and the push side weak, the muscle works worse, ...",
+     "found": "Balance, one of three factors in training the male sex muscle, is a common mistake",
+     "fix": "Balance, one of three factors in training the male sex muscle: being out of balance is a common mistake. (As written, alone, it says balance itself is the mistake; the Recap's next sentence, and 275-39, show it means imbalance.)"}
+  ]},
+  {"id": "731", "ok": false, "findings": [
+    {"severity": "S2", "kind": "lost in split", "line": 36, "claim": "731-39",
+     "recap": "For a vast majority of guys, at the beginning and maybe for a good period, longer is, in general terms, kind of better ... So, in essence, go as long as you can: you won't go forever anyway, between accidental releases, wet dreams and sex",
+     "found": "For a vast majority of guys, at the beginning of semen retention, in essence, go as long as you can: you won't go forever anyway, between accidental releases, wet dreams and sex",
+     "fix": "For a vast majority of guys, at the beginning of semen retention and maybe for a good period, in essence, go as long as you can: you won't go forever anyway, between accidental releases, wet dreams and sex"},
+    {"severity": "S2", "kind": "lost in split", "line": 36, "claim": "731-40",
+     "recap": "For a vast majority of guys, at the beginning and maybe for a good period, ... It may be very beneficial to go not only a couple of weeks but maybe a month, two or three",
+     "found": "For a vast majority of guys, at the beginning of semen retention, it may be very beneficial to go not only a couple of weeks but maybe a month, two or three",
+     "fix": "For a vast majority of guys, at the beginning of semen retention and maybe for a good period, it may be very beneficial to go not only a couple of weeks but maybe a month, two or three"}
+  ]},
+  {"id": "813", "ok": true, "findings": []}
+]}
