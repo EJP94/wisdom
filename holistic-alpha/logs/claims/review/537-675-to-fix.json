@@ -1,0 +1,119 @@
+{
+ "episodes": [
+  {
+   "id": "537",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 29,
+     "claim": "537-10",
+     "recap": "He firmly believes marriage is very sacred, something to be respected and vowed. However, we weren't given these desires and needs [?]",
+     "found": "Marriage is very sacred, something to be respected and vowed, a firm belief. However, we weren't given these desires and needs [?]",
+     "fix": "\"these desires and needs\" points outside the claim and nothing in it says which desires. Name them with the words of the neighbouring bullets: \"Marriage is very sacred, something to be respected and vowed, a firm belief. However, we weren't given these sexual desires and needs [?]\""
+    },
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 45,
+     "claim": "537-28",
+     "recap": "a lifetime of being told this was shameful, that he was weird and different, and that \"straight guys shouldn't be doing that\" flooded back",
+     "found": "a lifetime of being told this practice was shameful, that he was weird and different, and that \"straight guys shouldn't be doing that\" flooded back",
+     "fix": "\"this practice\" points outside the claim. Name it: \"After a podcast episode on shame and a call where one of the guys shared his own shame, a lifetime of being told edging was shameful, that he was weird and different, and that \\\"straight guys shouldn't be doing that\\\" flooded back. He ran: cancelled his membership and deleted everything off his Instagram\" (keep the rest of the claim as it is)"
+    },
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 65,
+     "claim": "537-70",
+     "recap": "Become a champion and spokesperson for this practice, starting with the students and college-age men he works with at church",
+     "found": "In his five-year vision: become a champion and spokesperson for this practice, starting with the students and college-age men he works with at church, changing how we talk to young men: \"are we life giving or are we shame giving?\"",
+     "fix": "Replace \"this practice\" with \"edging\": \"In his five-year vision: become a champion and spokesperson for edging, starting with the students and college-age men he works with at church, changing how we talk to young men: \\\"are we life giving or are we shame giving?\\\"\""
+    },
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 66,
+     "claim": "537-71",
+     "recap": "Finish his master's and move into public relations and marketing, driven by the energy this builds",
+     "found": "In his five-year vision: finish his master's and move into public relations and marketing, driven by the energy this practice builds",
+     "fix": "Replace \"this practice\" with \"edging\": \"In his five-year vision: finish his master's and move into public relations and marketing, driven by the energy edging builds\""
+    },
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 22,
+     "claim": "537-01",
+     "recap": "Introduced to porn at 11 or 12 by a cousin ... Finding this podcast was \"truly life changing\": it pulled him out of addictions he thought he couldn't get out of",
+     "found": "also: [\"life-force\"]",
+     "fix": "Nothing in the claim is about sex energy as life force, so the pointer would be wrong in that note. Set also to []"
+    }
+   ]
+  },
+  {
+   "id": "549",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 21,
+     "claim": "549-03",
+     "recap": "A certain positivity that carries through even when you're feeling shitty is something personally practiced, or tried",
+     "found": "topic \"+setbacks\" (name Setbacks and slips)",
+     "fix": "The claim is about positivity as a state of mind, not about falling off the path. topic \"emotions\"; delete name and area"
+    },
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 21,
+     "claim": "549-04",
+     "recap": "the guest has it: surely there are times he's not really feeling it, since we all have shitty times, but he has \"this deep foundational kind of positivity\", and it will serve him well",
+     "found": "topic \"+setbacks\" (name Setbacks and slips)",
+     "fix": "Same subject as 549-03: topic \"emotions\"; delete name and area"
+    }
+   ]
+  },
+  {
+   "id": "556",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 27,
+     "claim": "556-10",
+     "recap": "If you have to scale a habit back over and over again, something needs to change: maybe when you do it, where it fits in your day, what the habit is, or the time in your life. On occasional days, don't sweat it or beat yourself up",
+     "found": "topic \"+habits\" (name Habits and tracking), also [\"every-day\"]",
+     "fix": "Same subject (scaling a habit back) as 556-02, 556-03, 556-05, 556-06, 556-09 and 556-11, which all have topic \"every-day\" and also [\"+habits\"]. Use the same topic: topic \"every-day\", also [\"+habits\"], and delete name and area. (If the fixer prefers +habits for the whole scaling-back group, change all of them together.)"
+    }
+   ]
+  },
+  {
+   "id": "565",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "663",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "675",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 34,
+     "claim": "675-33",
+     "recap": "**Story:** a promise: 10-plus years into this journey, all of this still comes up, in different ways, layers, depths and time frames, because this is how we function. \"And it ought to still come up.\"",
+     "found": "A promise: 10-plus years into the retention journey, all of this still comes up, in different ways, layers, depths and time frames, because this is how we function. \"And it ought to still come up.\"",
+     "fix": "\"all of this\" and the quoted \"it\" point outside the claim. Name the subject without touching the quote: \"A promise: 10-plus years into the retention journey, emotional walls still come up, in different ways, layers, depths and time frames, because this is how we function. \\\"And it ought to still come up.\\\"\""
+    }
+   ]
+  }
+ ]
+}

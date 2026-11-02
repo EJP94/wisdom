@@ -7,7 +7,7 @@ La primera vault es el podcast Holistic Alpha de Steven Mathis.
 
 1. **Transcripts** (`holistic-alpha/transcripts/`): los 809 episodios tal como salieron de Parakeet. No se editan
 2. **Recaps** (`holistic-alpha/recaps/`): un Recap por episodio. Es la fuente de todo lo demás
-3. **Temas** (`holistic-alpha/topics/`): una nota por tema, sacada solo de los Recaps, en 6 áreas. Cada idea es una línea con los episodios donde aparece. Todavía no existen
+3. **Temas**, en dos pasos. El paso A parte cada Recap en afirmaciones (`holistic-alpha/claims/`). El paso B arma una nota por tema con sus afirmaciones (`holistic-alpha/topics/`), en 6 áreas. Los 57 Recaps ya tienen afirmaciones. La primera nota completa será la del frío
 4. **Vistas** sacadas de los temas: pensum, manual por problema, programa de transformación, grafo de ideas. Todavía no existen
 5. **Piezas**: lo que se publica. Esteban verifica los datos de cada pieza antes de publicarla
 

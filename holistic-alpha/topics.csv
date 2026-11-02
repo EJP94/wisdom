@@ -1,33 +1,39 @@
 slug,area,name,status,explicitness,min_hits,keywords
 resistance,mind,Resistance,topic,general,3,\bresistance\b(?! (?:training|work|band|exercise))
-meditation,mind,Meditation and presence,topic,general,3,meditat\w*
-every-day,mind,"Every day, small steps",topic,general,8,every single day|\bevery day\b|15 minutes|fifteen minutes|\bone minute\b|small steps?|little steps?|tiny steps?|\btoday\b
-regret,mind,Regret and death,topic,general,3,\bregret\w*|deathbed|going to die|\bwe(?:'re| are) all going to die
+meditation,mind,Meditation and presence,topic,sexual-health,3,meditat\w*
+every-day,mind,"Every day, small steps",topic,sexual-health,8,every single day|\bevery day\b|15 minutes|fifteen minutes|\bone minute\b|small steps?|little steps?|tiny steps?
+regret,mind,Regret and death,topic,sexual-health,3,\bregret\w*|deathbed|going to die|\bwe(?:'re| are) all going to die
 discomfort,mind,Discomfort and pain as power,topic,general,3,discomfort|uncomfortable|hard things|hard shit|pain is (?:your )?power|galvaniz\w*
-never-too-late,mind,Never too late,topic,general,2,too late|too old|how old you are|\bnot stuck\b
-truth,mind,Living your truth and happiness,topic,general,3,your truth|\balignment\b|what (?:people|anybody|somebody|others) think|\bhappiness\b
-cold,mind,Cold exposure,parked,general,5,cold showers?|ice baths?|cold plunge|cold exposure|the cold\b
+never-too-late,mind,Never too late,topic,sexual-health,2,too late|too old|how old you are|\bnot stuck\b
+truth,mind,Living your truth and happiness,topic,sexual-health,3,your truth|\balignment\b|what (?:people|anybody|somebody|others) think|\bhappiness\b
+cold,mind,Cold exposure,topic,general,5,cold showers?|ice baths?|cold plunge|cold exposure|the cold\b
 work,mind,Work and business,parked,general,6,\bjobs?\b|\bbusiness\w*|\bcareer\b|\bboss\b
 semen-retention,sex-energy,Semen retention,topic,explicit,3,ejaculat\w*|semen|no ?fap|no fab|\bretention\b
-life-force,sex-energy,Sex energy as life force,topic,sexual-health,3,life force|transmut\w*|creative energy|napoleon hill|think and grow rich
-kegels,sex-energy,Kegels and reverse Kegels,topic,sexual-health,5,\bk(?:e|ee|ea)g(?:e|a)ls?\b
+orgasm,sex-energy,Orgasm without ejaculation,topic,explicit,2,multiple orgasms?|orgasm\w* without ejaculat\w*|separat\w* (?:the |your )?orgasm|non-?ejaculatory|dry orgasms?|full[- ]body orgasm\w*
+life-force,sex-energy,Sex energy as life force,topic,explicit,3,life force|transmut\w*|creative energy|napoleon hill|think and grow rich
+kegels,sex-energy,Root muscle and Kegels,topic,explicit,5,\bk(?:e|ee|ea)g(?:e|a)ls?\b|root (?:muscle|squeeze|push|hold|lock)s?|pelvic floor|sex muscle
 edging,sex-energy,Edging and arousal control,topic,explicit,3,\bedging\b|arousal|ride the edge|\bedge session
-morning-wood,sex-energy,Morning wood,topic,sexual-health,1,morning wood|morning erection
-porn,sex-energy,Porn,parked,sexual-health,5,\bporn\w*
-sleep,hormones,Sleep,topic,general,3,\bsleep\w*|\bslept\b
+morning-wood,sex-energy,Morning wood,topic,explicit,1,morning wood|morning erection
+porn,sex-energy,Porn,topic,sexual-health,5,\bporn\w*
+sleep,hormones,Sleep,topic,sexual-health,3,\bsleep\w*|\bslept\b
 testosterone,hormones,Testosterone 80/20,topic,sexual-health,5,testosterone|80/20|80-20|eighty twenty|\b8020\b
-stress,hormones,Stress and cortisol,topic,general,3,cortisol|stress hormones?|adrenaline
-toxins,hormones,Toxins and detox,topic,general,3,toxin\w*|\btoxic\b|fragrance|endocrine disrupt\w*|plastics?\b|detox\w*|enemas?\b
-dopamine,hormones,Dopamine,topic,general,3,dopamine
-oxytocin,hormones,Oxytocin and touch,parked,general,3,oxytocin
-dhea,hormones,DHEA,parked,general,2,\bdhea\b|d h e a\b
+stress,hormones,Stress and cortisol,topic,sexual-health,3,cortisol|stress hormones?|adrenaline
+toxins,hormones,Toxins and detox,topic,sexual-health,3,toxin\w*|\btoxic\b|fragrance|endocrine disrupt\w*|plastics?\b|detox\w*|enemas?\b
+dopamine,hormones,Dopamine,topic,sexual-health,3,dopamine
+oxytocin,hormones,Oxytocin and touch,parked,sexual-health,3,oxytocin
+dhea,hormones,DHEA,parked,sexual-health,2,\bdhea\b|d h e a\b
 growth-hormone,hormones,Growth hormone,parked,general,2,growth hormone|\bhgh\b
 intensity,training,Intensity,topic,general,2,\bintensity\b|\bintense\b|all out|as hard as you can
-recovery,training,Recovery and pain,topic,general,4,recover\w*|roll(?:ing)? out|rollers?\b|massager?|tightness|\bsore\b
+recovery,training,Recovery and pain,topic,sexual-health,4,recover\w*|roll(?:ing)? out|rollers?\b|massager?|tightness|\bsore\b
 strength,training,Strength,topic,general,5,strength training|squats?\b|deadlifts?|kettlebells?|push.?ups?|pull.?ups?|compound|total daily volume|heavy
-sprints,training,Sprints,topic,general,3,sprint\w*
+sprints,training,Sprints,topic,sexual-health,3,sprint\w*
 endurance,training,Long training,parked,general,3,endurance|45 minutes|forty.?five minutes
 supplements,fuel,Supplements,topic,sexual-health,5,supplement\w*
 fats-sugar,fuel,Fats and sugar,topic,general,3,\bsugar\b|polyunsaturated|saturated|good fats|healthy fats|canola|vegetable oil|seed oils?
-fasting,fuel,Fasting and the eating window,topic,general,3,\bfasting\b|eating window|intermittent|\bfasted\b
-partner-family,relationships,Partner and family,topic,general,6,\bwife\b|spouse|girlfriend|relationships?\b|\bkids?\b|father|daughters?\b|\bmarri\w*
+fasting,fuel,Fasting and the eating window,topic,sexual-health,3,\bfasting\b|eating window|intermittent|\bfasted\b
+partner-family,relationships,Partner and family,topic,sexual-health,6,\bwife\b|spouse|girlfriend|relationships?\b|\bkids?\b|father|daughters?\b|\bmarri\w*
+emotions,mind,Emotions,topic,general,3,\bemotion(?:s|al|ally)?\b
+setbacks,mind,Setbacks and slips,topic,sexual-health,3,\brelaps\w*|setbacks?|slip(?:s|ped)? up|off (?:the|my|your|our) path|\bfunky?\b|back on track|fresh start
+habits,mind,Habits and tracking,topic,sexual-health,3,\bhabits?\b|habit track\w*|tally (?:app|marks?)|\bstreaks?\b
+alcohol,fuel,Alcohol,topic,general,3,alcohol\w*|\bbeers?\b|\bwine\b|hangovers?|\bbooze\b|liquor|\bdrunk\b
+breathing,mind,Breathing,topic,sexual-health,3,\bbreath(?:e|es|ing|ed|work)?\b|\binhal\w*|\bexhal\w*|nasal breathing

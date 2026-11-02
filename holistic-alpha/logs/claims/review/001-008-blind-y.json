@@ -1,0 +1,195 @@
+{
+  "episodes": [
+    {
+      "id": "001",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "format",
+          "line": 28,
+          "claim": "001-14",
+          "recap": "Beating resistance seems to come down to a few things: (label bullet; its five nested bullets carry the things)",
+          "found": "Beating resistance seems to come down to a few things: physical well-being, hormones, fasting, sexual energy and the mind. (topic resistance)",
+          "fix": "The bullet only introduces its nested bullets (3.1): topic none, claim in the bullet's own words, 'Beating resistance seems to come down to a few things.', without listing the five things (the nested claims carry them)"
+        },
+        {
+          "severity": "S2",
+          "kind": "lost in split",
+          "line": 29,
+          "claim": "001-15",
+          "recap": "parent bullet (line 28): 'Beating resistance seems to come down to a few things:' then 'Physical well-being is absolutely critical: your body affects your mind, emotions, relationships and success in business.'",
+          "found": "Physical well-being is absolutely critical: your body affects your mind, emotions, relationships and success in business.",
+          "fix": "The parent's subject and hedge ('beating resistance seems to come down to') cover all five nested bullets but only some of their claims name resistance. Add the frame, e.g. 'In beating resistance, which seems to come down to a few things, physical well-being is absolutely critical: your body affects your mind, emotions, relationships and success in business.' Same for the first claim of the other nested bullets that never name resistance: 001-18 (hormones), 001-21 (sexual energy), 001-26 (the mind)"
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "format",
+          "line": 21,
+          "claim": "002-05",
+          "recap": "Lifestyle: (label bullet; its three nested bullets carry the keys)",
+          "found": "For testosterone, one of the four areas is lifestyle, with three keys: sleep, keeping stress down and removing toxins. (topic testosterone)",
+          "fix": "Label-only bullet (3.1): topic none, claim in the label's own words (e.g. 'Lifestyle'), without summarizing the three nested bullets in it"
+        },
+        {
+          "severity": "S2",
+          "kind": "not standalone",
+          "line": 22,
+          "claim": "002-10",
+          "recap": "Enough sleep gives double the benefit, too little hurts both ways",
+          "found": "Enough sleep gives double the benefit, too little sleep hurts both ways.",
+          "fix": "'double the benefit' and 'both ways' point to the two effects in the neighbouring claims (hormone production during sleep, cortisol and stress hormones). Carry them from the bullet: 'For testosterone, enough sleep gives double the benefit, too little sleep hurts both ways: most hormone production happens during sleep, and too little sleep raises cortisol and stress hormones.'"
+        },
+        {
+          "severity": "S3",
+          "kind": "format",
+          "line": 33,
+          "claim": "002-41",
+          "recap": "Fitness: (label bullet; its three nested bullets carry the keys)",
+          "found": "For testosterone, one of the four areas is fitness, with three keys: daily activity, intensity and resistance work. (topic testosterone)",
+          "fix": "Label-only bullet (3.1): topic none, claim in the label's own words (e.g. 'Fitness'), without summarizing the three nested bullets in it"
+        }
+      ]
+    },
+    {
+      "id": "003",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "not standalone",
+          "line": 27,
+          "claim": "003-20",
+          "recap": "From experience, personally, what leads there is every day",
+          "found": "From experience, personally, what leads to those powerful changes is every day.",
+          "fix": "'those powerful changes' points to the previous claim. Make it self-contained: 'From experience, personally, what leads to really powerful changes is every day.'"
+        }
+      ]
+    },
+    {
+      "id": "004",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "wrong topic",
+          "line": 23,
+          "claim": "004-12",
+          "recap": "How: (label bullet; its nested bullets carry the instructions)",
+          "found": "How to take cold showers. (topic cold)",
+          "fix": "Label-only bullet (3.1): topic none. Its nested claims 004-13 to 004-17 carry the subject"
+        },
+        {
+          "severity": "S3",
+          "kind": "wrong topic",
+          "line": 27,
+          "claim": "004-18",
+          "recap": "Benefits: (label bullet; its nested bullets carry the benefits)",
+          "found": "The benefits of cold showers. (topic cold)",
+          "fix": "Label-only bullet (3.1): topic none. Its nested claims 004-19 to 004-24 carry the subject"
+        },
+        {
+          "severity": "S3",
+          "kind": "duplicate proposal",
+          "line": 31,
+          "claim": "004-24",
+          "recap": "The biggest: you literally increase your willpower, your strength against resistance in every area of life",
+          "found": "The biggest benefit of cold showers: you literally increase your willpower, your strength against resistance in every area of life. (topic +willpower, also cold, resistance)",
+          "fix": "Judgment call: the Recap defines willpower as 'your strength against resistance', so topic resistance (also cold) fits and 3.4 says to use a topics.csv topic whenever one fits. If +willpower is kept as a proposal, make it a decision of the run report; 006-26 ('not ejaculating builds willpower') uses it too"
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "not standalone",
+          "line": 24,
+          "claim": "005-07",
+          "recap": "It doesn't necessarily have to be every 15 minutes",
+          "found": "The sets don't necessarily have to be every 15 minutes.",
+          "fix": "Which sets is not named. 'The sets of total daily volume don't necessarily have to be every 15 minutes.'"
+        },
+        {
+          "severity": "S2",
+          "kind": "lost in split",
+          "line": 25,
+          "claim": "005-08",
+          "recap": "Each set activates those muscles and seems to give them a little signal to grow. ... At least that's the way it seems to work, experientially",
+          "found": "Each mini set activates the muscles worked and seems to give them a little signal to grow.",
+          "fix": "The closing hedge 'experientially' covers the whole explanation but is only in 005-10. Add it: 'Each mini set activates the muscles worked and, experientially, seems to give them a little signal to grow.'"
+        },
+        {
+          "severity": "S3",
+          "kind": "not split",
+          "line": 30,
+          "claim": "005-22",
+          "recap": "It also seems an awesome way to set a new sort of record for yourself, and it adjusts your perspective",
+          "found": "Total daily volume also seems an awesome way to set a new sort of record for yourself, and it adjusts your perspective.",
+          "fix": "Two statements: split into 'Total daily volume also seems an awesome way to set a new sort of record for yourself.' and 'Total daily volume also adjusts your perspective.'"
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "not standalone",
+          "line": 19,
+          "claim": "006-02",
+          "recap": "You can't necessarily quit tomorrow, but don't live that way, you don't have to.",
+          "found": "You can't necessarily quit tomorrow, but don't live that way, you don't have to.",
+          "fix": "'that way' points to the previous claim. 'If you dread Monday because you're not digging your work, you can't necessarily quit tomorrow, but don't live that way, you don't have to.'"
+        },
+        {
+          "severity": "S3",
+          "kind": "wrong topic",
+          "line": 37,
+          "claim": "006-43",
+          "recap": "What to practice to move towards that and gain control: (label bullet; its nested bullets carry the practices)",
+          "found": "What to practice to move towards separating orgasm and ejaculation and gain control. (topic semen-retention)",
+          "fix": "Label-only bullet (3.1): topic none. Its nested claims 006-44 to 006-50 carry the subject"
+        },
+        {
+          "severity": "S2",
+          "kind": "not standalone",
+          "line": 39,
+          "claim": "006-45",
+          "recap": "Meditation, which might sound unrelated but is incredibly related.",
+          "found": "Practice meditation, which might sound unrelated to gaining control but is incredibly related.",
+          "fix": "'gaining control' has no object outside the label bullet. 'Practice meditation, which might sound unrelated to gaining control of arousal and ejaculation but is incredibly related.'"
+        }
+      ]
+    },
+    {
+      "id": "007",
+      "ok": true,
+      "findings": []
+    },
+    {
+      "id": "008",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "not standalone",
+          "line": 29,
+          "claim": "008-18",
+          "recap": "Stop eating at 7 p.m. and eat breakfast at 7 or 8 a.m., and you start eating just as those amazing benefits would begin.",
+          "found": "Stop eating at 7 p.m. and eat breakfast at 7 or 8 a.m., and you start eating just as those beneficial processes would begin.",
+          "fix": "'those beneficial processes' points to 008-17. 'Stop eating at 7 p.m. and eat breakfast at 7 or 8 a.m., and you start eating just as the beneficial processes that take about 12 hours of fasting to begin would start.'"
+        }
+      ]
+    }
+  ]
+}

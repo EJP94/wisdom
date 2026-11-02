@@ -1,0 +1,27 @@
+{
+  "topic": "semen-retention",
+  "merged_lines_checked": 1,
+  "findings": [
+    {
+      "severity": "S2",
+      "kind": "merge widened",
+      "ids": ["002-33", "006-23"],
+      "found": "The only merged line. 002-33: \"Avoid excess ejaculation: too often, no matter how, it drains your hormones, your life energy, your 'qi'... in major ways\" (an instruction, scope 'no matter how', what drains: hormones, life energy, qi). 006-23: \"Ejaculating too often, especially alone, takes you well below baseline and starts to suck life out of you\" (scope 'especially alone', what it does: takes you well below baseline). The line renders only 002-33's text, so 'especially alone' and 'below baseline' from 006 are lost and 'no matter how' is credited to episode 006, which narrows rather than repeats it.",
+      "fix": "Split the line: keep 002-33 as the parent and nest 006-23 under it (\"- 002-33\" then \"  - 006-23\" then \"  - 675-22\"), so 006-23 and 675-22 sit as siblings under 002-33 in What ejaculation does."
+    },
+    {
+      "severity": "S2",
+      "kind": "view change hidden",
+      "ids": ["006-26", "675-23"],
+      "found": "006-26 (2019): \"The Holistic Alpha way, it seems, single or not: masturbate and edge regularly, highly recommended, but absolutely don't ejaculate\". 675-23 (2024): \"An aware, intentional release at the right time for the right reasons can be incredibly powerful and beneficial\", with 675-16 and 675-17 as its detail. This is the same change of view that the layout already marks for 675-26 (later under 006-26) and 675-21 (later under 002-34), but 675-23 and its two children sit in Releasing as an ordinary line with no Later view mark, with nothing linking them to the older 'absolutely don't ejaculate'.",
+      "fix": "Under 006-26, after \"  - later 675-26\", add \"  - later 675-23\" with 675-16 and 675-17 nested under it (\"    - 675-16\", \"    - 675-17\"), and remove them from the Releasing section. Releasing then keeps 675-14 (with 675-15) and 675-20."
+    },
+    {
+      "severity": "S3",
+      "kind": "wrong section",
+      "ids": ["565-32", "565-33"],
+      "found": "Rick's two lines (\"A lot of guys in semen retention are confused into thinking holding on as long as possible is the goal, so ejaculating means failing\"; \"his philosophy on retention shifted to 'hold on and if it happens, it does'\") end the Releasing section, which is about what a release is and when an intentional one helps (675-14 to 675-20). They answer a different question, whether ejaculating means failing, and have their own suggested section (Not a pass-fail test). Their natural neighbours are 675-21 and 675-31 (it is never a bad thing to release, don't beat yourself up).",
+      "fix": "Move them out of Releasing: either a new short section '## Not a pass-fail test' with \"- 565-32\" and \"  - 565-33\" (33 is the guest's own shift, a detail of 32), or after 675-31 in How to meet the wall."
+    }
+  ]
+}

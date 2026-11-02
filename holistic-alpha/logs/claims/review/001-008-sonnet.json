@@ -1,0 +1,71 @@
+{"episodes": [
+  {"id": "001", "ok": true, "findings": []},
+  {"id": "002", "ok": true, "findings": []},
+  {"id": "003", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 27, "claim": "003-20",
+     "recap": "From experience, personally, what leads there is every day",
+     "found": "From experience, personally, what leads to those powerful changes is every day.",
+     "fix": "From experience, personally, what leads to the really powerful changes, when something has become who you are, is every day. (\"those powerful changes\" points to 003-19, outside the claim)"}
+  ]},
+  {"id": "004", "ok": false, "findings": [
+    {"severity": "S3", "kind": "format", "line": 23, "claim": "004-12",
+     "recap": "How:",
+     "found": "How to take cold showers.",
+     "fix": "Label-only bullet: the Recap holds no idea here, so the claim states nothing and would render as a content-free line in the cold note. claims.py check forces a claim on every bullet line, so the rule for label-only bullets is a decision for the instructions (exempt them, or let the label ride on its first child). Same case: 004-18 and 006-43"},
+    {"severity": "S3", "kind": "format", "line": 27, "claim": "004-18",
+     "recap": "Benefits:",
+     "found": "The benefits of cold showers.",
+     "fix": "Label-only bullet, no idea (see 004-12). Decide the rule for label-only bullets; as it stands the note would get a line that says nothing"},
+    {"severity": "S3", "kind": "wrong topic", "line": 31, "claim": "004-24",
+     "recap": "The biggest: you literally increase your willpower, your strength against resistance in every area of life",
+     "found": "topic +willpower, also [cold, resistance]",
+     "fix": "topic cold, also [resistance]. The claim is the last of the benefits of cold showers (its sibling benefits 004-19 to 004-23 are all topic cold), so with +willpower (2 episodes, parked) it would be missing from the cold note except as a pointer. The Recap itself defines willpower as 'your strength against resistance', so +willpower is also close to a duplicate of the resistance topic: consider dropping the proposal and using also [resistance] instead"}
+  ]},
+  {"id": "005", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 24, "claim": "005-07",
+     "recap": "It doesn't necessarily have to be every 15 minutes",
+     "found": "The sets don't necessarily have to be every 15 minutes.",
+     "fix": "With total daily volume, the sets don't necessarily have to be every 15 minutes. (sets of what? the subject is outside the claim)"},
+    {"severity": "S2", "kind": "not standalone", "line": 29, "claim": "005-18",
+     "recap": "Pick something you can just get down and do.",
+     "found": "Pick something you can just get down and do.",
+     "fix": "For total daily volume, pick something you can just get down and do. (read alone, 'something' has no subject)"},
+    {"severity": "S2", "kind": "not standalone", "line": 34, "claim": "005-27",
+     "recap": "Make each set hard enough to kind of push you while you can still do it every time.",
+     "found": "Make each set hard enough to kind of push you while you can still do it every time.",
+     "fix": "In total daily volume, make each set hard enough to kind of push you while you can still do it every time."},
+    {"severity": "S2", "kind": "not standalone", "line": 34, "claim": "005-28",
+     "recap": "By the 40th or 50th set, if you do that many, they obviously get harder.",
+     "found": "By the 40th or 50th set, if you do that many, the sets obviously get harder.",
+     "fix": "In total daily volume, by the 40th or 50th set, if you do that many, the sets obviously get harder."}
+  ]},
+  {"id": "006", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 19, "claim": "006-02",
+     "recap": "You can't necessarily quit tomorrow, but don't live that way, you don't have to.",
+     "found": "You can't necessarily quit tomorrow, but don't live that way, you don't have to.",
+     "fix": "If you dread Monday because you're not digging your work, you can't necessarily quit tomorrow, but don't live that way, you don't have to. ('that way' and 'quit' point to 006-01)"},
+    {"severity": "S3", "kind": "wrong topic", "line": 28, "claim": "006-26",
+     "recap": "one amazing benefit is just that: not letting yourself quite reach that point builds willpower",
+     "found": "topic +willpower, also [semen-retention]",
+     "fix": "topic semen-retention, also [+willpower] or [resistance]. It is a benefit of not ejaculating, like 006-25 before it, so it belongs in the semen-retention note. Same reasoning as 004-24: +willpower is a benefit and not a subject apart from resistance"},
+    {"severity": "S3", "kind": "not split", "line": 35, "claim": "006-40",
+     "recap": "Don't feel guilty or bummed, it happens: be intentional and get back on the practice. The difference you'll feel on a fundamental level is tremendous",
+     "found": "Don't feel guilty or bummed if you slip, it happens: be intentional and get back on the practice. The difference you'll feel on a fundamental level is tremendous.",
+     "fix": "Two rows: (1) Don't feel guilty or bummed if you slip, it happens: be intentional and get back on the practice. (2) With the practice, the difference you'll feel on a fundamental level is tremendous. (2 is a separate point, why it matters, and 'the difference' needs a subject)"},
+    {"severity": "S3", "kind": "format", "line": 37, "claim": "006-43",
+     "recap": "What to practice to move towards that and gain control:",
+     "found": "What to practice to move towards separating orgasm and ejaculation and gain control.",
+     "fix": "Label-only bullet that introduces the next three bullets and holds no idea, so the claim states nothing. See 004-12: decide the rule for label-only bullets"}
+  ]},
+  {"id": "007", "ok": true, "findings": []},
+  {"id": "008", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 29, "claim": "008-18",
+     "recap": "Stop eating at 7 p.m. and eat breakfast at 7 or 8 a.m., and you start eating just as those amazing benefits would begin.",
+     "found": "Stop eating at 7 p.m. and eat breakfast at 7 or 8 a.m., and you start eating just as those beneficial processes would begin.",
+     "fix": "Stop eating at 7 p.m. and eat breakfast at 7 or 8 a.m., and you start eating just as the amazing benefits of fasting, which start after about 12 hours, would begin. ('those beneficial processes' points to 008-17, outside the claim)"},
+    {"severity": "S2", "kind": "not standalone", "line": 29, "claim": "008-19",
+     "recap": "Skipping breakfast gives you at least a few hours a day past that point, enough to start feeling the benefits.",
+     "found": "Skipping breakfast gives you at least a few hours a day past the 12-hour point, enough to start feeling the benefits.",
+     "fix": "Skipping breakfast gives you at least a few hours a day past the point, about 12 hours into a fast, where the beneficial processes begin, enough to start feeling the benefits. ('the 12-hour point' and 'the benefits' have no subject outside 008-17)"}
+  ]}
+]}
