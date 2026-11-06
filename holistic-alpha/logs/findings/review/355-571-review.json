@@ -1,0 +1,276 @@
+{
+  "episodes": [
+    {
+      "id": "355",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "01:16",
+          "transcript": "Ivan's 13 years old, and he's doing things that that I didn't do until many, many years later than that, and figuring out things that I didn't figure out until many years later than that.",
+          "recap": "at 13 he is doing things that personally came many, many years later",
+          "fix": "Add the second half: at 13 he is doing things, and figuring out things, that personally came many, many years later"
+        },
+        {
+          "severity": "S3",
+          "kind": "fact changed",
+          "ts": "02:13",
+          "transcript": "thinking ahead to this summer and thinking about the fact that there's going to be days where he's not really hanging out with friends and doesn't necessarily have a lot to do and he's feeling kind of unmotivated.",
+          "recap": "facing summer days without much to do or friends to hang out with, the young man felt kind of unmotivated and asked what to do",
+          "fix": "Thinking ahead to this summer, with days when he's not really hanging out with friends and doesn't necessarily have a lot to do, the young man was feeling kind of unmotivated and asked what to do"
+        },
+        {
+          "severity": "S3",
+          "kind": "word added",
+          "ts": "03:09",
+          "transcript": "the number of days where I was kind of like blah in the morning until I get in that cold shower, and then everything changes. Is it's incredible.",
+          "recap": "an incredible number of days feeling kind of blah in the morning until the cold shower, and then everything changed",
+          "fix": "Drop 'an incredible' from the count of days and keep 'incredible' for the change: the number of days feeling kind of blah in the morning until the cold shower, and then everything changes, which is incredible"
+        },
+        {
+          "severity": "S3",
+          "kind": "certainty hedge lost",
+          "ts": "06:42",
+          "transcript": "I had days and months strung together where they were all like that pretty much.",
+          "recap": "days and months of it strung together",
+          "fix": "days and months strung together that were pretty much all like that"
+        }
+      ]
+    },
+    {
+      "id": "391",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "scope widened",
+          "ts": "00:51",
+          "transcript": "One of the most basic ways is just in our physical comfort.",
+          "recap": "Physical comfort is the most basic way, so it is very important to seek out cold exposure",
+          "fix": "Physical comfort is one of the most basic ways (he later says 'the most basic way is getting physically uncomfortable' at [03:12], so this is minor)"
+        },
+        {
+          "severity": "S3",
+          "kind": "scope widened",
+          "ts": "17:56",
+          "transcript": "the emotional triggers and some of those things that underlie it. It's having awareness of the situations that lead to that, and the set and setting that leads to that, and some of the physical, environmental kind of triggers.",
+          "recap": "of what really drives it (emotional triggers and what underlies them), of the situations, set and setting, and of physical, environmental kind of triggers",
+          "fix": "(emotional triggers and some of the things that underlie them) ... and of some of the physical, environmental kind of triggers"
+        },
+        {
+          "severity": "S3",
+          "kind": "source lost",
+          "ts": "11:58",
+          "transcript": "when when guys would realign their sexual lives, it would realign their whole life.",
+          "recap": "TL;DR: sexual empowerment, realigning your sexual life so it realigns your whole life, is rooted in awareness",
+          "fix": "In the TL;DR keep the coaching source, staying within 45 words: replace 'realigning your sexual life so it realigns your whole life' with 'in coaching, realigned sexual lives realigned whole lives'"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "15:54",
+          "transcript": "to create in terms of this show and this business and to create in terms of my personal life and relationships.",
+          "recap": "now using it more directly and in more advanced ways, for this show and business and in personal life",
+          "fix": "for this show and business and in personal life and relationships"
+        },
+        {
+          "severity": "S3",
+          "kind": "word added",
+          "ts": "09:48",
+          "transcript": "I still didn't really recognize just how far reaching it is and how critical it is. And when that really changed is in the aftermath of me starting this podcast.",
+          "recap": "How far-reaching and critical it is only became clear after starting this podcast",
+          "fix": "How far-reaching and critical it is really became clear after starting this podcast (drop 'only', which is not his word)"
+        }
+      ]
+    },
+    {
+      "id": "422",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "03:40",
+          "transcript": "cheese from cows in Wisconsin to businesses to economies to all various aspects of the world",
+          "recap": "It applies to everything from cheese from cows in Wisconsin to economies, and certainly to our personal life",
+          "fix": "everything from cheese from cows in Wisconsin to businesses to economies, and certainly to our personal life"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "05:30",
+          "transcript": "You may have a positive habit or two or three or four that you know are trickle-down habits, that when you do those things, It leads to other good things.",
+          "recap": "You very likely have at least a couple at work now, maybe unaware, perhaps a positive one, two, three or four",
+          "fix": "You very likely have at least a couple at work now, maybe unaware; you may have a positive one, two, three or four that you know are trickle-down habits, leading to other good things"
+        },
+        {
+          "severity": "S3",
+          "kind": "scope widened",
+          "ts": "07:57",
+          "transcript": "So for a lot of people, some of these trickle-down habits are going to be how are you going about the last hour or day or hour or two of your day before you go to bed?",
+          "recap": "For a lot of people, key ones are the last hour or two before bed and what time you go to bed",
+          "fix": "For a lot of people, some of them are the last hour or two before bed and what time you go to bed"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "07:08",
+          "transcript": "you look at porn, you masturbate, you ejaculate, you're filled with shame, you wish you hadn't done it.",
+          "recap": "you look at porn, masturbate, ejaculate, are filled with shame, or not even aware of it yet, but you feel different",
+          "fix": "are filled with shame and wish you hadn't done it; or maybe not even aware of it yet, but you feel different"
+        },
+        {
+          "severity": "S3",
+          "kind": "word added",
+          "ts": "12:09",
+          "transcript": "Is that they change with less effort, less uh gridting your way to that change, and more of it just automatically happening.",
+          "recap": "Most importantly, maybe, things change with less effort and gritting, more automatically, as a natural next step",
+          "fix": "The transcript word 'gridting' is garbled ('grinding'?): write 'less effort, less grinding [?]' or paraphrase as 'less forcing'"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "12:09",
+          "transcript": "when people are trying to change their health. You know, their mental health or physical health or sexual health or trying to change some aspect of their life, it feels like you've got to force so many changes.",
+          "recap": "Changing your mental, physical or sexual health a lot of times feels like forcing so many changes",
+          "fix": "Changing your mental, physical or sexual health, or some aspect of your life, a lot of times feels like forcing so many changes"
+        }
+      ]
+    },
+    {
+      "id": "458",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "certainty hedge lost",
+          "ts": "10:23",
+          "transcript": "Maybe it's gonna go well for a period of time, and then you're gonna fall off.",
+          "recap": "is not going to go well, or goes well for a period and then you fall off",
+          "fix": "is not going to go well, or maybe goes well for a period and then you fall off"
+        },
+        {
+          "severity": "S3",
+          "kind": "scope widened",
+          "ts": "16:29",
+          "transcript": "you will start to make some permanent changes that truly become a part of who you are that you don't fall back from.",
+          "recap": "toward permanent changes that become part of who you are",
+          "fix": "toward some permanent changes that become part of who you are"
+        }
+      ]
+    },
+    {
+      "id": "540",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "certainty hedge lost",
+          "ts": "04:06",
+          "transcript": "getting past porn is actually like step two out of 26.",
+          "recap": "TL;DR: Stopping porn, the NoFap goal, is worthy but only step two of 26",
+          "fix": "worthy but only like step two of 26 (the body bullet already keeps 'actually like step two out of 26')"
+        },
+        {
+          "severity": "S3",
+          "kind": "fact changed",
+          "ts": "09:32",
+          "transcript": "overcoming porn, and actually the vast majority of this sexual health stuff, there's some physical aspects, you know, there's some physical practices and techniques and things like that. But a big part of this journey of our sexual health.",
+          "recap": "The vast majority of sexual health has some physical practices and techniques, but a big part of it, and certainly overcoming porn, is an inner world game",
+          "fix": "Unsure: his sentence is unfinished, and 'the vast majority' may belong to the inner-world side. Safer wording: Overcoming porn, and the vast majority of this sexual health stuff, has some physical aspects, practices and techniques, but a big part of the journey, and certainly of overcoming porn, is an inner world game"
+        }
+      ]
+    },
+    {
+      "id": "550",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "scope widened",
+          "ts": "08:22",
+          "transcript": "Some of the most important days for us to talk, for us to um you know, debrief.",
+          "recap": "TL;DR: rough days ahead are the most important to debrief",
+          "fix": "rough days ahead are some of the most important to debrief (the body bullet already says 'some of'); keep the TL;DR at 45 words or fewer, e.g. drop 'daily' or 'ahead'"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "03:58",
+          "transcript": "So um the past two days actually, um, with the cold showers, day one today was the best.",
+          "recap": "It was the best he felt from them, because he held it longer",
+          "fix": "It was the best he felt from them in the past two days, because he held it longer"
+        },
+        {
+          "severity": "S3",
+          "kind": "certainty hedge lost",
+          "ts": "06:16",
+          "transcript": "I don't think that's weird at all.",
+          "recap": "Meditating in the cold isn't weird at all.",
+          "fix": "Meditating in the cold doesn't seem weird at all."
+        }
+      ]
+    },
+    {
+      "id": "569",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S2",
+          "kind": "advice hedge lost",
+          "ts": "19:00",
+          "transcript": "you're gonna want to stay further away from the edge. You might want to do that more at a, you know, a seven or an eight on the arousal scale, or maybe even a six.",
+          "recap": "be cautious: squeeze and pull further from the edge, more at a seven or eight on the arousal scale, maybe even a six",
+          "fix": "you're going to want to be cautious: stay further from the edge when you squeeze and pull, and you might want to do it more at a seven or eight on the arousal scale, or maybe even a six"
+        },
+        {
+          "severity": "S2",
+          "kind": "advice hedge lost",
+          "ts": "19:24",
+          "transcript": "As you get more used to it, you can do that at a higher and higher and higher arousal level.",
+          "recap": "As you get used to it, do it at higher and higher arousal levels",
+          "fix": "As you get used to it, you can do it at higher and higher arousal levels"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "04:09",
+          "transcript": "for us as men, there might be maybe not a more important habit than retention.",
+          "recap": "For us as men there might be maybe not a more important habit",
+          "fix": "For us as men there might be maybe not a more important habit than retention"
+        },
+        {
+          "severity": "S3",
+          "kind": "idea missing",
+          "ts": "17:24",
+          "transcript": "For years, I increased that and changed that in dramatic. hugely beneficial ways to the point where I could stand in line at the grocery store and basically have a little mini orgasm just standing there, squeezing my root muscle and pulling energy up my spine because those energetic pathways were open enough and my root muscle strong and strong enough that I could do that.",
+          "recap": "Years of building it changed things in dramatic ways, to the point of basically having a little mini orgasm standing in line at the grocery store, just squeezing the root muscle and pulling energy up the spine",
+          "fix": "changed things in dramatic, hugely beneficial ways, to the point of basically having a little mini orgasm ... because the energetic pathways were open enough and the root muscle strong enough"
+        }
+      ]
+    },
+    {
+      "id": "571",
+      "ok": false,
+      "findings": [
+        {
+          "severity": "S3",
+          "kind": "format",
+          "ts": "",
+          "transcript": "",
+          "recap": "**Encouraged:** look at your relationship with your cock and work to improve it.",
+          "fix": "'Encouraged:' is not a marker of section 7 and is not a key term: write it plain ('Encouraged: look at ...') or as 'Suggested practice:'"
+        },
+        {
+          "severity": "S3",
+          "kind": "format",
+          "ts": "",
+          "transcript": "",
+          "recap": "**Challenge:** next time you get out of a shower",
+          "fix": "'Challenge:' is bold with a colon like a marker but is not in the section 7 table: write it plain, or bold the key term without the colon"
+        }
+      ]
+    }
+  ]
+}

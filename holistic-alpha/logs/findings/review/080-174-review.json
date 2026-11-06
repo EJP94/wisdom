@@ -1,0 +1,145 @@
+{
+ "episodes": [
+  {
+   "id": "080",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "090",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "fact changed",
+     "ts": "13:37",
+     "transcript": "I cannot recommend cold showers highly enough. I spend the majority of my life, you guys, taking man. I used to love a long hot shower, and even if it wasn't long and hot, it was certainly warm",
+     "recap": "**Story:** most of life went to a long hot shower, or at least a warm one.",
+     "fix": "The transcript line 'I spend the majority of my life, you guys, taking man' is cut off, so 'most of life went to' is a guess. Write: '**Story:** used to love a long hot shower, or at least a warm one', dropping 'most of life went to'."
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "14:14",
+     "transcript": "but I never really adapted to it as, you know, as a lifestyle or as, you know, a more frequent thing",
+     "recap": "but never as a lifestyle or a frequent thing",
+     "fix": "but never really adapted to it as a lifestyle or a more frequent thing"
+    }
+   ]
+  },
+  {
+   "id": "092",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "105",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "advice hedge lost",
+     "ts": "11:49",
+     "transcript": "So what I would encourage you to do is this combine push ups and squats. Close your eyes, like I've talked about on the show before.",
+     "recap": "Combine push-ups and squats with your eyes closed, which has such a powerful effect.",
+     "fix": "A suggestion: combine push-ups and squats with your eyes closed, which has such a powerful effect"
+    }
+   ]
+  },
+  {
+   "id": "114",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "121",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "source lost",
+     "ts": "05:07",
+     "transcript": "I know a lot of you guys are. I know a lot of you guys have have started uh you know recently as a result of hearing me mention it on this podcast or somewhere else",
+     "recap": "a lot of guys already take them, a lot started after hearing them mentioned here.",
+     "fix": "a lot of guys already take them, and a lot have started recently after hearing them mentioned on this podcast or somewhere else"
+    },
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "08:55",
+     "transcript": "The more often we push into that unknown space, the more we get comfortable with pushing in to that unknown space. ... so the more often you step into that cold shower and step into that unknown and step into that discomfort, the more you convince yourself, you know what? I can step into the unknown.",
+     "recap": "Each cold shower convinces you: \"I can step into the unknown. I can step into discomfort\"",
+     "fix": "The more often you step into a cold shower, the more you convince yourself: \"I can step into the unknown. I can step into discomfort\""
+    },
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "20:43",
+     "transcript": "so yeah, you'll experience some changes in 30 days, and you can experience dramatic changes in short period of time, in a short period of time",
+     "recap": "You can see dramatic changes in a short period, like 30 days",
+     "fix": "You'll experience some changes in 30 days, and can experience dramatic changes in a short period of time"
+    },
+    {
+     "severity": "S3",
+     "kind": "source lost",
+     "ts": "21:49",
+     "transcript": "So do the work, you guys. I know a lot of you guys are. I love it. I see you guys. I see my guys in boot camp doing it. I see a lot of you guys that I talk to doing it.",
+     "recap": "A lot of guys are doing the work.",
+     "fix": "A lot of guys are doing the work, both in Bootcamp and among those talked to (the checker's LOOK 'some of you guys' is a false alarm: that is a false start before 'it's not doing the work is not just about physical training')"
+    }
+   ]
+  },
+  {
+   "id": "140",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "04:31",
+     "transcript": "So one of the ways that we can literally stay warmer and literally physically not feel the cold as much is to get plenty of sleep.",
+     "recap": "plenty of sleep literally keeps you warmer",
+     "fix": "plenty of sleep is one of the ways to literally stay warmer"
+    },
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "07:47",
+     "transcript": "And by the way, staying hydrated for most people, shoot for a gallon a day. Shoot for a gallon a day, depending on how much you weigh.",
+     "recap": "TL;DR: focus extra on sleep and hydration, about a gallon a day",
+     "fix": "TL;DR keeps no scope for the gallon (the bullet has 'For most people ... depending on how much you weigh'). The TL;DR is at 45 words, so swap 'about a gallon a day' for 'for most people about a gallon a day' and cut 'your warmth muscle' to stay at 45 or fewer"
+    }
+   ]
+  },
+  {
+   "id": "174",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "advice hedge lost",
+     "ts": "01:33",
+     "transcript": "So maybe it's meditating if you're not already meditating. Maybe commit to uh you know download headspace and do at least a five minute meditation every day this week if you're not already meditating.",
+     "recap": "Or download Headspace and do at least a five minute meditation every day this week",
+     "fix": "Or maybe commit to downloading Headspace and doing at least a five minute meditation every day this week, if you're not already meditating"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "04:38",
+     "transcript": "It might happen after a year, it might happen after five years, it might happen after 10 years or 15 or whatever.",
+     "recap": "it's inevitable: after a year, five years, 10, 15, because of what porn does to us",
+     "fix": "it's inevitable; it might happen after a year, five years, 10 or 15, because of what porn does to us"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "12:27",
+     "transcript": "Meditation can be a great strategy to s just step back from that, get out of that thought pattern, come back to the present moment.",
+     "recap": "meditation is a great way to step back from that thought pattern and come back to the present moment",
+     "fix": "meditation can be a great strategy to step back from that thought pattern and come back to the present moment"
+    }
+   ]
+  }
+ ]
+}

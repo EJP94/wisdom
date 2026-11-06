@@ -1,0 +1,70 @@
+{
+  "topic": "cold",
+  "merged_lines_checked": 0,
+  "groups_checked": 57,
+  "findings": [
+    {
+      "severity": "S2",
+      "kind": "view change hidden",
+      "ids": ["004-16", "540-63"],
+      "found": "004-16 (2019): \"Gradually build how long you stay in a cold shower\", with no upper limit. 540-63 (2023) is nested under it with no `later`: \"No need to push cold exposure significantly beyond the sweet spot of about 11 minutes per week or set records\" (540-62 gives about a minute and a half per day). Someone who reads only 004-16 keeps lengthening the shower; the host's later claim says to stop at about a minute and a half a day. That changes what a person does, so it is a Later view, not a hedge. As rendered, 540-63 also sits in 'How to practice' and names \"the sweet spot\", which is defined only in 540-62 in 'How much'.",
+      "fix": "In 'How to practice', change the nested line under 004-16 to `later 540-63` (newer after older, 004-16 kept). Leave the 540-62 group in 'How much' as it is."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["289-34", "289-35", "289-36", "140-35", "140-36", "090-51"],
+      "found": "The 289-34 group repeats the brown-fat groups of 140 and 090 as a separate top-level line in the same section. 289-36 \"The cold engine, brown fat, helps keep you warm and adapt to cold\" is the claim of 140-35 \"Brown fat is basically our body's warmth engine: the more we have, the more easily we stay warm\" (with 090-53). 289-35 \"Every little bit of cold trains the cold engine, brown fat: a 30-second or 10-minute cold shower...\" is the claim of 140-36 \"Every time you expose yourself to cold, your body responds by building brown fat\" and 090-49, with another scope (even a little cold, vs 'any decent period'). 289-34 (brown fat trained like muscles with push-ups) is the muscle image of 090-51 and 140-37. These are different strengths or scopes of the same claims, so a missed group, not a merge.",
+      "fix": "In 'Adapting to cold', nest the whole 289-34 line (with 289-35 and 289-36) under 140-35, so the 'warmth engine' claim is one group. Optionally move the 140-36 group (now in 'Physical effects') into 'Adapting to cold' beside it and nest 289-35 under 140-36 instead."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["004-24", "240-19", "240-21", "092-43", "174-79", "289-28", "289-30", "350-10"],
+      "found": "Two top-level groups in 'Willpower, discipline and resistance' make the same claim: a cold shower builds the ability or willingness to choose a discomfort because of where it leads. 004-24 group: 174-79 \"builds willpower: you choose your path intentionally even though it's uncomfortable in the moment, because you know it leads to a good place\", 289-28 and 289-30 \"stepping into a little discomfort because it leads where I want to go\". 240-19 group: 240-19 \"Probably the biggest benefit of cold showers: they strengthen your ability to just do an uncomfortable thing\", 350-10 \"Maybe among the most important benefits... they strengthen your willingness to make a choice that is uncomfortable in the moment but benefits you in the long run\". The strengths differ (\"the biggest benefit\" vs \"probably\" vs \"maybe among the most important\" vs plain), so a group, not a merge. Also 240-21 \"Every cold shower strengthens your ability and willingness to say 'this thing that I'm about to do is gonna be uncomfortable, but I'm gonna do it anyway'\" sits in the 114-33 group although it is the plain version of 240-19 from the same episode, and 092-43 \"A daily cold shower also builds your willingness to get uncomfortable, to face resistance head on\" sits in the resistance group with the same claim.",
+      "fix": "Nest the 240-19 line (with 350-10 and 350-12) under 004-24. Move 240-21 and 092-43 from their present groups to nested lines under 240-19. Leave 114-33 as its own group (choosing the uncomfortable thing at the start of the day)."
+    },
+    {
+      "severity": "S3",
+      "kind": "merge missed",
+      "ids": ["121-15", "140-60"],
+      "found": "121-15 \"A lot of guys already take cold showers, a lot started recently after hearing them mentioned on this podcast or somewhere else\" and 140-60 \"A lot of guys take cold showers on the regular now after hearing about them here or elsewhere\" are the same claim with the same strength and scope (many men take cold showers, many after hearing of them here or elsewhere). They sit on two lines, one nested under the other.",
+      "fix": "Put 140-60 on the 121-15 line (`- 121-15 140-60`) and keep 350-02 nested under it."
+    },
+    {
+      "severity": "S3",
+      "kind": "wrong nesting",
+      "ids": ["549-41", "121-15"],
+      "found": "549-41 (Guest) \"A lot of guys benefit from a cold shower\" is nested under 121-15 \"A lot of guys already take cold showers, a lot started recently after hearing them...\". The guest says men benefit; the parent says men take them and where they heard of them. It is not the same claim with another strength or scope, nor a detail of it.",
+      "fix": "Move 549-41 (with its Guest marker) under 004-01 \"Cold is amazing and beneficial on so many levels\" in the same section, or under 289-37."
+    },
+    {
+      "severity": "S3",
+      "kind": "wrong section",
+      "ids": ["004-27"],
+      "found": "004-27 \"a long, hot shower feels good, then a lot of times leaves you more drained\" is alone at the end of 'Discomfort and what it feels like'. It is about hot showers and the drained feeling they leave, not about the discomfort or feel of a cold shower. It contrasts with the alertness that cold brings (004-20, 004-21).",
+      "fix": "Move 004-27 to 'Mental reset, mood and stress', as a nested line under 004-20, or to 'Why it matters'."
+    },
+    {
+      "severity": "S3",
+      "kind": "wrong section",
+      "ids": ["569-19", "571-22", "711-34"],
+      "found": "The section 'Porn and NoFap' holds 569-19 (a cold shower moves stuck energy in semen retention) and the 571-22 group (the penis is at its most shrunken after a cold shower or plunge). Neither is about porn or NoFap, so the title does not fit these lines.",
+      "fix": "Rename the section, for example 'Porn, semen retention and the body', or move these lines to a section of their own. If the registry change in the next finding is made, 571-22 and 711-34 leave the note and only 569-19 stays."
+    },
+    {
+      "severity": "S3",
+      "kind": "pointer",
+      "ids": ["711-25", "571-22", "711-34"],
+      "found": "The registry splits one observation between two homes. 711-25 \"Out of a cold shower, 'woof', your cock is not at its biggest\" has home body-relationship (cold is only in `also`), while 571-22 \"Out of a shower, especially a cold shower or cold plunge, your cock is in its most shrinkage kind of position: ... when your body's cold, it's not at its physical biggest point\" and 711-34 \"Plenty of cold plunges, ice baths at home and cold creeks made well known how short, shriveled and much, much smaller the cock is after the cold\" have home cold. All three make the same point, and in 571 and 711 it is only the premise of the shame and acceptance claims (571-23..25, 711-04, 711-05, 711-26, 711-33), which are in body-relationship.",
+      "fix": "Registry, not layout: give the three claims one home. The better home is body-relationship with `also: [\"cold\"]` for 571-22 and 711-34, because the passage is about how the man sees his body. Then 571-22 and 711-34 leave the cold note and appear as a pointer. The alternative is to set 711-25 to topic cold, where it would nest under 571-22."
+    },
+    {
+      "severity": "S3",
+      "kind": "pointer",
+      "ids": ["140-56", "140-06", "140-07"],
+      "found": "Same registry split in episode 140. Cold holds 140-49 \"Winter asks us to either shy away, hibernate and get smaller, or lean in and get strong\" and 140-55 \"As winter comes, have a determination to attack it\". The pointers 140-56 \"Winter will make you stronger, an opportunity to lean into the challenge and grow... attacking it instead of hibernating\", 140-07 \"Some people just dread winter... such an awesome time to grow, attacking it instead of going into hibernation mode\" and 140-06 \"we can let it beat us down or take it as a tool for growth\" have home discomfort. They say the same thing as 140-49/140-55 and 140-47, which are in the 'lean into the cold' group. One of the two sets has the wrong home.",
+      "fix": "Registry, not layout: either set 140-56, 140-07 and 140-06 to topic cold (then nest them under 140-46 in 'Going out in the cold and winter'), or move 140-49 and 140-55 to discomfort with `also: [\"cold\"]`. Setting them to cold is the closer fit, since the group already carries the winter 'lean into it' claims."
+    }
+  ]
+}

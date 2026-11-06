@@ -2,14 +2,14 @@
 topic: semen-retention
 title: "Semen retention"
 area: sex-energy
-claims: 198
+claims: 188
 episodes: 13
 explicitness: sexual-health
 instructions: v2
 section: topic
 ---
 
-> **In short** — Semen retention is not ejaculating, or not as often, while staying sexually active: masturbating and edging without ejaculating, and learning to separate orgasm from ejaculation. Ejaculating too often drains life force and hormones. Later episodes add that the right frequency is individual, that an aware, intentional release can be powerful, and that emotional walls are very common.
+> **In short** — Semen retention is not ejaculating, or not as often, while staying sexually active: masturbating and edging without ejaculating, and eventually learning to separate orgasm from ejaculation. Ejaculating too often drains life force and hormones. Later episodes add that the right frequency is individual, that an aware, intentional release can be powerful, and that emotional walls are very common.
 
 *Ideas from Holistic Alpha, as told by host Steven Mathis and, where marked, his guests and listeners. Numbers in parentheses are episodes. Sources he credits are named where they appear. Not fact-checked.*
 
@@ -128,19 +128,9 @@ section: topic
 
 ## Orgasm without ejaculation
 
-- You can absolutely work towards separating orgasm and ejaculation (002) <!-- 002-38 -->
-- Far enough along, fueling your sexual energy means separating orgasm and ejaculation, so you can be highly sexually active (in general, not with multiple people, though that's your choice) (002 · also 006, 029) <!-- 002-37 -->
-  - The encouragement: learn to ride the edge of not ejaculating while getting the benefits of sexual activity, and eventually to separate ejaculation and orgasm (002) <!-- 002-40 -->
-  - With a partner, not ejaculating as often means learning to separate orgasm and ejaculation (029) <!-- 029-52 -->
-    - In a relationship, the tremendous power is in controlling ejaculation with your partner too (006) <!-- 006-29 -->
-    - With a woman and regular sex, the goal still seems to be separating orgasm and ejaculation, which takes practice and can't really fit in one 15-minute episode (006) <!-- 006-43 -->
-- The more you reach orgasm without ejaculating, the more the energy builds (006) <!-- 006-31 -->
-- To move towards separating orgasm and ejaculation and gain control, practice deep breathing (006) <!-- 006-46 -->
-- After the three fundamental shifts, you practice edging more and more, get better at controlling arousal, practice Kegels and reverse Kegels and get stronger, and after some practice you can reach a full-on, super powerful level 10 orgasm without ejaculating (006) <!-- 006-66 -->
-- Controlling arousal eventually lets you fully orgasm without ejaculating (027) <!-- 027-41 -->
-- You can absolutely reach 10 on the arousal scale and have an amazing, longer-lasting orgasm without ejaculating, and end with incredible energy and power, way above baseline instead of back at square one (006) <!-- 006-30 -->
-- Orgasm without ejaculating takes practice for sure, and intention (006) <!-- 006-32 -->
-  - A level 10 orgasm without ejaculating doesn't come in three days: more important is shifting how you look at it and when you allow yourself to ejaculate, which has a huge impact (006) <!-- 006-67 -->
+- The encouragement: learn to ride the edge of not ejaculating while getting the benefits of sexual activity, and eventually to separate ejaculation and orgasm (002) <!-- 002-40 -->
+- In a relationship, the tremendous power is in controlling ejaculation with your partner too (006) <!-- 006-29 -->
+- A level 10 orgasm without ejaculating doesn't come in three days: more important is shifting how you look at it and when you allow yourself to ejaculate, which has a huge impact (006) <!-- 006-67 -->
 
 ## With a partner
 
@@ -266,7 +256,7 @@ section: topic
 - See [[life-force]] (006, 027, 034, 127, 537) <!-- 006-65 027-21 027-45 034-46 127-74 537-48 -->
 - See [[meditation]] (006) <!-- 006-47 -->
 - See [[morning-wood]] (011) <!-- 011-20 011-21 011-22 011-30 -->
-- See [[orgasm]] (034, 275, 404b1) <!-- 034-01 034-02 034-03 034-04 034-05 034-06 034-22 034-30 034-31 034-32 034-33 034-34 034-35 034-36 034-43 034-45 034-47 034-48 034-57 034-58 275-88 275-89 404b1-40 -->
+- See [[orgasm]] (002, 006, 027, 029, 034, 275, 404b1) <!-- 002-37 002-38 006-30 006-31 006-32 006-43 006-46 006-66 027-41 029-52 034-01 034-02 034-03 034-04 034-05 034-06 034-22 034-30 034-31 034-32 034-33 034-34 034-35 034-36 034-43 034-45 034-47 034-48 034-57 034-58 275-88 275-89 404b1-40 -->
 - See [[porn]] (150, 731) <!-- 150-15 731-07 731-23 731-24 -->
 - See [[resistance]] (088) <!-- 088-29 -->
 - See [[setbacks]] (088) <!-- 088-61 088-62 088-63 088-64 088-78 -->

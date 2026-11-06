@@ -1,0 +1,63 @@
+{"episodes": [
+  {"id": "080", "ok": true, "findings": []},
+  {"id": "090", "ok": false, "findings": [
+    {"severity": "S1", "kind": "speaker wrong", "line": 24, "claim": "090-16",
+     "recap": "**Story:** on mornings of dragging and feeling down, nothing else ever found changed that: back in the day every energy drink known to man, coffee, all kinds of supplements. Nothing will change your state more than a cold shower",
+     "found": "marker Story on the whole claim, including the last sentence: \"Nothing will change your state more than a cold shower\"",
+     "fix": "The Story marker opens one sentence in the middle of the bullet, so it governs only that sentence. Split in two rows. Row 1, marker Story: \"On mornings of dragging and feeling down, nothing else ever found changed that: back in the day every energy drink known to man, coffee, all kinds of supplements\" (topic cold, also supplements). Row 2, marker empty (the host's view): \"Nothing will change your state more than a cold shower\" (topic cold)"},
+    {"severity": "S2", "kind": "not standalone", "line": 27, "claim": "090-24",
+     "recap": "On a day-to-day basis, \"I truly believe there is nothing more that you can do, nothing more powerful that you can do to start your day\" and your battle against resistance from a fundamentally more powerful standpoint than a cold shower",
+     "found": "On a day-to-day basis, \"I truly believe there is nothing more that you can do, nothing more powerful that you can do to start your day\" and your battle against resistance from a fundamentally more powerful standpoint than a cold shower",
+     "fix": "The claim has no subject and no verb: it does not say what is the most powerful thing. Name the subject (the cold shower) and keep the quote and the hedge \"I truly believe\", for example: \"A cold shower, on a day-to-day basis: \\\"I truly believe there is nothing more that you can do, nothing more powerful that you can do to start your day\\\" and your battle against resistance from a fundamentally more powerful standpoint\""}
+  ]},
+  {"id": "092", "ok": true, "findings": []},
+  {"id": "105", "ok": false, "findings": [
+    {"severity": "S2", "kind": "hedge lost", "line": 21, "claim": "105-08",
+     "recap": "Personally, if this lasted a week or two, maybe chilling to relax and recharge ... would do ... Even once things a little bit go back to normal, a major economic thing means things will take a while to get started again, and for people with businesses things have just changed",
+     "found": "Even once things a little bit go back to normal after the quarantine, a major economic thing means things will take a while to get started again, and for people with businesses things have just changed",
+     "fix": "\"Personally\" opens the bullet and covers its views, and this one is a prediction. Carry it: \"Personally, even once things a little bit go back to normal after the quarantine, a major economic thing means things will take a while to get started again, and for people with businesses things have just changed\" (scope arguable: if the fixer reads \"Personally\" as covering only the first two sentences, log it as rejected)"},
+    {"severity": "S2", "kind": "not standalone", "line": 37, "claim": "105-47",
+     "recap": "your relationships, how calm you are and how well you deal emotionally with all of this",
+     "found": "...how calm you are and how well you deal emotionally with all of this",
+     "fix": "\"all of this\" points outside the claim (the quarantine). Name it: \"The ground gained against resistance carries into the rest of life: your work or business, how you're making things work financially right now, your relationships, how calm you are and how well you deal emotionally with all of this, the quarantine\""},
+    {"severity": "S1", "kind": "speaker wrong", "line": 38, "claim": "105-50",
+     "recap": "**Story:** doing them daily right now: \"do it with me\". If you've never done them, you will feel the power. A cold shower, your Headspace, then eyes closed, wherever you are, squats and push-ups, every single day; whatever else you want to do is fine",
+     "found": "marker Story on the whole claim: the story sentence plus two sentences of advice",
+     "fix": "The Story marker opens one sentence in the middle of the bullet, so it governs only that sentence (as 105-39 does). Split in three rows. Row 1, marker Story: \"Doing the three tools against resistance daily right now: \\\"do it with me\\\"\" (topic resistance, also every-day, cold, meditation, +eyes-closed). Row 2, marker empty: \"If you've never done the three tools against resistance, you will feel the power\". Row 3, marker empty: \"A cold shower, your Headspace, then eyes closed, wherever you are, squats and push-ups, every single day; whatever else you want to do is fine\""}
+  ]},
+  {"id": "114", "ok": false, "findings": [
+    {"severity": "S2", "kind": "lost in split", "line": 24, "claim": "114-14",
+     "recap": "Some examples, not a prescription of this and this every day, but foundational things that really support you: ... Physical grinding every day ... Rest days occasionally, yes, but grind every day",
+     "found": "Rest days occasionally, yes, but grind every day",
+     "fix": "The parent bullet (line 21) says these are examples, not a prescription, and 114-09 carries it for the same example. This nested instruction does not, so it reads as a flat prescription. Carry it: \"As an example of a personal foundation, not a prescription: rest days occasionally, yes, but grind every day\""}
+  ]},
+  {"id": "121", "ok": true, "findings": []},
+  {"id": "140", "ok": false, "findings": [
+    {"severity": "S2", "kind": "hedge lost", "line": 24, "claim": "140-14",
+     "recap": "Personally, winter can be hard on the mental and emotional state. In summer, feeling down, you can walk out into the warm sun; in winter, that state seemingly can be much more challenged",
+     "found": "In summer, feeling down, you can walk out into the warm sun; in winter, that state seemingly can be much more challenged",
+     "fix": "This sentence is the host's own observation that explains the opening \"Personally\" (carried by 140-13). Carry it: \"Personally, in summer, feeling down, you can walk out into the warm sun; in winter, that state seemingly can be much more challenged\""},
+    {"severity": "S2", "kind": "claim strengthened", "line": 31, "claim": "140-33",
+     "recap": "We have much, much less of it, in little stores in a few areas",
+     "found": "We have much, much less brown fat than white fat, in little stores in a few areas: ...",
+     "fix": "The Recap does not say what the comparison is with; \"than white fat\" is added. \"We have much, much less brown fat, in little stores in a few areas: where a warm towel wrapped around your neck would sit, where you'd place things to keep warm\""},
+    {"severity": "S3", "kind": "not split", "line": 41, "claim": "140-57",
+     "recap": "who knows what this winter will bring; it's likely to bring a more challenging mental and physical health situation, with all the lockdowns. Don't let it push you down",
+     "found": "one row holds the prediction and the instruction \"Don't let it push you down\"",
+     "fix": "Split in two. Row 1: \"With all the bullshit happening right now, the \\\"scandemic nonsense\\\", who knows what this winter will bring; it's likely to bring a more challenging mental and physical health situation, with all the lockdowns\". Row 2: \"Don't let a more challenging winter, with all the lockdowns, push you down\""},
+    {"severity": "S3", "kind": "not split", "line": 43, "claim": "140-60",
+     "recap": "A lot of guys take cold showers on the regular now after hearing about them here or elsewhere: one of the best ways to upgrade your mental state and fight depression and anxiety",
+     "found": "one row holds two statements: guys take cold showers now, and cold showers are one of the best ways to upgrade the mental state",
+     "fix": "Split in two (121-15 does the same for the first statement). Row 1: \"A lot of guys take cold showers on the regular now after hearing about them here or elsewhere\". Row 2: \"Cold showers are one of the best ways to upgrade your mental state and fight depression and anxiety\""}
+  ]},
+  {"id": "174", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 36, "claim": "174-46",
+     "recap": "Then that Saturday afternoon anxious feelings come up, or some visual on Instagram triggers you, and you either redirect, maybe work out, meditate, get the project done, or lose that five-second battle and go down the porn path",
+     "found": "Then on a Saturday afternoon anxious feelings come up, ...",
+     "fix": "\"Then\" points to the previous claim (174-45). Drop it and name the subject: \"On a Saturday afternoon, anxious feelings come up, or some visual on Instagram triggers you, and you either redirect, maybe work out, meditate, get the project done, or lose that five-second battle and go down the porn path\""},
+    {"severity": "S2", "kind": "not standalone", "line": 48, "claim": "174-90",
+     "recap": "Maybe uncomfortable or not that desirable short term, it's strategically powerful long term",
+     "found": "Maybe uncomfortable or not that desirable short term, doing those things every day instead of porn is strategically powerful long term",
+     "fix": "\"those things\" points to the previous claims (174-88, 174-89). Name them: \"Maybe uncomfortable or not that desirable short term, a cold shower, physical training, a gallon of water or meditation every day for 90 days instead of porn is strategically powerful long term\" (in the Recap, \"it\" follows the meditation option, so the fixer may limit it to meditation)"}
+  ]}
+]}

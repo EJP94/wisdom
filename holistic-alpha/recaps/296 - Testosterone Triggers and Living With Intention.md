@@ -1,0 +1,56 @@
+---
+id: "296"
+episode: 296
+title: "Testosterone Triggers and Living With Intention"
+date: 2022-01-05
+type: solo
+host: Steven Mathis
+words: 4867
+minutes: 27
+instructions: v2
+source: "296 - Testosterone Triggers and Living With Intention.txt"
+section: recap
+---
+
+> **TL;DR** — All growth comes from living with intention, helped by meditation and a morning trick of doing a habit differently; testosterone, the masculine fire, is a big picture: plug negative triggers like ejaculation, porn and stagnation, and add positive ones like heavy lifting and sun.
+
+*Ideas and stories from Holistic Alpha episode 296, as told by host Steven Mathis. Sources he credits are named where they appear. Not fact-checked.*
+
+- **Living with intention** is the fundamental thing: honestly, all of our growth and development as human beings and men comes from it. Stuck in old patterns of behavior, belief and action, we get nowhere, and there is no treading water in life: we're either getting better or worse, so old patterns mean a gradual decline. The only way into growth, into the most authentic and powerful version of ourselves and results in life, is choosing how we react, act and live in the moment
+- So much of life is lived on repeat, basically: the same patterns, beliefs, actions and habits over and over, on a macro scale (people repeating patterns in romantic relationships) and a micro scale, day to day, moment to moment. Intentionally choosing in the moment where our focus goes and what we do is where growth is, where life is, really: there's no magic in this sort of automatic repeating-patterns mode
+- The basics apply: meditating, since we're never going to live with intention without stepping back to some distance from our thoughts, which removes some of their control; and the moment-to-moment, day-to-day decision to live with intention
+- **A simple but effective little trick**, suggested with brushing your teeth or putting on your shoes:
+  - Teeth: you probably brush with your dominant hand. Start the morning with the other and say to yourself "I'm starting today in a new and different way. I'm starting today with intention." A small thing but a big thing: breaking a really powerful long-term habit, minor as it might seem, into intention is really powerful and helps you harness intention through the day
+  - Shoes: you probably put one on and tie them in a particular order. Identify it and do it differently: if you always put your right shoe on first and tie it, tomorrow start with the left, and say the same words
+  - It could probably be adapted to other parts of your morning routine. Something very, very ingrained, probably done for decades, seems good: it really helps kind of crack the door open in your mind to getting out of patterns. Done early in a very deliberately different way, with the words, it carries through the rest of your day
+- We've got to practice living with intention, and the only way to practice it is to start doing it
+- **Testosterone** here means a bigger view than the molecule, which itself isn't just total testosterone but free testosterone, conversion into DHT and a lot more. What matters to us as men is not some arbitrary number on a test but how we feel: the overall testosterone fire and its impacts on strength, confidence, physical recovery, muscle mass, sexual energy and drive, sexual performance, if you will, erections, all kind of part of the same fire
+- The big picture seems to be that it is a big picture: not one thing drags the fire down, and not one thing will magically solve it. A bunch of things will either sort of trigger a reduction or trigger a boost; some may change a test result, some may not, but either way they affect how you feel and perform
+- Talked about previously: we're very much like a bucket holding our life force energy, here testosterone, the masculine fire. Plug as many holes in the bottom as possible and add as many things at the top as we can: negative triggers to avoid, positive ones to add. It's a complete picture, so we need to kind of address both sides of it
+- A quick rundown, without much detail: there's a whole world of information out there and lots of previous episodes. The suggestion: a few on each side will kind of stand out to you. The point isn't to check off every single thing immediately, but to look at your life and circumstances and take the little nuggets: "I should probably pay attention to this and this, and maybe I should try this and this"
+- **Negative triggers** drag the masculine fire down, short and/or long term:
+  - Ejaculation, especially frequent, especially alone, no surprise: the more we ejaculate, the more it basically drags this fire down. A big one, with tons more in previous episodes
+  - Porn, related but separate, not always directly connected to ejaculation, is in and of itself a negative trigger
+  - Shitty food crushes your hormones, testosterone included: you eat shitty, you drag down your fire, period
+  - Sleep disruptions. Sleep is huge: the majority of the actual hormone is produced at night, and stress, recovery and pain are affected without enough of it. Sleep is in a lot of ways our superpower: we need enough of it, and enough quality sleep
+  - Physical stagnation: we're not meant to sit. Testosterone and that fire, when it really comes down to it, are basically "get shit done juice": our body responds when we place demands on it, and sitting and doing nothing places none
+  - A lack of presence, now-ness and inner peace leads to stress, which crushes the fire and the hormone, to being emotionally triggered and at times not necessarily stable, and to arguments and disruptions in relationships, sucking the masculine force out of us
+  - Excess screen time basically tells your body it doesn't really need this, with no demands placed. Unless you're sort of a workaholic, most likely a lot of it is social media, TV, the unproductive things
+  - Comfort, and staying stuck in old shitty patterns: from a primal standpoint, not challenging ourselves or taking risks to create the new thing we want places no demands on our body and on the universe, and over time, especially this one, it drags you down
+  - The energetic middle. Talked about previously: very still, as in meditation, and very intense, as in intense training. Those edges (not their only forms) are really where the magic of life is, where we grow and heal: intensity asks the body for more fire, more testosterone; stillness is where we recover, heal and reduce stress, letting the fire thrive. The neutral zone in the middle is kind of where our fire goes to die. Some stretches of days you just have to bust stuff out, but as much as possible push into true stillness and real intensity
+  - Fat: the more fat on our body, the worse hormonally, for the molecule and for the overall fire. Really simple: long term, getting leaner matters
+- **Positive triggers** add to the bucket:
+  - Non-ejaculatory, high-vibe masturbation and/or sex absolutely fires this up, with three keys: non-ejaculatory, without porn, and with awareness and mindfulness
+  - Lifting heavy stuff, huge: it really fires up your hormones in a powerful way. It can look different, kettlebells, dumbbells, deadlifts, squats, even ramped-up bodyweight work, but we need to move heavy stuff: a fact we cannot get around as men, if we want to be the strongest we can be, with this fire strong
+  - Sun: its effects on our hormones and testosterone are well documented, and beyond the molecule, sunlight does so much for us. It's a tougher time of year, but we can still soak some up on sunny days, even when it's cold
+  - Cold exposure, which doesn't need to be hugely excessive: a cold shower, a little cold outside, maybe a workout in the cold to get some sun. It triggers various things physiologically and sort of energetically and spiritually that fire this up
+  - Super clean power food, the opposite of shitty food: stuff in the middle is meh, the really good stuff really fires us up. Personally, based on current knowledge and experience, the suggestion is to focus on meat and organs, pastured eggs, things like that, a topic of its own
+  - A solid night's sleep: consistent quality sleep really helps energize you and definitely improves your hormonal state and this fire
+  - Taking action that excites and challenges you. A lot of times we get more of this fire from placing demands on ourselves: a lot of how our body and nature respond is to demands, just as heavier weights make your body get stronger to adapt. Challenge yourself and your body responds with what you need, part of which is testosterone, this get-stuff-done fire
+  - Human bonding: we're meant to connect with other people, and it will definitely raise your vibration. Especially dating, even just striking up conversations with women, which lifts you up and absolutely raises your testosterone and this fire. You may have left a date, maybe a second or third, maybe after kissing somebody for a while for the first time, with a little hormonal funk in your armpit: your hormones actually did get a boost. Even before a relationship or sex, the conversations and interactions fire this up
+  - Definitely suggested: do it in the physical world. Swiping on Tinder won't do this; personally, the impression over the years is that sitting and swiping on Tinder seems to be a negative trigger, which seems to actually suck this fire out of you. Forget Tinder, Bumble and all the things: live your life, go where you want, do what you enjoy, and talk with the women you see there. It's a million times better and more effective way to start a meaningful relationship, most often
+  - Presence and inner ease: knowing you can stay calm and grounded and come back to peace, even when temporarily pulled away, brings a lot of confidence in facing your world and its challenges, which translates to more of this fire, never mind the reduced stress. The more you stay in touch with that inner place of peace and presence, the more you access your real power, fire and passion
+  - Nature: we are primal beasts, wild animals when it comes down to it, smart and creative, but meant to be in nature, part of it. Connecting with it is really, really important, especially bare feet on the ground, even on concrete: one major benefit of being barefoot is grounding electrically to the earth, which happens even through concrete because its moisture conducts the electricity. A suggested barefoot walk, even when it's cold, maybe especially when it's cold, is a fantastic way to get a little connection and grounding
+  - The energetic edges: get really, really still and really, really intense, especially intense. Stillness also helps work through the inner and emotional stuff that kind of drags you down
+  - Muscle, well, well known: the more muscle mass, the more testosterone we produce in general. Long term, losing fat and putting on muscle is one of the most important triggers, for the hormone and the overall fire
+- Live with intention: that is everything. It's how we're better in relationships, communicating and relating with more intention, how we create change, change habits and add new ones, grow and expand: we've got to choose. Start your day with one of the little tricks and carry it into the rest of your day as much as possible

@@ -1,0 +1,14 @@
+{"episodes": [
+  {"id": "676", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 26, "claim": "676-17",
+     "recap": "The after is enjoyable, as is knowing how good it will be for the day; the first moment stepping in isn't ever really",
+     "found": "With cold showers, the after is enjoyable, as is knowing how good it will be for the day; the first moment stepping in isn't ever really",
+     "fix": "With cold showers, the after is enjoyable, as is knowing how good it will be for the day; the first moment stepping in isn't ever really enjoyable (the claim ends mid-sentence: \"isn't ever really\" has no predicate, so it does not read alone when copied word for word)"}
+  ]},
+  {"id": "711", "ok": false, "findings": [
+    {"severity": "S2", "kind": "lost in split", "line": 21, "claim": "711-05",
+     "recap": "comes a little inkling, 90% or 99% of the time probably not even very conscious: not good enough, too small, wish it was bigger. Or a little shame: a lot of men seem kind of prouder of it hard, \"in its full glory\", and in any other state there is kind of an element of shame, almost as if it should somehow be hard all the time",
+     "found": "Out of a cold shower, cock cold and kind of shriveled, comes a little inkling of not good enough, or a little shame: a lot of men seem kind of prouder of their cock hard, \"in its full glory\", and in any other state there is kind of an element of shame, almost as if it should somehow be hard all the time",
+     "fix": "The qualifier \"90% or 99% of the time probably not even very conscious\" opens the sentence and covers both the inkling and the \"Or a little shame\" alternative, but 711-05 states the inkling and the shame without it. 711-05 also repeats the inkling already in 711-04. Make 711-05 carry only the shame statement and the qualifier: \"Out of a cold shower, cock cold and kind of shriveled, comes a little shame, 90% or 99% of the time probably not even very conscious: a lot of men seem kind of prouder of their cock hard, \\\"in its full glory\\\", and in any other state there is kind of an element of shame, almost as if it should somehow be hard all the time\""}
+  ]}
+]}

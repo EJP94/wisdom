@@ -1,0 +1,14 @@
+{"episodes": [{"id": "711", "ok": false, "findings": [
+  {"severity": "S3", "kind": "fact changed", "ts": "00:37",
+   "transcript": "Some of the layers of that, you know, I think about some of the the times that I've thought about my own body. I think about some of the times that I've heard from many countless guys at this point, you know, talking to so many of you guys over the years.",
+   "recap": "Some of its layers come from times of personally thinking about one's own body, and from what so many of you, countless men, have said over the years",
+   "fix": "Some of its layers show in some times of personally thinking about one's own body, and in some of what so many of you, countless men, have said over the years (he names where he has seen the layers, not what causes them; \"come from\" reads as a cause, and \"some of the times\" lost its \"some\")"},
+  {"severity": "S3", "kind": "idea missing", "ts": "09:57",
+   "transcript": "if you're critical of and You don't feel enough in, and you have these expectations of your cock. Guess what? That's you. That's you, right?",
+   "recap": "Criticizing your cock is criticizing yourself: it's part of you, physically, energetically, spiritually, as life force",
+   "fix": "Criticizing your cock, or placing expectations on it, is doing it to yourself: it's part of you, physically, energetically, spiritually, as life force"},
+  {"severity": "S3", "kind": "fact changed", "ts": "11:49",
+   "transcript": "by allowing for it to be short and shriveled and much, much smaller when you get out of a cold shower or a cold plunge. I know some of you guys some of you guys getting cold plunges, and I know very well because I've had plenty of my own.",
+   "recap": "including much, much smaller after a cold shower or plunge, as some of you know",
+   "fix": "including short, shriveled and much, much smaller after a cold shower or plunge, which some of you take (he knows some of you take cold plunges; the knowing is his, not the listeners')"}
+]}]}

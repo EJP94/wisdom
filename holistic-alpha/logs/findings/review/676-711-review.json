@@ -1,0 +1,96 @@
+{
+ "episodes": [
+  {
+   "id": "676",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "00:20",
+     "transcript": "usually I'm not really a fan of the word hack. I think that's something that uh doesn't really speak to a larger intention and it's also a word that's probably overused",
+     "recap": "\"Hack\" usually doesn't really speak to a larger intention and is probably overused",
+     "fix": "Usually not a fan of the word \"hack\": it seems not to really speak to a larger intention, and is probably overused; but it fits this massive return for a comparatively small thing"
+    },
+    {
+     "severity": "S3",
+     "kind": "source lost",
+     "ts": "02:04",
+     "transcript": "Conversely, I'll see it over and over and over again. When guys get out of porn and they get away from that habit and they heal through that, so many other areas of their life come into line.",
+     "recap": "Conversely, seen over and over again: men who get out of porn and heal see so many areas come into line, discipline being one reason",
+     "fix": "Conversely, personally seen over and over again: men who get out of porn and heal see so many areas come into line, discipline being one reason"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "04:09",
+     "transcript": "But I think the number one reason that I have really stuck with it is because it is the thing that keeps me on track the most when it comes to having discipline because it sucks.",
+     "recap": "personally the number one reason for sticking with them is discipline: they always suck",
+     "fix": "personally, it seems the number one reason for sticking with them is that they keep one on track the most with discipline: they always suck"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "04:09",
+     "transcript": "I enjoy how I feel after and I enjoy knowing how good it's going to be for my day.",
+     "recap": "The after is enjoyable; the first moment stepping in isn't ever really",
+     "fix": "The after is enjoyable, as is knowing how good it will be for the day; the first moment stepping in isn't ever really"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "05:42",
+     "transcript": "So tons of guys, all the way going back to the first boot camp program that I did years ago, have used cold showers as part of a foundation to rebuild their discipline and stay away from porn.",
+     "recap": "In coaching, many men, back to the first Bootcamp program years ago, have used cold showers in a foundation of habits to stay away from porn.",
+     "fix": "In coaching, many men, back to the first Bootcamp program years ago, have used cold showers in a foundation of habits to rebuild their discipline and stay away from porn."
+    }
+   ]
+  },
+  {
+   "id": "711",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "source lost",
+     "ts": "00:37",
+     "transcript": "Some of the layers of that, you know, I think about some of the the times that I've thought about my own body. I think about some of the times that I've heard from many countless guys at this point, you know, talking to so many of you guys over the years.",
+     "recap": "yet it has a big impact on our sexuality, as one's own body and so many of you, countless men over the years, show",
+     "fix": "yet it has a big impact on our sexuality. Some of its layers come from times of thinking about one's own body and from what so many of you, countless men over the years, have said"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "01:58",
+     "transcript": "So small. It's too small. My cock is too small. I wish it was bigger.",
+     "recap": "too small, not good enough",
+     "fix": "too small, I wish it was bigger, not good enough"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "02:22",
+     "transcript": "And if it's in any other state There's kind of this element of shame. It's almost like it's supposed to be hard somehow all the time",
+     "recap": "Or a little shame: a lot of men seem kind of prouder of it hard, \"in its full glory\", almost as if it should somehow be hard all the time",
+     "fix": "Or a little shame: a lot of men seem kind of prouder of it hard, \"in its full glory\", and in any other state there is kind of an element of shame, almost as if it should somehow be hard all the time"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "02:46",
+     "transcript": "And I should note by the way, guys with cocks of all sizes.",
+     "recap": "Unique and personal, resonating with some more than others, it seems a very common theme with the vast, vast majority of men",
+     "fix": "Unique and personal, resonating with some more than others, it seems a very common theme with the vast, vast majority of men, with cocks of all sizes"
+    },
+    {
+     "severity": "S3",
+     "kind": "fact changed",
+     "ts": "13:43",
+     "transcript": "Instead of feeling like you have these expectations of yourself that you're somehow not living up to, you're gonna feel more proud of yourself.",
+     "recap": "you feel enough, and prouder than short of your expectations",
+     "fix": "you feel enough, and instead of feeling you are somehow not living up to your expectations of yourself, you feel more proud of yourself"
+    }
+   ]
+  }
+ ]
+}
