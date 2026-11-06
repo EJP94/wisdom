@@ -1,0 +1,200 @@
+{
+ "episodes": [
+  {
+   "id": "185",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "04:47",
+     "transcript": "People look for the shortcut, the hack. And if you came here looking for that, you won't find it. The shortcut is a lie. The hack doesn't get you there. And if you want to take the easy road, it will not take you where you want to be. Stronger, smarter, faster, healthier, better, free. To reach goals and overcome obstacles and be the best version of you possible will not happen by itself.",
+     "recap": "\"The shortcut is a lie. The hack doesn't get you there.\" Reaching goals and being the best version of you possible will not happen by cutting corners or looking for the easy way",
+     "fix": "After the first quote add: the easy road \"will not take you where you want to be. Stronger, smarter, faster, healthier, better, free.\" Then: Reaching goals, overcoming obstacles and being the best version of you possible will not happen by itself, by cutting corners or by looking for the easy way"
+    },
+    {
+     "severity": "S3",
+     "kind": "format",
+     "ts": "",
+     "transcript": "frustration, and discipline. And that applies to every aspect of our lives, and that certainly applies to presence.",
+     "recap": "**Quote:** Jocko Willink, ... \"There is no easy way. ... frustration, and discipline.\" That applies to every aspect of our lives, and certainly to presence",
+     "fix": "[05:11] The last sentence is the host applying the quote, but it sits in the Quote bullet after Jocko's paraphrased words, so it reads as Jocko's. Move it to its own unmarked bullet right after: - That applies to every aspect of our lives, and certainly to presence"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "16:17",
+     "transcript": "we literally spend probably ninety-nine percent of the time or more not really fully present.",
+     "recap": "literally probably 99% of the time or more caught up in our head",
+     "fix": "literally probably 99% of the time or more not really fully present, caught up in our head"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "21:07",
+     "transcript": "So often we move about in the world and our awareness, you know, we we're only sort of semi-aware of what's actually around us.",
+     "recap": "So often we move about only semi-aware of what's actually around us",
+     "fix": "So often we move about only sort of semi-aware of what's actually around us"
+    }
+   ]
+  },
+  {
+   "id": "191",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "08:14",
+     "transcript": "there's you know more out there, but there's a couple that I think are kind of the best.",
+     "recap": "Two apps to check out, with more out there but these kind of the best",
+     "fix": "Two apps to check out, with more out there but these seem kind of the best"
+    }
+   ]
+  },
+  {
+   "id": "195",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "advice hedge lost",
+     "ts": "08:28",
+     "transcript": "um I am but again you can adapt this to you personally but do at least the minimums that he lays out there's a reason that those are there",
+     "recap": "Adapt it to you personally.",
+     "fix": "You can adapt it to you personally."
+    },
+    {
+     "severity": "S3",
+     "kind": "fact changed",
+     "ts": "09:14",
+     "transcript": "If you haven't heard me talk about that, you can look up Wim Hof, look up the Wim Hof breathing method. But I've been trying to implement that on a more regular basis. So I'm going to make that part of this challenge as well.",
+     "recap": "At least five rounds of Wim Hof breathing, being implemented on a more regular basis",
+     "fix": "At least five rounds of Wim Hof breathing, after trying to implement it on a more regular basis"
+    },
+    {
+     "severity": "S3",
+     "kind": "word added",
+     "ts": "13:05",
+     "transcript": "Of course, you don't need to ramp it up as much as I did, but I would suggest doing it the whole the basics of the holistic alpha way, which again is really three key additions to the normal 75 hard program.",
+     "recap": "but the suggestion is to do at least the basics of the Holistic Alpha way, its three key additions to the normal program",
+     "fix": "but the suggestion is to do the basics of the Holistic Alpha way, really three key additions to the normal program"
+    }
+   ]
+  },
+  {
+   "id": "212",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "02:57",
+     "transcript": "one of the things that he just sort of briefly mentioned, but I thought was actually pretty powerful, was that cold showers, taking a cold shower, had moved from he basically made a comment like he felt like it was just part of of who he is now, and he didn't really feel like he needed to track it with Itali anymore.",
+     "recap": "and he didn't feel he needed to track it with a tally anymore",
+     "fix": "and he didn't really feel he needed to track it with a tally anymore"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "05:50",
+     "transcript": "Now there's other things that I'm tracking with, especially with this challenge right now, uh, that are not. that automatic, you know, I'm having to to push my edges",
+     "recap": "Others in the current challenge aren't automatic and mean pushing edges to stay on track",
+     "fix": "Others in the current challenge aren't that automatic and mean pushing edges to stay on track"
+    }
+   ]
+  },
+  {
+   "id": "285",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "03:39",
+     "transcript": "But presence, as some of those definitions kind of allude to, it's really kind of more than that now-ness. There's something energetic about presence.",
+     "recap": "but, as some definitions kind of allude to, there's something energetic beyond now-ness",
+     "fix": "but, as some definitions kind of allude to, presence is really kind of more than now-ness: there's something energetic about it"
+    },
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "08:45",
+     "transcript": "You may have had the experience, either alone, masturbating, or having sex with a partner, where this was not the case, where either you or your partner was not present.",
+     "recap": "You may have had sex where you or your partner wasn't present",
+     "fix": "You may have had the experience, alone masturbating or having sex with a partner, where you or your partner wasn't present"
+    },
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "09:06",
+     "transcript": "And if you've had this experience having sex with somebody, sometimes it can be quite obvious.",
+     "recap": "and it can be quite obvious",
+     "fix": "and with a partner sometimes it can be quite obvious"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "28:47",
+     "transcript": "Is it brings you to this sort of quiet place of presence?",
+     "recap": "Of the cold shower's lots of benefits, one is a quiet place of presence",
+     "fix": "Of the cold shower's lots of benefits, one is this sort of quiet place of presence"
+    }
+   ]
+  },
+  {
+   "id": "296",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "03:06",
+     "transcript": "That's where life is, really, because there's no magic in life when we're on this sort of automatic repeating patterns mode.",
+     "recap": "there's no magic in automatic repeating-patterns mode",
+     "fix": "there's no magic in this sort of automatic repeating-patterns mode"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "08:16",
+     "transcript": "What there is is there's a bunch of different things that will either sort of trigger a reduction in your testosterone in that fire, or they will trigger a boost in that.",
+     "recap": "A bunch of things trigger a reduction or a boost",
+     "fix": "A bunch of things will either sort of trigger a reduction or trigger a boost"
+    },
+    {
+     "severity": "S3",
+     "kind": "fact changed",
+     "ts": "17:58",
+     "transcript": "which is cold exposure. This doesn't need to be Hugely excessive, a cold shower, a little cold exposure outside, you know, maybe a workout out in the cold to get some of that sun",
+     "recap": "Cold exposure, not hugely excessive: a cold shower, a little cold outside",
+     "fix": "Cold exposure, which doesn't need to be hugely excessive: a cold shower, a little cold outside"
+    },
+    {
+     "severity": "S3",
+     "kind": "certainty hedge lost",
+     "ts": "18:21",
+     "transcript": "Cold exposure will trigger various things to happen from a physiological and sort of energetic and spiritual standpoint that will fire up this testosterone masculine fire.",
+     "recap": "It triggers various things physiologically, energetically and spiritually that fire this up",
+     "fix": "It triggers various things physiologically and, sort of, energetically and spiritually that fire this up"
+    },
+    {
+     "severity": "S3",
+     "kind": "source lost",
+     "ts": "21:33",
+     "transcript": "In fact, my impression has been over the years that actually I think sitting and swiping on Tinder is a negative trigger. I feel like it actually sucks the fi this fire out of you.",
+     "recap": "the impression over the years is that sitting and swiping on Tinder seems to be a negative trigger, sucking this fire out of you",
+     "fix": "personally, the impression over the years is that sitting and swiping on Tinder seems to be a negative trigger, seeming to suck this fire out of you"
+    },
+    {
+     "severity": "S3",
+     "kind": "format",
+     "ts": "",
+     "transcript": "",
+     "recap": "Checker WARN: length ratio 37% (1830/4883), above the 36% solo limit. The closing bullet \"With testosterone there is not one magic bullet: ask how many negative triggers you can eliminate and how many positive ones you can add. It's a complete picture, so address both sides, and the more you do, the better a place you'll be in\" is the closing recap of the episode ([25:54]-[26:30]) and restates the \"big picture\" bullet (not one thing will magically solve it) and the \"bucket\" bullet (plug holes, add at the top). It also dropped \"kind of\" from \"So we need to kind of address both sides of it\" [26:30]",
+     "fix": "Drop the closing testosterone bullet, moving only \"it's a complete picture, so we need to kind of address both sides\" into the bucket bullet: ... negative triggers to avoid, positive ones to add: it's a complete picture, so kind of address both sides"
+    }
+   ]
+  }
+ ]
+}

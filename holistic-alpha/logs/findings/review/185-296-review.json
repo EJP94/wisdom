@@ -1,0 +1,101 @@
+{
+ "episodes": [
+  {
+   "id": "185",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "scope widened",
+     "ts": "07:37",
+     "transcript": "to learn about some of the strategies within our own mind and body that we can use to get there",
+     "recap": "not how to get back there, or the strategies within our own mind and body to get there",
+     "fix": "or some of the strategies within our own mind and body to get there"
+    },
+    {
+     "severity": "S3",
+     "kind": "fact changed",
+     "ts": "22:21",
+     "transcript": "when you actually really dive into this and you really bring this into your life in a powerful way, it is incredible. Incredible the difference that it will make in your world, in your inner world, in terms of how you feel, in your body, and your health, in your relationships, and your effectiveness",
+     "recap": "**Story:** for years and years, hearing people or reading every now and then about being present always just lived as \"that sounds good\". Really diving in and bringing it into life in a powerful way made an incredible difference: in the inner world, how you feel, body and health, relationships, effectiveness",
+     "fix": "Keep the Story for the years-and-years part, then state the second sentence as a general claim in the present: Really diving in and bringing it into your life in a powerful way makes an incredible difference in your world: ..."
+    }
+   ]
+  },
+  {
+   "id": "191",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "195",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "source lost",
+     "ts": "13:05",
+     "transcript": "That's something that I've kind of already, you know, a little bit kind of moved beyond the basics because I've been doing those things as part of my daily life for a long time. So I wanted to ramp this up.",
+     "recap": "Those basics are already part of daily life, for a long time, hence the ramp-up.",
+     "fix": "**Story:** the basics have been part of daily life for a long time, hence the ramp-up."
+    }
+   ]
+  },
+  {
+   "id": "212",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "scope widened",
+     "ts": "05:50",
+     "transcript": "Some of them I do still track because they're important enough that I want to be, you know, absolutely certain that they get done. But even if I wasn't tracking, there are some things that I would still just execute on because those are a part of of who I am.",
+     "recap": "Some stay tracked to be absolutely certain they get done, though they'd get done anyway.",
+     "fix": "Some stay tracked to be absolutely certain they get done, though some of them would get done anyway."
+    }
+   ]
+  },
+  {
+   "id": "240",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "idea missing",
+     "ts": "06:07",
+     "transcript": "is it leads to positive hormonal and neurotransmitter changes. So things like norepinephrine, which is like one of your feel good hormones, are boosted by a cold shower.",
+     "recap": "and boost norepinephrine, like one of your feel-good hormones",
+     "fix": "and lead to positive hormonal and neurotransmitter changes, things like norepinephrine, like one of your feel-good hormones"
+    }
+   ]
+  },
+  {
+   "id": "285",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "scope widened",
+     "ts": "11:05",
+     "transcript": "If your mind and some of your energy is in this imagining being with somebody, ... we when we're in fantasy, it it necessarily, by definition, takes some of our awareness away from right now.",
+     "recap": "imagining somebody, specific or generic, by definition takes awareness from right now.",
+     "fix": "imagining somebody, specific or generic, by definition takes some of the awareness from right now."
+    }
+   ]
+  },
+  {
+   "id": "296",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "format",
+     "ts": "",
+     "transcript": "",
+     "recap": "Checker WARN: length ratio 38% (Recap 1847 / transcript 4883 words), above the 36% solo limit. No idea is invented; the density comes from about 20 distinct triggers. One real repetition: the positive trigger \"The energetic edges\" restates the negative \"The energetic middle\" bullet (stillness reduces stress and heals, intensity signals the body for testosterone).",
+     "fix": "Optional trim: in the positive \"The energetic edges\" bullet keep only what is new (\"especially intense\"; stillness also helps work through the inner and emotional stuff that drags you down) and drop the restated stillness/intensity explanation; otherwise accept the WARN."
+    }
+   ]
+  }
+ ]
+}

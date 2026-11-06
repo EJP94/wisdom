@@ -1,0 +1,34 @@
+{"episodes": [
+  {"id": "355", "ok": true, "findings": []},
+  {"id": "391", "ok": false, "findings": [
+    {"severity": "S2", "kind": "hedge lost", "line": 36, "claim": "391-32",
+     "recap": "At that age, it seems, so many guys have so little understanding of what sex is and what it can do. The aim is to change that, with so many more guys using sexual energy powerfully to build the life and the self they desire",
+     "found": "The aim is to change how little so many young guys understand of what sex is and what it can do, with so many more guys using sexual energy powerfully to build the life and the self they desire",
+     "fix": "The aim is to change what it seems is so little understanding that so many young guys have of what sex is and what it can do, with so many more guys using sexual energy powerfully to build the life and the self they desire. (The claim states as fact the premise that the Recap hedges with \"it seems\"; 391-31 keeps the hedge, 391-32 loses it.)"},
+    {"severity": "S2", "kind": "claim strengthened", "line": 43, "claim": "391-50",
+     "recap": "**Story:** still on this journey too",
+     "found": "Still on the journey of awareness in sexual empowerment too, from giving up porn to translating sexual energy into creating things",
+     "fix": "Still on this journey too, of practicing guiding his attention and being aware of his mind, emotions and body. (The Recap only says the host is still on this journey. \"From giving up porn to translating sexual energy into creating things\" is the range of the listeners in the bullet's opening, \"whether you're a young guy trying to give up porn or further along\"; the claim turns it into the host's own path.)"}
+  ]},
+  {"id": "422", "ok": true, "findings": []},
+  {"id": "458", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 29, "claim": "458-24",
+     "recap": "Personally, no one worked with or heard from in the last few years has yet made significant changes in these areas without some kind of tracking of key habits",
+     "found": "Personally, no one worked with or heard from in the last few years has yet made significant changes in the areas discussed here without some kind of tracking of key habits",
+     "fix": "Name the areas the claim points to, which the Recap gives in the listener question and in the Start small bullet: \"Personally, no one worked with or heard from in the last few years has yet made significant changes in areas such as porn, exercise and eating trash food without some kind of tracking of key habits\". \"The areas discussed here\" points outside the claim and step B cannot add words."}
+  ]},
+  {"id": "540", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 35, "claim": "540-57",
+     "recap": "Overcoming porn will be hard, with hard moments to push through; so will the body, business and relationships you want. Stop hoping for it not to be hard and get better at doing hard things",
+     "found": "Stop hoping for it not to be hard and get better at doing hard things",
+     "fix": "Stop hoping that overcoming porn, or creating the body, business and relationships you want, will not be hard, and get better at doing hard things. (\"it\" points to the previous claim 540-56, which is a separate row.)"}
+  ]},
+  {"id": "550", "ok": false, "findings": [
+    {"severity": "S2", "kind": "not standalone", "line": 29, "claim": "550-10",
+     "recap": "The more we do a sitting meditation, as the guest has for a while, for the most part, the more it shows up elsewhere",
+     "found": "The more we do a sitting meditation, as the guest has for a while, for the most part, the more it shows up elsewhere: in a cold shower, in edging or at some other time, you get into a really meditative place",
+     "fix": "Name the guest: \"as the guest, Charles, has for a while\". \"The guest\" alone points to the episode, and in a topic note that mixes episodes the reader cannot tell who it is."}
+  ]},
+  {"id": "569", "ok": true, "findings": []},
+  {"id": "571", "ok": true, "findings": []}
+]}

@@ -3,10 +3,10 @@ resistance,mind,Resistance,topic,general,3,\bresistance\b(?! (?:training|work|ba
 meditation,mind,Meditation and presence,topic,sexual-health,3,meditat\w*
 every-day,mind,"Every day, small steps",topic,sexual-health,8,every single day|\bevery day\b|15 minutes|fifteen minutes|\bone minute\b|small steps?|little steps?|tiny steps?
 regret,mind,Regret and death,topic,sexual-health,3,\bregret\w*|deathbed|going to die|\bwe(?:'re| are) all going to die
-discomfort,mind,Discomfort and pain as power,topic,general,3,discomfort|uncomfortable|hard things|hard shit|pain is (?:your )?power|galvaniz\w*
+discomfort,mind,Discomfort and pain as power,topic,sexual-health,3,discomfort|uncomfortable|hard things|hard shit|pain is (?:your )?power|galvaniz\w*
 never-too-late,mind,Never too late,topic,sexual-health,2,too late|too old|how old you are|\bnot stuck\b
 truth,mind,Living your truth and happiness,topic,sexual-health,3,your truth|\balignment\b|what (?:people|anybody|somebody|others) think|\bhappiness\b
-cold,mind,Cold exposure,topic,general,5,cold showers?|ice baths?|cold plunge|cold exposure|the cold\b
+cold,mind,Cold exposure,topic,sexual-health,5,cold showers?|ice baths?|cold plunge|cold exposure|the cold\b
 work,mind,Work and business,parked,general,6,\bjobs?\b|\bbusiness\w*|\bcareer\b|\bboss\b
 semen-retention,sex-energy,Semen retention,topic,explicit,3,ejaculat\w*|semen|no ?fap|no fab|\bretention\b
 orgasm,sex-energy,Orgasm without ejaculation,topic,explicit,2,multiple orgasms?|orgasm\w* without ejaculat\w*|separat\w* (?:the |your )?orgasm|non-?ejaculatory|dry orgasms?|full[- ]body orgasm\w*
@@ -37,3 +37,15 @@ setbacks,mind,Setbacks and slips,topic,sexual-health,3,\brelaps\w*|setbacks?|sli
 habits,mind,Habits and tracking,topic,sexual-health,3,\bhabits?\b|habit track\w*|tally (?:app|marks?)|\bstreaks?\b
 alcohol,fuel,Alcohol,topic,general,3,alcohol\w*|\bbeers?\b|\bwine\b|hangovers?|\bbooze\b|liquor|\bdrunk\b
 breathing,mind,Breathing,topic,sexual-health,3,\bbreath(?:e|es|ing|ed|work)?\b|\binhal\w*|\bexhal\w*|nasal breathing
+discipline,mind,Discipline and intention,topic,sexual-health,3,\bdisciplin\w*|\bwillpower\b|\bintentional(?:ly)?\b|living with intention
+journey,mind,Being on the journey,topic,general,3,\bon (?:the|this|your|my|our) journey\b|\bthe journey\b
+why-train,training,Why men train,topic,sexual-health,3,\bwhy (?:we |you |men |i )?(?:train|work out|exercise)\b|benefits of (?:training|exercise|working out)|physical training
+self-worth,mind,Being enough,topic,sexual-health,3,self[- ]worth|\byou are enough\b|\bbeing enough\b|\bnot (?:good )?enough\b|\bworthy\b|\bworthiness\b
+eyes-closed,training,Exercising with eyes closed,topic,sexual-health,3,\beyes closed\b|\bclosed eyes\b|\beyes shut\b
+erections,sex-energy,Erection quality,topic,explicit,3,\berections?\b|\berectile\b|\bhard[- ]?ons?\b
+community,relationships,Community and accountability,topic,sexual-health,3,\bcommunity\b|\baccountab\w*|brotherhood
+clean-eating,fuel,Clean eating,topic,general,3,clean eating|\beat(?:ing)? clean\b|\breal food\b|whole foods?|junk food|processed foods?|trash food|shitty food
+water,fuel,Water and hydration,topic,sexual-health,3,\bhydrat\w*|\bdehydrat\w*|drink(?:ing)? (?:more |enough |a lot of )?water|glass(?:es)? of water|water intake
+shame,mind,Shame,topic,sexual-health,3,\bshame(?:ful|d)?\b|\bashamed\b
+purpose,mind,Purpose,topic,sexual-health,3,(?<!on )\bpurpose(?:ful)?\b|\bmy mission\b|life'?s mission
+nature,mind,Nature,topic,general,3,\bin nature\b|\bthe mountains?\b|\bhik(?:e|es|ing)\b|\boutdoors\b|\bthe woods\b|\bforests?\b

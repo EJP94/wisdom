@@ -1,0 +1,134 @@
+{
+ "episodes": [
+  {
+   "id": "185",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 25,
+     "claim": "185-11",
+     "recap": "That applies to every aspect of our lives, and certainly to presence (about \"there is no shortcut\")",
+     "found": "topic meditation, also [+discipline]: \"There is no shortcut, and that applies to every aspect of our lives, and certainly to presence\"",
+     "fix": "Main subject is the no-shortcut idea, as in 185-08, 185-09, 185-10 and 185-54: topic +discipline (name \"Discipline and intention\", area mind), also [\"meditation\"]"
+    }
+   ]
+  },
+  {
+   "id": "191",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "195",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 51,
+     "claim": "195-45",
+     "recap": "two meditations, five Wim Hof breathing rounds (the minimum) ... eight sprints ... a gallon of water",
+     "found": "also ['cold','strength','kegels','edging']",
+     "fix": "Add the missing secondary topics the claim lists, as the sibling claims 195-26, 195-27 and 195-29 do: also ['cold','meditation','breathing','strength','sprints','kegels','edging','+water']"
+    }
+   ]
+  },
+  {
+   "id": "212",
+   "ok": true,
+   "findings": []
+  },
+  {
+   "id": "240",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "hedge lost",
+     "line": 39,
+     "claim": "240-51",
+     "recap": "They get bored, anxious, stressed, maybe sad, maybe love [?] ... (unique to you, but those are some common ones)",
+     "found": "(unique to you, but being bored, anxious, stressed or sad are some common ones)",
+     "fix": "The triggers that usually send you down the path to porn and masturbation (unique to you, but being bored, anxious, stressed, maybe sad are some common ones) are rooted in your mind, so meditation helps you address the root cause: the loneliness, anxiety, stress, boredom"
+    },
+    {
+     "severity": "S3",
+     "kind": "wrong level",
+     "line": 40,
+     "claim": "240-54",
+     "recap": "Breaking them means choosing uncomfortable but productive things, as in a lot of life, business, relationships, health",
+     "found": "level sexual-health: \"Breaking comfort-fueled behaviors means choosing uncomfortable but productive things, as in a lot of life, business, relationships, health: ...\"",
+     "fix": "level general (the claim text has no sexual content)"
+    },
+    {
+     "severity": "S3",
+     "kind": "wrong level",
+     "line": 42,
+     "claim": "240-61",
+     "recap": "With all three, you face your day and your inner and outer challenges in an entirely different situation",
+     "found": "level sexual-health: \"With all three of cold showers, meditation and physical training, you face your day and your inner and outer challenges in an entirely different situation\"",
+     "fix": "level general (the claim text has no sexual content)"
+    }
+   ]
+  },
+  {
+   "id": "285",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 28,
+     "claim": "285-22",
+     "recap": "With a partner, presence matters more than anything else (inside the bullets on presence in sex)",
+     "found": "With a partner, presence matters more than anything else",
+     "fix": "In sex with a partner, presence matters more than anything else"
+    }
+   ]
+  },
+  {
+   "id": "296",
+   "ok": false,
+   "findings": [
+    {
+     "severity": "S2",
+     "kind": "not standalone",
+     "line": 50,
+     "claim": "296-62",
+     "recap": "Human bonding ... Especially dating, even just striking up conversations with women, which lifts you up and absolutely raises your testosterone and this fire",
+     "found": "Especially dating, even just striking up conversations with women, lifts you up and absolutely raises your testosterone and the masculine fire",
+     "fix": "Human bonding, especially dating, even just striking up conversations with women, lifts you up and absolutely raises your testosterone and the masculine fire"
+    },
+    {
+     "severity": "S3",
+     "kind": "wrong level",
+     "line": 50,
+     "claim": "296-63",
+     "recap": "You may have left a date, maybe a second or third, maybe after kissing somebody for a while for the first time, with a little hormonal funk in your armpit: your hormones actually did get a boost",
+     "found": "level sexual-health",
+     "fix": "level general (dating and kissing, no sexual function, anatomy, drive or porn)"
+    },
+    {
+     "severity": "S3",
+     "kind": "not split",
+     "line": 51,
+     "claim": "296-66",
+     "recap": "Swiping on Tinder won't do this; personally, the impression over the years is that sitting and swiping on Tinder seems to be a negative trigger, which seems to actually suck this fire out of you",
+     "found": "Swiping on Tinder won't raise testosterone; personally, the impression over the years is that sitting and swiping on Tinder seems to be a negative trigger, which seems to actually suck the masculine fire out of you",
+     "fix": "Split in two: (1) \"Swiping on Tinder won't raise testosterone like human bonding in the physical world\"; (2) \"Personally, the impression over the years is that sitting and swiping on Tinder seems to be a negative trigger for testosterone, which seems to actually suck the masculine fire out of you\". The hedge \"personally ... seems\" belongs only to the second"
+    },
+    {
+     "severity": "S3",
+     "kind": "wrong topic",
+     "line": 43,
+     "claim": "296-48",
+     "recap": "Non-ejaculatory, high-vibe masturbation and/or sex absolutely fires this up, with three keys: non-ejaculatory, without porn, and with awareness and mindfulness",
+     "found": "topic semen-retention, also ['testosterone','porn']",
+     "fix": "Add 'orgasm' to also (its keywords include non-ejaculatory): also ['testosterone','porn','orgasm']"
+    }
+   ]
+  }
+ ]
+}

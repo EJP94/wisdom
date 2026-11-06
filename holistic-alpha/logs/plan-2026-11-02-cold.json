@@ -1,0 +1,138 @@
+{
+ "planner": "plan_blocks.py 0.2 (2026-10-28)",
+ "date": "2026-11-02",
+ "repo": "/home/user/wisdom",
+ "python": "python3",
+ "mode": "write",
+ "overwrite": false,
+ "outDir": null,
+ "header": "id,episode,title,date,date_estimated,type,guest,series,part,words,minutes,replays,stem,recap,status,flags",
+ "chains": [
+  [
+   {
+    "label": "080-174",
+    "ids": [
+     "080",
+     "090",
+     "092",
+     "105",
+     "114",
+     "121",
+     "140",
+     "174"
+    ],
+    "spot": [
+     "174"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 29808,
+    "estimate": 19.5,
+    "rows": [
+     "080,80,The Most Powerful Change We Can Make This Year,2020-01-01,,solo,,,,1342,10,,080 - The Most Powerful Change We Can Make This Year,080 - The Most Powerful Change We Can Make This Year.md,available,",
+     "090,90,3 Ways Cold Showers Help You Kick A** & Proof YOU Can Do It Too,2020-02-01,,solo,,,,4325,25,,090 - 3 Ways Cold Showers Help You Kick A & Proof YOU Can Do It Too,090 - 3 Ways Cold Showers Help You Kick A & Proof YOU Can Do It Too.md,available,",
+     "092,92,\"4 Techniques for Dissolving Stress, Anxiety, & Depression\",2020-02-08,,solo,,,,4575,27,,\"092 - 4 Techniques for Dissolving Stress, Anxiety, & Depression\",\"092 - 4 Techniques for Dissolving Stress, Anxiety, & Depression.md\",available,",
+     "105,105,\"Fear, Resistance, and Stuckness\",2020-03-22,,solo,,,,3416,19,,\"105 - Fear, Resistance, and Stuckness\",\"105 - Fear, Resistance, and Stuckness.md\",available,",
+     "114,114,What is Your Personal Foundation As a Man?,2020-05-15,,solo,,,,2435,15,,114 - What is Your Personal Foundation As a Man,114 - What is Your Personal Foundation As a Man.md,available,",
+     "121,121,Fear and Resistance,2020-07-21,,solo,,,,4028,25,,121 - Fear and Resistance,121 - Fear and Resistance.md,available,",
+     "140,140,Attacking Winter Instead of Surviving It,2020-10-26,,solo,,,,3794,22,,140 - Attacking Winter Instead of Surviving It,140 - Attacking Winter Instead of Surviving It.md,available,",
+     "174,174,NoFap Success - 5 Keys for Breaking a Porn Addiction,2021-02-08,,solo,,,,5893,32,,174 - NoFap Success - 5 Keys for Breaking a Porn Addiction,174 - NoFap Success - 5 Keys for Breaking a Porn Addiction.md,available,"
+    ]
+   },
+   {
+    "label": "185-296",
+    "ids": [
+     "185",
+     "191",
+     "195",
+     "212",
+     "240",
+     "285",
+     "296"
+    ],
+    "spot": [
+     "240"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 29976,
+    "estimate": 17.5,
+    "rows": [
+     "185,185,The Shortcut to More Presence and Now-ness,2021-03-20,,solo,,,,4255,25,,185 - The Shortcut to More Presence and Now-ness,185 - The Shortcut to More Presence and Now-ness.md,available,",
+     "191,191,Tally Up Your Growth,2021-04-22,,solo,,,,2862,15,,191 - Tally Up Your Growth,191 - Tally Up Your Growth.md,available,",
+     "195,195,75 Hard The Holistic Alpha Way,2021-05-04,,solo,,,,3360,19,,195 - 75 Hard The Holistic Alpha Way,195 - 75 Hard The Holistic Alpha Way.md,available,",
+     "212,212,From Tally to Identity,2021-05-21,,solo,,,,2130,12,,212 - From Tally to Identity,212 - From Tally to Identity.md,available,",
+     "240,240,NoFap - How to Avoid a Relapse,2021-07-29,,solo,,,,7829,40,,240 - NoFap - How to Avoid a Relapse,240 - NoFap - How to Avoid a Relapse.md,available,",
+     "285,285,Presence and Sex,2021-12-01,,solo,,,,4673,30,,285 - Presence and Sex,285 - Presence and Sex.md,available,",
+     "296,296,Testosterone Triggers and Living With Intention,2022-01-05,,solo,,,,4867,27,,296 - Testosterone Triggers and Living With Intention,296 - Testosterone Triggers and Living With Intention.md,available,"
+    ]
+   },
+   {
+    "label": "355-571",
+    "ids": [
+     "355",
+     "391",
+     "422",
+     "458",
+     "540",
+     "550",
+     "569",
+     "571"
+    ],
+    "spot": [
+     "571"
+    ],
+    "types": [
+     "challenge",
+     "solo"
+    ],
+    "words": 22666,
+    "estimate": 19.5,
+    "rows": [
+     "355,355,What to Do When You're Feeling Unmotivated,2022-06-16,,solo,,,,1586,9,,355 - What to Do When You're Feeling Unmotivated,355 - What to Do When You're Feeling Unmotivated.md,available,",
+     "391,391,Awareness and Sexual Empowerment,2022-11-09,,solo,,,,4234,28,,391 - Awareness and Sexual Empowerment,391 - Awareness and Sexual Empowerment.md,available,",
+     "422,422,Trickle-Down Habits,2023-02-14,,solo,,,,2232,14,,422 - Trickle-Down Habits,422 - Trickle-Down Habits.md,available,",
+     "458,458,How Do I Stay On Course?,2023-06-01,,solo,,,,2825,17,,458 - How Do I Stay On Course,458 - How Do I Stay On Course.md,available,",
+     "540,540,NoFap vs. The Holistic Alpha Way + 4 Indispensable Tools to Overcome Porn Addiction,2023-12-04,,solo,,,,4212,25,,540 - NoFap vs. The Holistic Alpha Way + 4 Indispensable Tools to Overcome Porn Addiction,540 - NoFap vs. The Holistic Alpha Way + 4 Indispensable Tools to Overcome Porn Addiction.md,available,",
+     "550,550,21D Habit Challenge - Day 1 - With Charles,2023-12-21,,challenge,Charles Martin,21D Habit Challenge,1,1809,9,,550 - 21D Habit Challenge - Day 1 - With Charles,550 - 21D Habit Challenge - Day 1 - With Charles.md,available,",
+     "569,569,Semen Retention - What to Do When This Happens Around 1-2 Weeks,2024-01-11,,solo,,,,3826,21,,569 - Semen Retention - What to Do When This Happens Around 1-2 Weeks,569 - Semen Retention - What to Do When This Happens Around 1-2 Weeks.md,available,",
+     "571,571,Your Relationship With Your Cock,2024-01-16,,solo,,,,1942,11,,571 - Your Relationship With Your Cock,571 - Your Relationship With Your Cock.md,available,"
+    ]
+   },
+   {
+    "label": "676-711",
+    "ids": [
+     "676",
+     "711"
+    ],
+    "spot": [
+     "711"
+    ],
+    "types": [
+     "solo"
+    ],
+    "words": 4061,
+    "estimate": 7.6,
+    "rows": [
+     "676,676,\"Porn, The River of Discipline, and My #1 Discipline “Hack”\",2024-08-17,,solo,,,,1392,8,,\"676 - Porn, The River of Discipline, and My #1 Discipline “Hack”\",\"676 - Porn, The River of Discipline, and My #1 Discipline “Hack”.md\",available,",
+     "711,711,Cock Grace and Shame,2024-11-17,,solo,,,,2669,17,,711 - Cock Grace and Shame,711 - Cock Grace and Shame.md,available,"
+    ]
+   }
+  ]
+ ],
+ "qa": [
+  "240",
+  "550"
+ ],
+ "estimate": {
+  "episodes": 25,
+  "blocks": 4,
+  "words": 86511,
+  "spot_episodes": 4,
+  "cu": 64.1,
+  "windows": 1.3,
+  "left_for_later": 0
+ }
+}
